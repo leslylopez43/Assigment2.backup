@@ -2,15 +2,15 @@ TicTacToe=[0,1,2,
            3,4,5,
            6,7,8];
 
-TicTacToe[0]="0";
+TicTacToe[0]="";
 TicTacToe[1]="";
 TicTacToe[2]="";
 TicTacToe[3]="";
-TicTacToe[4]="0";
+TicTacToe[4]="";
 TicTacToe[5]="";
 TicTacToe[6]="";
 TicTacToe[7]="";
-TicTacToe[8]="0";
+TicTacToe[8]="";
 
 
 
@@ -20,7 +20,7 @@ CurrentBoard=CurrentBoard+TicTacToe[3]+TicTacToe[4]+TicTacToe[5]+"<br>";
 CurrentBoard=CurrentBoard+TicTacToe[6]+TicTacToe[7]+TicTacToe[8]+"<br>";
 
 Board.innerHTML=CurrentBoard; //display  Tic Tac Toe Board on screen
-
+alert(CurrentBoard)
 
 function checkWinner()
 
