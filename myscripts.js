@@ -12,6 +12,7 @@ TicTacToe[6]="";
 TicTacToe[7]="";
 TicTacToe[8]="";
 
+let Player="O"; //X player is human and O player is computer 
 let Board=document.getElementById("Display");
 CurrentBoard=TicTacToe[0]+TicTacToe[1]+TicTacToe[2]+"<br>";
 CurrentBoard=CurrentBoard+TicTacToe[3]+TicTacToe[4]+TicTacToe[5]+"<br>";
@@ -152,12 +153,21 @@ function putNaughtOrCross(boxNumber)
    if (TicTacToe[boxNumber] =="")  //CHECK ARRAY LOCATION IF EMPTY
    {
     //alert("INSIDE  NAUGHTORCROSS")
-    Board[boxNumber].innerText="X";
+    Board[boxNumber].innerText=player;
    }
    
  }
+
+
  function generateRandomInteger(max) {
   return Math.floor(Math.random() * max) + 1;
 }
-let value4 = generateRandomInteger(8);
-alert(value4);
+if(player=="O")
+{
+ let computerChoice= generateRandomInteger(8);
+ putNaughtOrCross(computerChoice)
+}
+ 
+
+
+
