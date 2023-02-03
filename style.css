@@ -12,6 +12,8 @@ h1 {
     border-left: 2px solid black;
     border-right: 2px solid black;
   }
+  .vert :hover{color: blue;}
+  
   .hori {
     border-top: 2px solid black;
     border-bottom: 2px solid black;

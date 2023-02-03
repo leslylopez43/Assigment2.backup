@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
- <script src="myscripts.js"></script>
+ <!-- <script src="myscripts.js"></script> -->
 
 </head>
 <body>
 <h1>TIc Tac Toe</h1>
 <table>
   <tr>
-    <td></td>
-    <td class="vert"></td>
+    <td onclick="putNaughtOrCross(1)">X</td>
+    <td onclick="putNaughtOrCross(2)"class="vert"></td>
     <td></td>
   </tr>
   <tr>
@@ -28,7 +28,7 @@
 <div id="Display"></div>
 <button onclick="checkWinner()">Click to check if a player X has won correct version  </button>
 
-           
+<script src="myscripts.js"></script>     
     </body>
     </html>
 

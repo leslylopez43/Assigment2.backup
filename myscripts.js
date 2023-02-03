@@ -16,9 +16,9 @@ let Board=document.getElementById("Display");
 CurrentBoard=TicTacToe[0]+TicTacToe[1]+TicTacToe[2]+"<br>";
 CurrentBoard=CurrentBoard+TicTacToe[3]+TicTacToe[4]+TicTacToe[5]+"<br>";
 CurrentBoard=CurrentBoard+TicTacToe[6]+TicTacToe[7]+TicTacToe[8]+"<br>";
-
+console.log(Board)
 Board.innerHTML=CurrentBoard; //display  Tic Tac Toe Board on screen
-alert(CurrentBoard)
+//alert(CurrentBoard)
 
 function checkWinner()
 
@@ -26,6 +26,7 @@ function checkWinner()
     checkTopRow();
     checkMiddleRow();
     checkbottomRow();
+   // alert("inside checkwinner")
 
 }
 
@@ -141,3 +142,10 @@ function checkcolumn3Row()
   
   }
 }
+
+
+function putNaughtOrCross(boxNumber)
+ {
+
+  alert(boxNumber)
+ }
