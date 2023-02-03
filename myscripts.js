@@ -12,14 +12,14 @@ TicTacToe[6]="";
 TicTacToe[7]="";
 TicTacToe[8]="";
 
-let Player="O"; //X player is human and O player is computer 
-let Board=document.getElementById("Display");
+let player="O"; //X player is human and O player is computer 
+/*let Board=document.getElementById("Display");
 CurrentBoard=TicTacToe[0]+TicTacToe[1]+TicTacToe[2]+"<br>";
 CurrentBoard=CurrentBoard+TicTacToe[3]+TicTacToe[4]+TicTacToe[5]+"<br>";
 CurrentBoard=CurrentBoard+TicTacToe[6]+TicTacToe[7]+TicTacToe[8]+"<br>";
 console.log(Board)
 Board.innerHTML=CurrentBoard; //display  Tic Tac Toe Board on screen
-//alert(CurrentBoard)
+//alert(CurrentBoard)*/
 
 function checkWinner()
 
@@ -27,8 +27,8 @@ function checkWinner()
     checkTopRow();
     checkMiddleRow();
     checkbottomRow();
-   // alert("inside checkwinner")
-
+    checkdiagonal1();
+    checkdiagonal2();
 }
 
 function checkTopRow()
@@ -37,9 +37,7 @@ function checkTopRow()
   {
   alert("X player wins");
     }
-    
-
-
+  
     if(TopRow=="OOO")
   {
   alert("O player wins");
@@ -156,18 +154,52 @@ function putNaughtOrCross(boxNumber)
     Board[boxNumber].innerText=player;
    }
    
+//Check if player is human then change to computer player and call computerplays
+if(player=="X")
+ {
+  player="O"
+  computerPlays();
  }
-
+ }
 
  function generateRandomInteger(max) {
   return Math.floor(Math.random() * max) + 1;
 }
 if(player=="O")
 {
- let computerChoice= generateRandomInteger(8);
- putNaughtOrCross(computerChoice)
+ /*let computerChoice= generateRandomInteger(8);
+ putNaughtOrCross(computerChoice)*/
+ //const TimeoutRef=setTimeout(computerPlays,1000);
 }
+function display()
+{
+  if(player=="X")
+  {
+   document.getElementById("Display").innerHTML="humanplayer" 
+  }
+  if (player=="O")
+  {
+    document.getElementById("Display").innerHTML="computerPlays"
+  }
+}
+
+function computerPlays()
+
+{ 
+  let computerChoice= generateRandomInteger(8);
+putNaughtOrCross(computerChoice)
+player=("X")
+display();
+
+}
+
+//gameOn=true
+//while(gameOn===true)
+//{
+  if(player=="O")
+  {
+  // const TimeoutRef=setTimeout(computerPlays,1000);
+  computerPlays()
+  }
+
  
-
-
-
