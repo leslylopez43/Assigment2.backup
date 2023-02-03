@@ -12,8 +12,6 @@ TicTacToe[6]="";
 TicTacToe[7]="";
 TicTacToe[8]="";
 
-
-
 let Board=document.getElementById("Display");
 CurrentBoard=TicTacToe[0]+TicTacToe[1]+TicTacToe[2]+"<br>";
 CurrentBoard=CurrentBoard+TicTacToe[3]+TicTacToe[4]+TicTacToe[5]+"<br>";
@@ -69,7 +67,7 @@ function checkbottomRow()
   alert("X player wins");
     }
     
-    bottomRow=TicTacToe[6]+TicTacToe[7]+TicTacToe[8];
+     bottomRow=TicTacToe[6]+TicTacToe[7]+TicTacToe[8];
  if(bottomRow=="OOO")
   {
   alert("0 player wins");
