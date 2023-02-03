@@ -147,5 +147,17 @@ function checkcolumn3Row()
 function putNaughtOrCross(boxNumber)
  {
 
-  alert(boxNumber)
+  let Board=document.getElementsByClassName("box")
+   
+   if (TicTacToe[boxNumber] =="")  //CHECK ARRAY LOCATION IF EMPTY
+   {
+    //alert("INSIDE  NAUGHTORCROSS")
+    Board[boxNumber].innerText="X";
+   }
+   
  }
+ function generateRandomInteger(max) {
+  return Math.floor(Math.random() * max) + 1;
+}
+let value4 = generateRandomInteger(8);
+alert(value4);
