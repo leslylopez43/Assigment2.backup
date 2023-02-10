@@ -1,3 +1,35 @@
+/////////Copied!
+const boxes = document.querySelectorAll('.box');
+
+boxes.forEach(box => {
+  box.addEventListener('click', function handleClick(event) {
+    console.log(box.id, event);
+    if(box.id=="zero")
+    putNaughtOrCross(0)
+    if(box.id=="one")
+    putNaughtOrCross(1)
+    if(box.id=="two")
+    putNaughtOrCross(2)
+    if(box.id=="three")
+    putNaughtOrCross(3)
+    if(box.id=="four")
+    putNaughtOrCross(4)
+// alert(event.target)
+if(box.id=="five")
+    putNaughtOrCross(5)
+    if(box.id=="six")
+    putNaughtOrCross(6)
+    if(box.id=="seven")
+    putNaughtOrCross(7)
+    if(box.id=="eight")
+    putNaughtOrCross(8)
+    box.setAttribute('style', 'background-color: yellow;');
+  });
+});
+
+
+///////////////
+
 TicTacToe=[0,1,2,
            3,4,5,
            6,7,8];
@@ -164,9 +196,10 @@ function putNaughtOrCross(boxNumber)
           //computerPlays();
           const TimeoutRef=setTimeout(computerPlays,2000);//computer plays after 2 seconds
         }
-        checkWinner();
+        checkWinner();   
    }
    
+
 
  }
 
@@ -208,18 +241,17 @@ function computerPlays()
 putNaughtOrCross(computerChoice)
 player=("X") //Change player to human playeer
 display();
-
 }
-
 //gameOn=true
 //while(gameOn===true)
 //{
   if(player=="O")
-  {
+  { 
     display();
  const TimeoutRef=setTimeout(computerPlays,3000);
   //computerPlays();
    
   }
+  
 
  
