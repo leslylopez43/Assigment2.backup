@@ -30,7 +30,7 @@ function checkWinner()
     checkMiddleRow();
     checkbottomRow();
     checkdiagonal1Row();
-    checkdiagonal2();
+    checkdiagonal2Row();
 }
 
 function checkTopRow()
