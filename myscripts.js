@@ -1,6 +1,7 @@
 TicTacToe=[0,1,2,
            3,4,5,
            6,7,8];
+// each arrange location is set one space
 
 TicTacToe[0]="";
 TicTacToe[1]="";
@@ -146,24 +147,37 @@ function checkcolumn3Row()
 function putNaughtOrCross(boxNumber)
  {
 
-  let Board=document.getElementsByClassName("box")
-   
+  let onscreenBoard=document.getElementsByClassName("box")
+  //  alert(TicTacToe[boxNumber] )
    if (TicTacToe[boxNumber] =="")  //CHECK ARRAY LOCATION IF EMPTY
    {
-    //alert("INSIDE  NAUGHTORCROSS")
-    Board[boxNumber].innerText=player;
+    //Check if player is human then change to computer player and call computerplays
+      if(player=="X")
+        {
+          player="O";//Change player to computer
+          display();
+          //computerPlays();
+          const TimeoutRef=setTimeout(computerPlays,2000);//computer plays after 2 seconds
+        }
+    onscreenBoard[boxNumber].innerText=player;
+    TicTacToe[boxNumber]=player;//Record player position in array TicTacToe
    }
    
-//Check if player is human then change to computer player and call computerplays
-if(player=="X")
- {
-  player="O"
-  computerPlays();
- }
+
  }
 
  function generateRandomInteger(max) {
-  return Math.floor(Math.random() * max) + 1;
+  let noSpaceFound=true;
+  var randomNumber; 
+while(noSpaceFound==true)
+{
+  randomNumber=Math.floor(Math.random() * max) + 1;
+  if (TicTacToe[randomNumber] =="")  //CHECK ARRAY LOCATION IF EMPTY
+  {
+    noSpaceFound=false;//set noSpaceFound to false to stop while loop
+  }
+}
+ return randomNumber;
 }
 if(player=="O")
 {
@@ -175,11 +189,11 @@ function display()
 {
   if(player=="X")
   {
-   document.getElementById("Display").innerHTML="humanplayer" 
+   document.getElementById("Display").innerHTML="<h1>humanplayer</h1>" 
   }
   if (player=="O")
   {
-    document.getElementById("Display").innerHTML="computerPlays"
+    document.getElementById("Display").innerHTML="<h1>computerPlays</h1>"
   }
 }
 
@@ -188,7 +202,7 @@ function computerPlays()
 { 
   let computerChoice= generateRandomInteger(8);
 putNaughtOrCross(computerChoice)
-player=("X")
+player=("X") //Change player to human playeer
 display();
 
 }
@@ -199,7 +213,7 @@ display();
   if(player=="O")
   {
   // const TimeoutRef=setTimeout(computerPlays,1000);
-  computerPlays()
+  computerPlays();
   }
 
  
