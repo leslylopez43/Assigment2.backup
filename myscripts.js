@@ -164,6 +164,7 @@ function putNaughtOrCross(boxNumber)
           //computerPlays();
           const TimeoutRef=setTimeout(computerPlays,2000);//computer plays after 2 seconds
         }
+    //    checkWinner();
    }
    
 
@@ -215,8 +216,10 @@ display();
 //{
   if(player=="O")
   {
-  // const TimeoutRef=setTimeout(computerPlays,1000);
-  computerPlays();
+    display();
+ const TimeoutRef=setTimeout(computerPlays,3000);
+  //computerPlays();
+   
   }
 
  
