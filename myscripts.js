@@ -29,7 +29,7 @@ function checkWinner()
     checkTopRow();
     checkMiddleRow();
     checkbottomRow();
-    checkdiagonal1();
+    checkdiagonal1Row();
     checkdiagonal2();
 }
 
@@ -164,7 +164,7 @@ function putNaughtOrCross(boxNumber)
           //computerPlays();
           const TimeoutRef=setTimeout(computerPlays,2000);//computer plays after 2 seconds
         }
-    //    checkWinner();
+        checkWinner();
    }
    
 
