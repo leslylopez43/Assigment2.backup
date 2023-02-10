@@ -21,6 +21,7 @@ CurrentBoard=CurrentBoard+TicTacToe[6]+TicTacToe[7]+TicTacToe[8]+"<br>";
 console.log(Board)
 Board.innerHTML=CurrentBoard; //display  Tic Tac Toe Board on screen
 //alert(CurrentBoard)*/
+var numberOfPlays=0;
 
 function checkWinner()
 
@@ -152,15 +153,17 @@ function putNaughtOrCross(boxNumber)
    if (TicTacToe[boxNumber] =="")  //CHECK ARRAY LOCATION IF EMPTY
    {
     //Check if player is human then change to computer player and call computerplays
-      if(player=="X")
+      
+    onscreenBoard[boxNumber].innerText=player;
+    TicTacToe[boxNumber]=player;//Record player position in array TicTacToe
+    numberOfPlays++;//increases numerOfPlays by one
+    if(player=="X")
         {
           player="O";//Change player to computer
           display();
           //computerPlays();
           const TimeoutRef=setTimeout(computerPlays,2000);//computer plays after 2 seconds
         }
-    onscreenBoard[boxNumber].innerText=player;
-    TicTacToe[boxNumber]=player;//Record player position in array TicTacToe
    }
    
 
@@ -169,7 +172,7 @@ function putNaughtOrCross(boxNumber)
  function generateRandomInteger(max) {
   let noSpaceFound=true;
   var randomNumber; 
-while(noSpaceFound==true)
+while((noSpaceFound==true) && (numberOfPlays<9))
 {
   randomNumber=Math.floor(Math.random() * max) + 1;
   if (TicTacToe[randomNumber] =="")  //CHECK ARRAY LOCATION IF EMPTY
