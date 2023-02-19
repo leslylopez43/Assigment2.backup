@@ -20,31 +20,6 @@ Then the program will check if Player 1 with “X” wins or Player 2 with “O�
 
 
 
-
-
-
-
-# Web pages
-## Home page
-The Home page is the landing page which introduces the website to the visitor and introduces the latest games with links to go to the Current Computer games page
-## Current computer games
-Current computer games highlights the latest computer.
-## Contact us
-The contact us page provides the user with a form to capture the name and email of anyone wishing to contact us. The form is linked to a PHP script that will automatically send the request via email and also generates an automated reply. The form uaes the POST method for security so that the user's details are not made visible in the URL
-## about Us
-This page give information about the website, its aims and contains a donation button for those wishing to give some money if they so wish.
-## Forum page
-The forum page consists of a chat facility created using Django and puts visitors in touch with each other to discuss computer games
-# GAME RULES:
-A player can choose between two symbols with his opponent, usual game uses “X” and “O”.
-
-The player that gets to play first will get the "X" mark (we call him/her player 1) and the player that gets to play second will get the "O" mark (we call him/her player 2).
-
-Player 1 and 2 take turns making moves with Player 1 playing mark “X” and Player 2 playing mark “O”.
-
-A player marks any of the 3x3 squares with his mark (“X” or “O”) and their aim is to create a straight line horizontally, vertically or diagonally with two intensions:
-a. One of the players gets three of his/her marks in a row (vertically, horizontally, or diagonally) i.e. that player wins the game.
-b. If no one can create a straight line with their own mark and all the positions on the board are occupied, then the game ends in a draw/tie.Design 
 The interface consists of Wireframes – 3 wireframes for each page – (one for each of PC size, Ipad, Smartphone ) – The files are included named as follows:
 |Web page| File name|
 | ------ | ------ |

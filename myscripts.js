@@ -15,8 +15,9 @@ boxes.forEach(box => {
     if(box.id=="four")
     putNaughtOrCross(4)
 // alert(event.target)
-if(box.id=="five")
+   if(box.id=="five")
     putNaughtOrCross(5)
+    
     if(box.id=="six")
     putNaughtOrCross(6)
     if(box.id=="seven")
@@ -25,6 +26,7 @@ if(box.id=="five")
     putNaughtOrCross(8)
     box.setAttribute('style', 'background-color: yellow;');
   });
+  
 });
 
 
@@ -252,6 +254,25 @@ display();
   //computerPlays();
    
   }
+//   function changePlayer(){
+//     player=(player=='X') ? "O" :"X";
+//     currentPlayer=(currentPlayer==x) ? o :x;
+//     statusTxt.textContent=`${player} Your Turn`;
+// }
+
   
+  function restartGame(){
+    options=["","","","","","","","",""];
+    currentPlayer=x;
+    player="X";
+    running=true;
+    statusTxt.textContent=`${player} Your Turn`;
+  
+    boxs.forEach(box=>{
+        box.innerHTML="";
+        box.classList.remove('win');
+    });
+  }
+
 
  
