@@ -4,19 +4,22 @@ background-color: cornflowerblue;
 h1 {
     text-align: center;
   }
-  td {
+td {
     width: 100px;
     height: 100px;
+    padding: auto;
+    
   }
-  table {
-    margin: 5px auto;
+
+table {
+    margin: 55px auto;
   }
   .vert {
-    border-left: 2px solid black;
-    border-right: 2px solid black;
+    border-left: 20px solid black;
+    border-right: 20px solid black;
   }
   .vert :hover{
-    color: blue;
+    color: rgb(13, 13, 56);
   }
   
   .hori {
@@ -37,9 +40,9 @@ h1 {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    
-    font-size: 25px;
+    font-size: 75px;
   }
+
   #status{
     padding: 20px;
     font-size: 25px;
@@ -57,7 +60,7 @@ h1 {
   }
   
   .win{
-      animation: winAnimation ease-in-out 1s infinite;
+      animation: winAnimation ease-in-out 3s infinite;
   }
   
   @keyframes winAnimation {

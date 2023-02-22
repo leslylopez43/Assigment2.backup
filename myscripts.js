@@ -268,11 +268,13 @@ display();
     running=true;
     statusTxt.textContent=`${player} Your Turn`;
   
-    boxs.forEach(box=>{
+    box.forEach(box=>{
         box.innerHTML="";
         box.classList.remove('win');
     });
   }
 
-
+  function myFunction() {
+    document.getElementById("restart").click();
+  }
  
