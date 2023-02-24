@@ -17,14 +17,13 @@ boxes.forEach(box => {
 // alert(event.target)
    if(box.id=="five")
     putNaughtOrCross(5)
-    
     if(box.id=="six")
     putNaughtOrCross(6)
     if(box.id=="seven")
     putNaughtOrCross(7)
     if(box.id=="eight")
     putNaughtOrCross(8)
-    box.setAttribute('style', 'background-color: yellow;');
+    //  box.setAttribute('style', 'background-color: yellow;');
   });
   
 });
@@ -185,25 +184,22 @@ function putNaughtOrCross(boxNumber)
   let onscreenBoard=document.getElementsByClassName("box")
   //  alert(TicTacToe[boxNumber] )
    if (TicTacToe[boxNumber] =="")  //CHECK ARRAY LOCATION IF EMPTY
-   {
-    //Check if player is human then change to computer player and call computerplays
-      
-    onscreenBoard[boxNumber].innerText=player;
-    TicTacToe[boxNumber]=player;//Record player position in array TicTacToe
-    numberOfPlays++;//increases numerOfPlays by one
-    if(player=="X")
-        {
-          player="O";//Change player to computer
-          display();
-          //computerPlays();
-          const TimeoutRef=setTimeout(computerPlays,2000);//computer plays after 2 seconds
-        }
-        checkWinner();   
-   }
+       {
+          //Check if player is human then change to computer player and call computerplays  
+          onscreenBoard[boxNumber].innerText=player;
+          TicTacToe[boxNumber]=player;//Record player position in array TicTacToe
+           numberOfPlays++;//increases numerOfPlays by one
+           if(player=="X")
+               {
+                  player="O";//Change player to computer
+                  display();
+                   //computerPlays();
+                    const TimeoutRef=setTimeout(computerPlays,2000);//computer plays after 2 seconds
+                }
+             checkWinner();   
+          }
    
-
-
- }
+ } // End of put nought or cross fuction 
 
  function generateRandomInteger(max) {
   let noSpaceFound=true;
@@ -250,31 +246,50 @@ display();
   if(player=="O")
   { 
     display();
- const TimeoutRef=setTimeout(computerPlays,3000);
+ const TimeoutRef=setTimeout(computerPlays,2000);
   //computerPlays();
    
   }
-//   function changePlayer(){
+//   function changePlayer()
+  // {
 //     player=(player=='X') ? "O" :"X";
 //     currentPlayer=(currentPlayer==x) ? o :x;
 //     statusTxt.textContent=`${player} Your Turn`;
 // }
 
-  
-  function restartGame(){
-    options=["","","","","","","","",""];
-    currentPlayer=x;
-    player="X";
-    running=true;
-    statusTxt.textContent=`${player} Your Turn`;
-  
-    box.forEach(box=>{
-        box.innerHTML="";
-        box.classList.remove('win');
-    });
-  }
 
-  function myFunction() {
-    document.getElementById("restart").click();
-  }
+  function clearBoard()
+    {
+  
+      let onscreenBoard= document.getElementsByClassName("box") ;
+    /*  onscreenBoard[0].innerText="";
+      onscreenBoard[1].innerText="";
+      onscreenBoard[2].innerText="";
+      onscreenBoard[3].innerText="";
+      onscreenBoard[4].innerText="";
+      onscreenBoard[5].innerText="";
+      onscreenBoard[6].innerText="";
+      onscreenBoard[7].innerText="";
+      onscreenBoard[8].innerText="";*/
+     
+    let counter=0;
+    while(counter<onscreenBoard.length)
+    {
+      onscreenBoard[counter].innerText="";
+      counter = counter + 1;
+      
+          }
+          TicTacToe[0]="";
+          TicTacToe[1]="";
+          TicTacToe[2]="";
+          TicTacToe[3]="";
+          TicTacToe[4]="";
+          TicTacToe[5]="";
+          TicTacToe[6]="";
+          TicTacToe[7]="";
+          TicTacToe[8]="";
+  }   
+
+    
+
  
