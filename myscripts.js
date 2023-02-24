@@ -70,28 +70,26 @@ function checkTopRow()
 {    TopRow=TicTacToe[0]+TicTacToe[1]+TicTacToe[2];
  if(TopRow=="XXX")
   {
-  alert("X player wins");
+  displayWinner("X player wins");
     }
   
     if(TopRow=="OOO")
   {
-  alert("O player wins");
+  displayWinner("O player wins");
     }
-    
-
 }
 
 function checkMiddleRow()
 {    MiddleRow=TicTacToe[3]+TicTacToe[4]+TicTacToe[5];
  if(MiddleRow=="XXX")
   {
-  alert("X player wins");
+    displayWinner("X player wins");
     }
     
     MiddleRow=TicTacToe[3]+TicTacToe[4]+TicTacToe[5];
  if(MiddleRow=="OOO")
   {
-  alert("0 player wins");
+    displayWinner("0 player wins");
     }
 
 }
@@ -99,13 +97,13 @@ function checkbottomRow()
 {    bottomRow=TicTacToe[6]+TicTacToe[7]+TicTacToe[8];
  if(bottomRow=="XXX")
   {
-  alert("X player wins");
+    displayWinner("X player wins");
     }
     
      bottomRow=TicTacToe[6]+TicTacToe[7]+TicTacToe[8];
  if(bottomRow=="OOO")
   {
-  alert("0 player wins");
+    displayWinner("0 player wins");
     }
 
 }
@@ -113,52 +111,52 @@ function checkdiagonal1Row()
 {    diagonal1Row=TicTacToe[0]+TicTacToe[4]+TicTacToe[8];
  if(diagonal1Row=="XXX")
   {
-  alert("X player wins");
+    displayWinner("X player wins");
     }
     
     diagonal1=TicTacToe[0]+TicTacToe[4]+TicTacToe[8];
  if(diagonal1=="OOO")
   {
-  alert("0 player wins");
+    displayWinner("0 player wins");
     }
 }
 function checkdiagonal2Row()
 {    diagonal2Row=TicTacToe[6]+TicTacToe[4]+TicTacToe[3];
  if(diagonal2Row=="XXX")
   {
-  alert("X player wins");
+    displayWinner("X player wins");
     }
     
     diagonal2=TicTacToe[6]+TicTacToe[4]+TicTacToe[3];
  if(diagonal2=="OOO")
   {
-  alert("0 player wins");
+    displayWinner("0 player wins");
     }
 }
 function checkcolumn1Row()
 {    column1Row=TicTacToe[0]+TicTacToe[4]+TicTacToe[7];
  if(columnlRow=="XXX")
   {
-  alert("X player wins");
+    displayWinner("X player wins");
     }
     
     column1=TicTacToe[0]+TicTacToe[4]+TicTacToe[7];
  if(column1=="OOO")
   {
-  alert("0 player wins");
+    displayWinner("0 player wins");
     }
 }
 function checkcolumn2Row()
 {    column2Row=TicTacToe[0]+TicTacToe[4]+TicTacToe[7];
  if(column2Row=="XXX")
   {
-  alert("X player wins");
+    displayWinner("X player wins");
     }
     
     column2=TicTacToe[0]+TicTacToe[4]+TicTacToe[7];
  if(column2=="OOO")
   {
-  alert("0 player wins");
+    displayWinner("0 player wins");
   
   }
 }
@@ -166,13 +164,13 @@ function checkcolumn3Row()
 {    column3Row=TicTacToe[0]+TicTacToe[4]+TicTacToe[7];
  if(column3Row=="XXX")
   {
-  alert("X player wins");
+    displayWinner("X player wins");
     }
     
     column3=TicTacToe[0]+TicTacToe[4]+TicTacToe[7];
  if(column3=="OOO")
   {
-  alert("0 player wins");
+    displayWinner("0 player wins");
   
   }
 }
@@ -236,7 +234,7 @@ function computerPlays()
 
 { 
   let computerChoice= generateRandomInteger(8);
-  alert(computerChoice)
+  //alert(computerChoice)
 putNaughtOrCross(computerChoice)
 player=("X") //Change player to human playeer
 display();
@@ -251,27 +249,13 @@ display();
   //computerPlays();
    
   }
-//   function changePlayer()
-  // {
-//     player=(player=='X') ? "O" :"X";
-//     currentPlayer=(currentPlayer==x) ? o :x;
-//     statusTxt.textContent=`${player} Your Turn`;
-// }
+
 
 
       function clearBoard() //is reseting the game
     {
   
       let onscreenBoard= document.getElementsByClassName("box") ;
-    /*  onscreenBoard[0].innerText="";
-      onscreenBoard[1].innerText="";
-      onscreenBoard[2].innerText="";
-      onscreenBoard[3].innerText="";
-      onscreenBoard[4].innerText="";
-      onscreenBoard[5].innerText="";
-      onscreenBoard[6].innerText="";
-      onscreenBoard[7].innerText="";
-      onscreenBoard[8].innerText="";*/
      numberOfPlays=0;
       //  this while loop is clear the tic toc tac
           let counter=0;
@@ -297,7 +281,11 @@ display();
  const TimeoutRef=setTimeout(computerPlays,2000);
   }   
 
-
+  function displayWinner(winner)
+  {
+     document.getElementById("display").innerHTML=winner 
+    }
+  
     
 
  
