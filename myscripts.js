@@ -236,6 +236,7 @@ function computerPlays()
 
 { 
   let computerChoice= generateRandomInteger(8);
+  alert(computerChoice)
 putNaughtOrCross(computerChoice)
 player=("X") //Change player to human playeer
 display();
@@ -258,7 +259,7 @@ display();
 // }
 
 
-  function clearBoard()
+      function clearBoard() //is reseting the game
     {
   
       let onscreenBoard= document.getElementsByClassName("box") ;
@@ -271,14 +272,15 @@ display();
       onscreenBoard[6].innerText="";
       onscreenBoard[7].innerText="";
       onscreenBoard[8].innerText="";*/
-     
-    let counter=0;
-    while(counter<onscreenBoard.length)
-    {
-      onscreenBoard[counter].innerText="";
-      counter = counter + 1;
-      
-          }
+     numberOfPlays=0;
+      //  this while loop is clear the tic toc tac
+          let counter=0;
+          while(counter<onscreenBoard.length)
+            {
+             onscreenBoard[counter].innerText=""; //this line is for clear a box
+             counter = counter + 1;
+            }  
+
           TicTacToe[0]="";
           TicTacToe[1]="";
           TicTacToe[2]="";
@@ -288,7 +290,13 @@ display();
           TicTacToe[6]="";
           TicTacToe[7]="";
           TicTacToe[8]="";
+
+          player = "O";
+          display();
+
+ const TimeoutRef=setTimeout(computerPlays,2000);
   }   
+
 
     
 
