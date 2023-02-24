@@ -219,7 +219,7 @@ if(player=="O")
  //const TimeoutRef=setTimeout(computerPlays,1000);
 }
 function display()
-{
+{return
   if(player=="X")
   {
    document.getElementById("Display").innerHTML="<h1>humanplayer</h1>" 
