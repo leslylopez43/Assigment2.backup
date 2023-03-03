@@ -1,9 +1,9 @@
 /////////Copied!
 const boxes = document.querySelectorAll('.box');
 
-boxes.forEach(box => {
-  box.addEventListener('click', function handleClick(event) {
-    console.log(box.id, event);
+// boxes.forEach(box => {
+  //if (player=="x")
+  //{
     if(box.id=="zero")
     putNaughtOrCross(0)
     if(box.id=="one")
@@ -23,10 +23,14 @@ boxes.forEach(box => {
     putNaughtOrCross(7)
     if(box.id=="eight")
     putNaughtOrCross(8)
+  //}
+   box.addEventListener('click', function handleClick(event) {
+    console.log(box.id, event);
+    
     //  box.setAttribute('style', 'background-color: yellow;');
   });
   
-});
+// });
 
 
 ///////////////
@@ -259,7 +263,7 @@ display();
      numberOfPlays=0;
       //  this while loop is clear the tic toc tac
           let counter=0;
-          while(counter<onscreenBoard.length)
+          while(counter<onscreenBoard.length ++)
             {
              onscreenBoard[counter].innerText=""; //this line is for clear a box
              counter = counter + 1;
@@ -287,5 +291,3 @@ display();
     }
   
     
-
- 
