@@ -175,6 +175,7 @@ function checkcolumn3Row()
  if(column3=="OOO")
   {
     displayWinner("0 player wins");
+    
   
   }
 }
@@ -210,7 +211,7 @@ while((noSpaceFound==true) && (numberOfPlays<9))
 {
   // randomNumber=Math.floor(Math.random() * max) + 1;
   randomNumber=Math.floor(Math.random() * max);
-  alert(randomNumber)
+  
   if (TicTacToe[randomNumber] =="")  //CHECK ARRAY LOCATION IF EMPTY
   {
     noSpaceFound=false;//set noSpaceFound to false to stop while loop
@@ -289,6 +290,7 @@ display();
 
   function displayWinner(winner)
   {
+    alert("checkWinner")
      document.getElementById("display").innerHTML=winner 
     }
   
