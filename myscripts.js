@@ -1,9 +1,9 @@
 /////////Copied!
 const boxes = document.querySelectorAll('.box');
 
-// boxes.forEach(box => {
-  //if (player=="x")
-  //{
+boxes.forEach(box => {
+  box.addEventListener('click', function handleClick(event) {
+  
     if(box.id=="zero")
     putNaughtOrCross(0)
     if(box.id=="one")
@@ -23,14 +23,14 @@ const boxes = document.querySelectorAll('.box');
     putNaughtOrCross(7)
     if(box.id=="eight")
     putNaughtOrCross(8)
-  //}
-   box.addEventListener('click', function handleClick(event) {
-    console.log(box.id, event);
+
+   //box.addEventListener('click', function handleClick(event) {
+    //console.log(box.id, event);
     
     //  box.setAttribute('style', 'background-color: yellow;');
   });
   
-// });
+});
 
 
 ///////////////
@@ -208,7 +208,9 @@ function putNaughtOrCross(boxNumber)
   var randomNumber; 
 while((noSpaceFound==true) && (numberOfPlays<9))
 {
-  randomNumber=Math.floor(Math.random() * max) + 1;
+  // randomNumber=Math.floor(Math.random() * max) + 1;
+  randomNumber=Math.floor(Math.random() * max);
+  alert(randomNumber)
   if (TicTacToe[randomNumber] =="")  //CHECK ARRAY LOCATION IF EMPTY
   {
     noSpaceFound=false;//set noSpaceFound to false to stop while loop
@@ -258,7 +260,7 @@ display();
 
       function clearBoard() //is reseting the game
     {
-  
+   display2();
       let onscreenBoard= document.getElementsByClassName("box") ;
      numberOfPlays=0;
       //  this while loop is clear the tic toc tac
@@ -290,4 +292,18 @@ display();
      document.getElementById("display").innerHTML=winner 
     }
   
+    function startgame()
+    {
+      //let onscreenBoard=getElementsByClassName(startgame);
+    // the text box identifie by Player name
+     Pname=document.getElementById("PlayerName").value; 
+     localStorage.setItem("PN",Pname) //the information store is identify the Pn Name
+    window.location.href="index.html"; //is change for the location of the page
+  
+    }
+    function display2 ()
+    {
+      const num=localStorage.getItem("PN") //retrieve store info from the local storage
+      alert(num);
+    }
     
