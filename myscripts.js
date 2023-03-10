@@ -307,6 +307,7 @@ display();
       function clearBoard() //is reseting the game
     {
        winner="";
+       gameOver=false;
    display2();
       let onscreenBoard= document.getElementsByClassName("box") ;
      numberOfPlays=0;
