@@ -1,9 +1,17 @@
 /////////Copied!
 const boxes = document.querySelectorAll('.box');
 
+var winner="";
+
+var gameOver=false;
+  
 boxes.forEach(box => {
   box.addEventListener('click', function handleClick(event) {
-  
+    if ((player!="X") || (gameOver==true))
+    {
+      alert("it is not you turn") 
+      return;
+  }
     if(box.id=="zero")
     putNaughtOrCross(0)
     if(box.id=="one")
@@ -77,11 +85,15 @@ function checkTopRow()
 {    TopRow=TicTacToe[0]+TicTacToe[1]+TicTacToe[2];
   if(TopRow=="XXX")
   {
+    winner=player;
+    gameOver=true;
   displayWinner("X player wins");
     }
   
     if(TopRow=="OOO")
   {
+    winner=player;
+    gameOver=true;
   displayWinner("O player wins");
     }
 }
@@ -90,12 +102,16 @@ function checkMiddleRow()
 {    MiddleRow=TicTacToe[3]+TicTacToe[4]+TicTacToe[5];
  if(MiddleRow=="XXX")
   {
+    winner=player;
+    gameOver=true;
     displayWinner("X player wins");
     }
     
     MiddleRow=TicTacToe[3]+TicTacToe[4]+TicTacToe[5];
  if(MiddleRow=="OOO")
   {
+    winner=player;
+    gameOver=true;
     displayWinner("0 player wins");
     }
 
@@ -104,12 +120,16 @@ function checkbottomRow()
 {    bottomRow=TicTacToe[6]+TicTacToe[7]+TicTacToe[8];
  if(bottomRow=="XXX")
   {
+    winner=player;
+    gameOver=true;
     displayWinner("X player wins");
     }
     
      bottomRow=TicTacToe[6]+TicTacToe[7]+TicTacToe[8];
  if(bottomRow=="OOO")
   {
+    winner=player;
+    gameOver=true;
     displayWinner("0 player wins");
     }
 
@@ -118,12 +138,16 @@ function checkdiagonal1Row()
 {    diagonal1Row=TicTacToe[0]+TicTacToe[4]+TicTacToe[8];
  if(diagonal1Row=="XXX")
   {
+    winner=player;
+    gameOver=true;
     displayWinner("X player wins");
     }
     
     diagonal1=TicTacToe[0]+TicTacToe[4]+TicTacToe[8];
  if(diagonal1=="OOO")
   {
+    winner=player;
+    gameOver=true;
     displayWinner("0 player wins");
     }
 }
@@ -131,25 +155,33 @@ function checkdiagonal2Row()
 {    diagonal2Row=TicTacToe[6]+TicTacToe[4]+TicTacToe[2];
  if(diagonal2Row=="XXX")
   {
+    winner=player;
+    gameOver=true;
     displayWinner("X player wins");
     }
     
     diagonal2=TicTacToe[6]+TicTacToe[4]+TicTacToe[2];
  if(diagonal2=="OOO")
   {
+    winner=player;
+    gameOver=true;
     displayWinner("0 player wins");
     }
 }
 function checkcolumn1Row()
 {    column1Row=TicTacToe[0]+TicTacToe[4]+TicTacToe[6];
- if(columnlRow=="XXX")
+ if(column1Row=="XXX")
   {
+    winner=player;
+    gameOver=true;
     displayWinner("X player wins");
     }
     
     column1=TicTacToe[0]+TicTacToe[4]+TicTacToe[6];
  if(column1=="OOO")
   {
+    winner=player;
+    gameOver=true;
     displayWinner("0 player wins");
     }
 }
@@ -157,12 +189,16 @@ function checkcolumn2Row()
 {    column2Row=TicTacToe[1]+TicTacToe[4]+TicTacToe[7];
  if(column2Row=="XXX")
   {
+    winner=player;
+    gameOver=true;
     displayWinner("X player wins");
     }
     
     column2=TicTacToe[1]+TicTacToe[4]+TicTacToe[7];
  if(column2=="OOO")
   {
+    winner=player;
+    gameOver=true;
     displayWinner("0 player wins");
   
   }
@@ -171,12 +207,16 @@ function checkcolumn3Row()
 {    column3Row=TicTacToe[2]+TicTacToe[5]+TicTacToe[8];
  if(column3Row=="XXX")
   {
+    winner=player;
+    gameOver=true;
     displayWinner("X player wins");
     }
     
     column3=TicTacToe[2]+TicTacToe[5]+TicTacToe[8];
  if(column3=="OOO")
   {
+    winner=player;
+    gameOver=true;
     displayWinner("0 player wins");
     
   
@@ -243,6 +283,8 @@ function display()
 function computerPlays()
 
 { 
+  if (gameOver==true)
+  return;
   let computerChoice= generateRandomInteger(8);
   //alert(computerChoice)
 putNaughtOrCross(computerChoice)
@@ -264,6 +306,7 @@ display();
 
       function clearBoard() //is reseting the game
     {
+       winner="";
    display2();
       let onscreenBoard= document.getElementsByClassName("box") ;
      numberOfPlays=0;
@@ -293,8 +336,9 @@ display();
 
   function displayWinner(winner)
   {
+
     alert("checkWinner")
-     document.getElementById("display").innerHTML=winner 
+     document.getElementById("Display").innerHTML=winner 
     }
   
     function startgame()
