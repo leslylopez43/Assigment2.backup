@@ -72,7 +72,7 @@ function checkWinner()
 
 function checkTopRow()
 {    TopRow=TicTacToe[0]+TicTacToe[1]+TicTacToe[2];
- if(TopRow=="XXX")
+  if(TopRow=="XXX")
   {
   displayWinner("X player wins");
     }
@@ -309,3 +309,15 @@ display();
       alert(num);
     }
     
+//resets the game
+document.getElementById("reset").addEventListener("click", function() {
+  for (let i = 0; i < boxes.length; i++) {
+    boxes[i].innerHTML = "";
+    boxes[i].style.backgroundColor = "#dee9ec";
+    boxes[i].style.color = "black";
+  }
+  currentPlayer = " ";
+  document.getElementById("message").style.display = "none";
+  document.getElementById("player").innerHTML = "X";
+  gameStatus = "Game On";
+});
