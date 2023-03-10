@@ -68,6 +68,9 @@ function checkWinner()
     checkbottomRow();
     checkdiagonal1Row();
     checkdiagonal2Row();
+    checkcolumn1Row();
+    checkcolumn2Row();
+    checkcolumn3Row();
 }
 
 function checkTopRow()
@@ -125,39 +128,39 @@ function checkdiagonal1Row()
     }
 }
 function checkdiagonal2Row()
-{    diagonal2Row=TicTacToe[6]+TicTacToe[4]+TicTacToe[3];
+{    diagonal2Row=TicTacToe[6]+TicTacToe[4]+TicTacToe[2];
  if(diagonal2Row=="XXX")
   {
     displayWinner("X player wins");
     }
     
-    diagonal2=TicTacToe[6]+TicTacToe[4]+TicTacToe[3];
+    diagonal2=TicTacToe[6]+TicTacToe[4]+TicTacToe[2];
  if(diagonal2=="OOO")
   {
     displayWinner("0 player wins");
     }
 }
 function checkcolumn1Row()
-{    column1Row=TicTacToe[0]+TicTacToe[4]+TicTacToe[7];
+{    column1Row=TicTacToe[0]+TicTacToe[4]+TicTacToe[6];
  if(columnlRow=="XXX")
   {
     displayWinner("X player wins");
     }
     
-    column1=TicTacToe[0]+TicTacToe[4]+TicTacToe[7];
+    column1=TicTacToe[0]+TicTacToe[4]+TicTacToe[6];
  if(column1=="OOO")
   {
     displayWinner("0 player wins");
     }
 }
 function checkcolumn2Row()
-{    column2Row=TicTacToe[0]+TicTacToe[4]+TicTacToe[7];
+{    column2Row=TicTacToe[1]+TicTacToe[4]+TicTacToe[7];
  if(column2Row=="XXX")
   {
     displayWinner("X player wins");
     }
     
-    column2=TicTacToe[0]+TicTacToe[4]+TicTacToe[7];
+    column2=TicTacToe[1]+TicTacToe[4]+TicTacToe[7];
  if(column2=="OOO")
   {
     displayWinner("0 player wins");
@@ -165,13 +168,13 @@ function checkcolumn2Row()
   }
 }
 function checkcolumn3Row()
-{    column3Row=TicTacToe[0]+TicTacToe[4]+TicTacToe[7];
+{    column3Row=TicTacToe[2]+TicTacToe[5]+TicTacToe[8];
  if(column3Row=="XXX")
   {
     displayWinner("X player wins");
     }
     
-    column3=TicTacToe[0]+TicTacToe[4]+TicTacToe[7];
+    column3=TicTacToe[2]+TicTacToe[5]+TicTacToe[8];
  if(column3=="OOO")
   {
     displayWinner("0 player wins");
@@ -309,15 +312,3 @@ display();
       alert(num);
     }
     
-//resets the game
-document.getElementById("reset").addEventListener("click", function() {
-  for (let i = 0; i < boxes.length; i++) {
-    boxes[i].innerHTML = "";
-    boxes[i].style.backgroundColor = "#dee9ec";
-    boxes[i].style.color = "black";
-  }
-  currentPlayer = " ";
-  document.getElementById("message").style.display = "none";
-  document.getElementById("player").innerHTML = "X";
-  gameStatus = "Game On";
-});
