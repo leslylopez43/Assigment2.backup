@@ -92,3 +92,9 @@ body {
   padding: 0;
 } */
 
+body home.html{
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
