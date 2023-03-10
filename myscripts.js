@@ -285,7 +285,7 @@ function computerPlays()
 { 
   if (gameOver==true)
   return;
-  let computerChoice= generateRandomInteger(8);
+  let computerChoice= generateRandomInteger(9);
   //alert(computerChoice)
 putNaughtOrCross(computerChoice)
 player=("X") //Change player to human playeer

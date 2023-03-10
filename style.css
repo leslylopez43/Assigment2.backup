@@ -1,5 +1,5 @@
 body{
-background-color: cornflowerblue;
+background-image: url();
 }
 h1 {
     text-align: center;
@@ -81,13 +81,13 @@ table {
    }
    body{
     padding: 90px;
+   }
+/*    
     HTML CSSResult Skip Results Iframe
 EDIT ON
 body {
   overflow: hidden;
   margin: 0;
   padding: 0;
-}
-.displayWinner{
-  size: 300px;
-}
+} */
+
