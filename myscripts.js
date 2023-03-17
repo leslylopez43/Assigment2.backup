@@ -39,8 +39,6 @@ boxes.forEach(box => {
   });
   
 });
-
-
 ///////////////
 
 TicTacToe=[0,1,2,
@@ -245,7 +243,7 @@ function putNaughtOrCross(boxNumber)
              checkWinner();   
           }
    
- } // End of put nought or cross fuction 
+ } // End of put nought or cross function 
 
  function generateRandomInteger(max) {
   let noSpaceFound=true;
@@ -269,10 +267,11 @@ if(player=="O")
  //const TimeoutRef=setTimeout(computerPlays,1000);
 }
 function display()
-{return
+{
+  
   if(player=="X")
   {
-   document.getElementById("Display").innerHTML="<h1>humanplayer</h1>" 
+   document.getElementById("Display").innerHTML=humanPlayer;
   }
   if (player=="O")
   {
@@ -345,7 +344,9 @@ display();
    
     function display2 ()
     {
+
       const num=localStorage.getItem("PN") //retrieve store info from the local storage
-      alert(num);
+      //alert(num);
+      document.getElementById("Display").innerHTML=num; 
     }
     
