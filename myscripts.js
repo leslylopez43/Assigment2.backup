@@ -2,7 +2,7 @@
 const boxes = document.querySelectorAll('.box');
 
 var winner="";
-
+var HumanPlayer="";
 var gameOver=false;
   
 boxes.forEach(box => {
@@ -167,7 +167,7 @@ function checkdiagonal2Row()
     }
 }
 function checkcolumn1Row()
-{    column1Row=TicTacToe[0]+TicTacToe[4]+TicTacToe[6];
+{    column1Row=TicTacToe[0]+TicTacToe[3]+TicTacToe[6];
  if(column1Row=="XXX")
   {
     winner=player;
@@ -175,7 +175,7 @@ function checkcolumn1Row()
     displayWinner("X player wins");
     }
     
-    column1=TicTacToe[0]+TicTacToe[4]+TicTacToe[6];
+    column1=TicTacToe[0]+TicTacToe[3]+TicTacToe[6];
  if(column1=="OOO")
   {
     winner=player;
@@ -270,12 +270,16 @@ function display()
 {
   
   if(player=="X")
+  
   {
-   document.getElementById("Display").innerHTML=humanPlayer;
+    // alert("player1")
+   document.getElementById("Display").innerHTML=HumanPlayer;
   }
   if (player=="O")
+    
   {
-    document.getElementById("Display").innerHTML="<h1>computerPlays</h1>"
+    // alert("computer2")
+    document.getElementById("Display").innerHTML="<h1>ComputerPlays</h1>"
   }
 }
 
@@ -287,7 +291,7 @@ function computerPlays()
   let computerChoice= generateRandomInteger(9);
   //alert(computerChoice)
 putNaughtOrCross(computerChoice)
-player=("X") //Change player to human playeer
+player="X" //Change player to human playeer
 display();
 }
 //gameOn=true
@@ -341,12 +345,27 @@ display();
      document.getElementById("Display").innerHTML=winner 
     }
   
-   
     function display2 ()
     {
-
+      
       const num=localStorage.getItem("PN") //retrieve store info from the local storage
       //alert(num);
-      document.getElementById("Display").innerHTML=num; 
+      HumanPlayer=num;
+      document.getElementById("Display").innerHTML=HumanPlayer; 
+      
     }
     
+
+    function Homepage()
+    {
+      window.location.href="home.html"; //is change for the location of the page
+    } 
+    homeBtn=document.getElementById("Home")
+    homeBtn.addEventListener('click',Homepage);
+
+
+    
+    function detectedkey(e)
+    {
+      alert(e.keyCode);
+    }
