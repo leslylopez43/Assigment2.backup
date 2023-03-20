@@ -367,5 +367,5 @@ display();
     
     function detectedkey(e)
     {
-      alert(e.keyCode);
+      alert(e.keyCode)
     }
