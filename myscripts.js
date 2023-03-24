@@ -4,12 +4,14 @@ const boxes = document.querySelectorAll('.box');
 var winner="";
 var HumanPlayer="";
 var gameOver=false;
-  
+var mode="";
+
 boxes.forEach(box => {
   box.addEventListener('click', function handleClick(event) {
     if ((player!="X") || (gameOver==true))
     {
-      alert("it is not you turn") 
+      document.getElementById("message").innerHTML="\!ComputerTurn!";
+      // alert("it is not you turn") 
       return;
   }
     if(box.id=="zero")
@@ -273,25 +275,35 @@ function display()
   
   {
     // alert("player1")
-   document.getElementById("Display").innerHTML=HumanPlayer;
+   document.getElementById("message").innerHTML=HumanPlayer;
+   
   }
   if (player=="O")
     
   {
     // alert("computer2")
-    document.getElementById("Display").innerHTML="<h1>ComputerPlays</h1>"
+    document.getElementById("message").innerHTML="ComputerPlays"
   }
 }
 
 function computerPlays()
 
-{ 
+{
   if (gameOver==true)
   return;
-  let computerChoice= generateRandomInteger(9);
+  {
+  if(mode=="hard")
+    hard();
+  else
+  {
+     let computerChoice= generateRandomInteger(9);
+
+  } 
+  
   //alert(computerChoice)
 putNaughtOrCross(computerChoice)
-player="X" //Change player to human playeer
+
+player="X" //Change player to human player
 display();
 }
 //gameOn=true
@@ -304,9 +316,7 @@ display();
   //computerPlays();
    
   }
-
-
-
+}
       function clearBoard() //is reseting the game
     {
        winner="";
@@ -352,13 +362,15 @@ display();
       
       const num=localStorage.getItem("PN") //retrieve store info from the local storage
       //alert(num);
-      const mode=localStorage.getItem("dn")
-      // alert (mode);
+       mode=localStorage.getItem("dn")
+      alert ("inside  display2 " + mode);
       HumanPlayer=num;
       document.getElementById("Display").innerHTML=HumanPlayer; 
       
+      document.getElementById("message").innerHTML="ComputerTurnxxxxxxxxxx";
+    document.getElementById("numberOfPlayers").innerHTML=mode;
+   
     }
-    
 
     function Homepage()
     {
@@ -367,5 +379,9 @@ display();
     homeBtn=document.getElementById("Home")
     homeBtn.addEventListener('click',Homepage);
 
-
+    // let messageElement = document.getElementById("message");
+    // messageElement.innerHTML = "Cumputer Turn";
+    // document.getElementById("message").innerHTML="ComputerTurnxxxxxxxxxx";
+    // document.getElementById("numberOfPlayers").innerHTML=mode;
+   
     
