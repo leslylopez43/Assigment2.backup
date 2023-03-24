@@ -335,8 +335,10 @@ display();
           player = "O";
           display();
 
- const TimeoutRef=setTimeout(computerPlays,2000);
-  }   
+//  const TimeoutRef=setTimeout(computerPlays,2000);
+   
+            location.reload();
+          }
 
   function displayWinner(winner)
   {
@@ -365,7 +367,10 @@ display();
 
 
     
-    function detectedkey(e)
+    function detectKey(e)
     {
-      alert(e.keyCode)
-    }
+      
+      if(e.key=="Enter")
+      alert("You pressed" + e.key)
+   
+       }
