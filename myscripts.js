@@ -352,6 +352,8 @@ display();
       
       const num=localStorage.getItem("PN") //retrieve store info from the local storage
       //alert(num);
+      const mode=localStorage.getItem("dn")
+      // alert (mode);
       HumanPlayer=num;
       document.getElementById("Display").innerHTML=HumanPlayer; 
       
@@ -367,10 +369,3 @@ display();
 
 
     
-    function detectKey(e)
-    {
-      
-      if(e.key=="Enter")
-      alert("You pressed" + e.key)
-   
-       }
