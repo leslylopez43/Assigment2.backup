@@ -6,7 +6,8 @@ var HumanPlayer="";
 var gameOver=false;
 var mode="";
 
-boxes.forEach(box => {
+boxes.forEach(box => 
+  {
   box.addEventListener('click', function handleClick(event) {
     if ((player!="X") || (gameOver==true))
     {
@@ -316,7 +317,7 @@ display();
   //computerPlays();
    
   }
-}
+}  
       function clearBoard() //is reseting the game
     {
        winner="";
