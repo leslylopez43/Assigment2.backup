@@ -1,10 +1,13 @@
 /////////Copied!
 const boxes = document.querySelectorAll('.box');
-
+var numberOfPlayers=0;
 var winner="";
 var HumanPlayer="";
 var gameOver=false;
 var mode="";
+var computerChoice=0;
+let player="O"; //X player is human and O player is computer
+var choosePlayer=0;
 
 boxes.forEach(box => 
   {
@@ -292,14 +295,16 @@ function computerPlays()
 {
   if (gameOver==true)
   return;
-  {
+  // {
   if(mode=="hard")
-    hard();
-  else
+   computerChoice=hard(); // the hard fuction is the one that maeks it hard for the human player to win
+   //alert ("computerchoose in computerPlays="+computer chooice)
+}
+else
   {
-     let computerChoice= generateRandomInteger(9);
-
+      computerChoice= generateRandomInteger(9);
   } 
+  //alert(computerChooice)
   
   //alert(computerChoice)
 putNaughtOrCross(computerChoice)
