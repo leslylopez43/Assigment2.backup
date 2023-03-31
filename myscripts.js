@@ -1,16 +1,13 @@
-/////////Copied!
 const boxes = document.querySelectorAll('.box');
-var numberOfPlayers=0;
+var numberOfPlays=0;
 var winner="";
 var HumanPlayer="";
 var gameOver=false;
 var mode="";
-var computerChoice=0;
-let player="O"; //X player is human and O player is computer
+var computerChoice= 0;
+let player="O"; //X player is human and O player is computer 
 var choosePlayer=0;
-
-boxes.forEach(box => 
-  {
+boxes.forEach(box => {
   box.addEventListener('click', function handleClick(event) {
     if ((player!="X") || (gameOver==true))
     {
@@ -62,7 +59,7 @@ TicTacToe[6]="";
 TicTacToe[7]="";
 TicTacToe[8]="";
 
-let player="O"; //X player is human and O player is computer 
+//let player="O"; //X player is human and O player is computer 
 /*let Board=document.getElementById("Display");
 CurrentBoard=TicTacToe[0]+TicTacToe[1]+TicTacToe[2]+"<br>";
 CurrentBoard=CurrentBoard+TicTacToe[3]+TicTacToe[4]+TicTacToe[5]+"<br>";
@@ -70,7 +67,7 @@ CurrentBoard=CurrentBoard+TicTacToe[6]+TicTacToe[7]+TicTacToe[8]+"<br>";
 console.log(Board)
 Board.innerHTML=CurrentBoard; //display  Tic Tac Toe Board on screen
 //alert(CurrentBoard)*/
-var numberOfPlays=0;
+//var numberOfPlays=0;
 
 function checkWinner()
 
@@ -226,6 +223,8 @@ function checkcolumn3Row()
   
   }
 }
+
+
 function putNaughtOrCross(boxNumber)
  {
 
@@ -287,6 +286,8 @@ function display()
     document.getElementById("message").innerHTML="ComputerPlays"
   }
 }
+
+
 function playDefencePositionOne()
 {
 decider=generateRandomInteger(4);
@@ -306,6 +307,7 @@ Row2=TicTacToe[3]+TicTacToe[4]+TicTacToe[5];
   if ((Row2=="X")&&(numberOfPlays==1))//this if statement is testing against X only because the concatenation operator ignores spaces
   {
     let boardPosition=PlayDefencePositionOne();
+    alert(check);
     return boardPosition;//this is the position on the Tic tac Toe where the pc will play
   }
   else if ((TicTacToe[0]=="X") && (TicTacToe[1]=="X") && (TicTacToe[2]==""))//see if there is an X in box 0 and 1 and an empty space in box 2
@@ -351,34 +353,59 @@ else
   } //end of fuction hard
 
 
-function computerPlays()
-{
-  if (gameOver==true)
-  return;
-  /// {
-  if(mode=="hard")
-   computerChoice=hard();  // the hard fuction is the one that maeks it hard for the human player to win
-   //alert ("computerchoose in computerPlays="+computer chooice)
-}
-  else
-  {
-      computerChoice= generateRandomInteger(9);
-  } 
-  //alert(computerChooice)
-  
-  //alert(computerChoice)
-putNaughtOrCross(computerChoice)
 
-player="X" //Change player to human player
-display();
+	// function hard()
+	// {//start of function hard
+ 	// 	Row2=TicTacToe[3]+TicTacToe[4]+TicTacToe[5];
+ 	// 	if ((Row2=="X")&&(numberOfPlays==1))//This if statement is testing against X only because the concatenation operator ignores spaces
+ 	// 	{
+  //      			let boardPosition=playDefencePositionOne();
+	// 		return boardPosition;//this is the position on the tic tac toe board where the computer will play
+	// 	}
+  //               else if ((TicTacToe[0]=="X") && (TicTacToe[1]=="X") && (TicTacToe[2]==""))//see if there is an X in box 0 and 1 and an empty space in box 2
+	// 	{	
+	// 		return 2;//block the human player from winning in row1 by playing in box 2
+	//          }
+
+ 	// 	else
+  //               {
+ 	// 		return generateRandomInteger(9);//computer just searches for an empty slot to play
+  //                }
+	// }//end of function hard
+
+
+
+function computerPlays()
+
+	{
+  		if (gameOver==true)
+  		return;
+  		///{
+  		if(mode=="hard")
+{
+    		computerChoice= hard();//the hard function is the one that makes it hard for the human player to win
+             //alert("computerchoice in computerplays="+computerChoice)
 }
-//gameOn=true
-//while(gameOn===true)
-//{
+  		else
+  		  {
+     			computerChoice= generateRandomInteger(9);
+		  } 
+ 			 //alert(computerChoice)
+		putNaughtOrCross(computerChoice)
+
+		player="X" //Change player to human player
+		display();
+	}
+	//gameOn=true
+	//while(gameOn===true)
+	//{
+
+
+
 
 choosePlayer=generateRandomInteger(2);
 if(choosePlayer==0)
-player="X" //for testing make player o after testing
+player="X" //for testing make player O after testing
 if(choosePlayer==1)
 player="X";
 alert(player)
@@ -386,10 +413,14 @@ alert(player)
   { 
     display();
  const TimeoutRef=setTimeout(computerPlays,2000);
-  //computerPlays(); 
+  //computerPlays();   
   }
+else if(player=="X")
+ display();
+//}
   
-      function clearBoard() //is reseting the game
+
+    function clearBoard() //is reseting the game
     {
        winner="";
        gameOver=false;
@@ -429,17 +460,17 @@ alert(player)
      document.getElementById("Display").innerHTML=winner 
     }
   
-    function display2()
+    function display2 ()
     {
       
       const num=localStorage.getItem("PN") //retrieve store info from the local storage
       //alert(num);
        mode=localStorage.getItem("dn")
-      alert ("inside  display2" + mode);
+     // alert ("inside  display2 " + mode);
       HumanPlayer=num;
       document.getElementById("Display").innerHTML=HumanPlayer; 
       
-      document.getElementById("message").innerHTML="ComputerTurnxxxxxxxxxx";
+     // document.getElementById("message").innerHTML="ComputerTurnxxxxxxxxxx";
     document.getElementById("numberOfPlayers").innerHTML=mode;
    
     }
@@ -457,3 +488,7 @@ alert(player)
     // document.getElementById("numberOfPlayers").innerHTML=mode;
    
     
+
+
+
+
