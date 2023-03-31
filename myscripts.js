@@ -352,16 +352,15 @@ else
 
 
 function computerPlays()
-
 {
   if (gameOver==true)
   return;
-  // {
+  /// {
   if(mode=="hard")
-   computerChoice=hard(); // the hard fuction is the one that maeks it hard for the human player to win
+   computerChoice=hard();  // the hard fuction is the one that maeks it hard for the human player to win
    //alert ("computerchoose in computerPlays="+computer chooice)
 }
-else
+  else
   {
       computerChoice= generateRandomInteger(9);
   } 
@@ -376,14 +375,20 @@ display();
 //gameOn=true
 //while(gameOn===true)
 //{
+
+choosePlayer=generateRandomInteger(2);
+if(choosePlayer==0)
+player="X" //for testing make player o after testing
+if(choosePlayer==1)
+player="X";
+alert(player)
   if(player=="O")
   { 
     display();
  const TimeoutRef=setTimeout(computerPlays,2000);
-  //computerPlays();
-   
+  //computerPlays(); 
   }
-}  
+  
       function clearBoard() //is reseting the game
     {
        winner="";
@@ -424,13 +429,13 @@ display();
      document.getElementById("Display").innerHTML=winner 
     }
   
-    function display2 ()
+    function display2()
     {
       
       const num=localStorage.getItem("PN") //retrieve store info from the local storage
       //alert(num);
        mode=localStorage.getItem("dn")
-      alert ("inside  display2 " + mode);
+      alert ("inside  display2" + mode);
       HumanPlayer=num;
       document.getElementById("Display").innerHTML=HumanPlayer; 
       
