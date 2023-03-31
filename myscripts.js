@@ -323,33 +323,33 @@ function hard()
 ////////TEST IF HUMAN PLAYER ISABOUT TO WIN IN THE SECOND ROW AND BLOCK ////////////////
 else if ((TicTacToe[3]=="X") && (TicTacToe[4]=="X") && (TicTacToe[5]==""))//see if there is an X in box 0 and 1 and an empty space in box 2
 {	
-  return 2;//block the human player from winning in row1 by playing in box 2
+  return 5;//block the human player from winning in row1 by playing in box 5
        }
 
        else if ((TicTacToe[3]=="") && (TicTacToe[4]=="X") && (TicTacToe[5]=="X"))//see if there is an X in box 0 and 1 and an empty space in box 2
        {	
-         return 0;//block the human player from winning in row1 by playing in box 0
+         return 3;//block the human player from winning in row1 by playing in box 3
               }
 
         else if ((TicTacToe[3]=="X") && (TicTacToe[4]=="") && (TicTacToe[5]=="X"))//see if there is an X in box 0 and 1 and an empty space in box 2
               {	
-                return 1;//block the human player from winning in row1 by playing in box 1
+                return 4;//block the human player from winning in row1 by playing in box 4
            }
 ///////////////END OF SECOND ROW TEST////////////////////////////
 ////////TEST IF HUMAN PLAYER ISABOUT TO WIN IN THE TIRTH ROW AND BLOCK ////////////////
 else if ((TicTacToe[6]=="X") && (TicTacToe[7]=="X") && (TicTacToe[8]==""))//see if there is an X in box 0 and 1 and an empty space in box 2
 {	
-  return 2;//block the human player from winning in row1 by playing in box 2
+  return 8;//block the human player from winning in row1 by playing in box 8
        }
 
        else if ((TicTacToe[6]=="") && (TicTacToe[7]=="X") && (TicTacToe[8]=="X"))//see if there is an X in box 0 and 1 and an empty space in box 2
        {	
-         return 0;//block the human player from winning in row1 by playing in box 0
+         return 6;//block the human player from winning in row1 by playing in box 6
               }
 
         else if ((TicTacToe[6]=="X") && (TicTacToe[7]=="") && (TicTacToe[8]=="X"))//see if there is an X in box 0 and 1 and an empty space in box 2
               {	
-                return 1;//block the human player from winning in row1 by playing in box 1
+                return 7;//block the human player from winning in row1 by playing in box 7
            }
 ///////////////END OF TIRTH ROW TEST////////////////////////////
 
