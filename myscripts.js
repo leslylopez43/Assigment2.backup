@@ -286,7 +286,7 @@ function display()
 function playDefencePositionOne()
 {
 decider=generateRandomInteger(4);
-  alert("decider="+decider);
+  // alert("decider="+decider);
     if(decider==0)
        return 0;
     if(decider==1)
@@ -440,7 +440,8 @@ else if ((TicTacToe[2]=="X") && (TicTacToe[5]=="X") && (TicTacToe[8]==""))//see 
  		else
                 {
  			//return generateRandomInteger(9);//computer just searches for an empty slot to play
-      attack();
+    let randomPlayingChoice=  attack();
+    return randomPlayingChoice;
                  }
 	}//end of function hard
 
@@ -586,14 +587,6 @@ function attack()
 
 }
 
-
-
-
-
-
-
-
-
 function computerPlays()
 
 	{
@@ -611,7 +604,7 @@ function computerPlays()
 		  } 
  			 //alert(computerChoice)
 		putNaughtOrCross(computerChoice)
-
+// alert("computerchoice"+computerChoice)
 		player="X" //Change player to human player
 		display();
 	}
@@ -621,13 +614,14 @@ function computerPlays()
 
 
 
-
+function playTheGame()
+{
 choosePlayer=generateRandomInteger(2);
 if(choosePlayer==0)
-player="X" //for testing make player O after testing
+player="O" //X is the human player
 if(choosePlayer==1)
-player="X";
-alert(player)
+player="O"; //O is the computer player
+//  alert(player)
   if(player=="O")
   { 
     display();
@@ -637,7 +631,7 @@ alert(player)
 else if(player=="X")
  display();
 //}
-  
+}
 
     function clearBoard() //is reseting the game
     {
@@ -707,7 +701,7 @@ else if(player=="X")
     // document.getElementById("numberOfPlayers").innerHTML=mode;
    
     
-
+playTheGame();
 
 
 
