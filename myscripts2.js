@@ -25,10 +25,12 @@ function detectKey(e)
  {
   difficult = "easy";
   // alert("difficult = " + difficult);
+  startgame();
 }
 
 function hard()
 {
   difficult= "hard";
   // alert("hard")
+  startgame();
 }

@@ -30,14 +30,15 @@ table {
 
   #Display{
     width: 300px;
-    color: red;
+    color: rgb(0, 38, 255);
+    font-size: 3em;
   }
   
   .box{
     width: 100px;
     height: 100px;
-    border: 2px solid #eccc68;
-    box-shadow: 0 0 0 2px #eccc68;
+    border: 5px solid #71ec68;
+    box-shadow: 0 0 0 2px #5cb0d4;
     /* display: flex; */
     justify-content: center;
     align-items: center;
@@ -49,6 +50,7 @@ table {
     padding: 20px;
     font-size: 25px;
     font-weight: 500;
+    color: #231e23;
   }
   
   button{
@@ -56,10 +58,15 @@ table {
     height: 40px;
     font-size: 18px;
     color:white;
-    background-color: #ff4757;
+    background-color: #f047ff;
     border: none;
     border-radius: 3px;
   }
+  button:hover {
+    box-shadow: inset 1000px 0 0 0 #54b3d6;
+    color: white;
+  }
+  
   
   .win{
       animation: winAnimation ease-in-out 3s infinite;
@@ -75,11 +82,11 @@ table {
 
    }
    .hard{
-    background-color: #9f9f69;
+    background-color: #699f9f;
     float: right;
    }
    .easy{
-    background-color: #0d1515;
+    background-color: #cf1313;
    }
    body{
     padding: 90px;
@@ -93,10 +100,6 @@ body {
   padding: 0;
 } */
 
-body home.html{
-  
-  
-}
 .message-box {
   font-size: 50px;
   color: white;
@@ -108,6 +111,6 @@ body home.html{
   transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 .message-box:hover {
-  box-shadow: inset 100px 0 0 0 #54b3d6;
+  box-shadow: inset 1000px 0 0 0 #54b3d6;
   color: white;
 }
