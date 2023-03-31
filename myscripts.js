@@ -200,8 +200,7 @@ function checkcolumn2Row()
   {
     winner=player;
     gameOver=true;
-    displayWinner("0 player wins");
-  
+    displayWinner("0 player wins");  
   }
 }
 function checkcolumn3Row()
@@ -219,12 +218,8 @@ function checkcolumn3Row()
     winner=player;
     gameOver=true;
     displayWinner("0 player wins");
-    
-  
   }
 }
-
-
 function putNaughtOrCross(boxNumber)
  {
 
@@ -302,78 +297,68 @@ decider=generateRandomInteger(4);
        return 8;
 }
 function hard()
-{ //START OF FUCTION HARD
-Row2=TicTacToe[3]+TicTacToe[4]+TicTacToe[5];
-  if ((Row2=="X")&&(numberOfPlays==1))//this if statement is testing against X only because the concatenation operator ignores spaces
-  {
-    let boardPosition=PlayDefencePositionOne();
-    alert(check);
-    return boardPosition;//this is the position on the Tic tac Toe where the pc will play
-  }
-  else if ((TicTacToe[0]=="X") && (TicTacToe[1]=="X") && (TicTacToe[2]==""))//see if there is an X in box 0 and 1 and an empty space in box 2
-{
-  return 2;//block the human player from winning in row1 by playing in box 2
-}
-else if ((TicTacToe[0]=="") && (TicTacToe[1]=="X") && (TicTacToe[2]=="X"))//see if there is an X in box 0 and 1 and an empty space in box 2
-{
-  return 2;//block the human player from winning in row1 by playing in box 2
-}
-else if ((TicTacToe[0]=="X") && (TicTacToe[1]=="") && (TicTacToe[2]=="X"))//see if there is an X in box 0 and 1 and an empty space in box 2
-{
-  return 2;//block the human player from winning in row1 by playing in box 2
-}
+	{//start of function hard
+ 		Row2=TicTacToe[3]+TicTacToe[4]+TicTacToe[5];
+ 		if ((Row2=="X")&&(numberOfPlays==1))//This if statement is testing against X only because the concatenation operator ignores spaces
+ 		{
+       			let boardPosition=playDefencePositionOne();
+			return boardPosition;//this is the position on the tic tac toe board where the computer will play
+		}
+    ////////TEST IF HUMAN PLAYER ISABOUT TO WIN IN THE FIRST ROW AND BLOCK ////////////////
+                else if ((TicTacToe[0]=="X") && (TicTacToe[1]=="X") && (TicTacToe[2]==""))//see if there is an X in box 0 and 1 and an empty space in box 2
+		{	
+			return 2;//block the human player from winning in row1 by playing in box 2
+	         }
+
+           else if ((TicTacToe[0]=="") && (TicTacToe[1]=="X") && (TicTacToe[2]=="X"))//see if there is an X in box 0 and 1 and an empty space in box 2
+           {	
+             return 0;//block the human player from winning in row1 by playing in box 0
+                  }
+
+            else if ((TicTacToe[0]=="X") && (TicTacToe[1]=="") && (TicTacToe[2]=="X"))//see if there is an X in box 0 and 1 and an empty space in box 2
+                  {	
+                    return 1;//block the human player from winning in row1 by playing in box 1
+               }
+///////////////END OF FIRST ROW TEST////////////////////////////
+////////TEST IF HUMAN PLAYER ISABOUT TO WIN IN THE SECOND ROW AND BLOCK ////////////////
 else if ((TicTacToe[3]=="X") && (TicTacToe[4]=="X") && (TicTacToe[5]==""))//see if there is an X in box 0 and 1 and an empty space in box 2
-{
+{	
   return 2;//block the human player from winning in row1 by playing in box 2
-}
-else if ((TicTacToe[3]=="") && (TicTacToe[4]=="X") && (TicTacToe[5]=="X"))//see if there is an X in box 0 and 1 and an empty space in box 2
-{
-  return 2;//block the human player from winning in row1 by playing in box 2
-}
-else if ((TicTacToe[3]=="X") && (TicTacToe[4]=="") && (TicTacToe[5]=="X"))//see if there is an X in box 0 and 1 and an empty space in box 2
-{
-  return 2;//block the human player from winning in row1 by playing in box 2
-}
+       }
+
+       else if ((TicTacToe[3]=="") && (TicTacToe[4]=="X") && (TicTacToe[5]=="X"))//see if there is an X in box 0 and 1 and an empty space in box 2
+       {	
+         return 0;//block the human player from winning in row1 by playing in box 0
+              }
+
+        else if ((TicTacToe[3]=="X") && (TicTacToe[4]=="") && (TicTacToe[5]=="X"))//see if there is an X in box 0 and 1 and an empty space in box 2
+              {	
+                return 1;//block the human player from winning in row1 by playing in box 1
+           }
+///////////////END OF SECOND ROW TEST////////////////////////////
+////////TEST IF HUMAN PLAYER ISABOUT TO WIN IN THE TIRTH ROW AND BLOCK ////////////////
 else if ((TicTacToe[6]=="X") && (TicTacToe[7]=="X") && (TicTacToe[8]==""))//see if there is an X in box 0 and 1 and an empty space in box 2
-{
+{	
   return 2;//block the human player from winning in row1 by playing in box 2
-}
-else if ((TicTacToe[6]=="") && (TicTacToe[7]=="X") && (TicTacToe[8]=="X"))//see if there is an X in box 0 and 1 and an empty space in box 2
-{
-  return 2;//block the human player from winning in row1 by playing in box 2
-}
-else if ((TicTacToe[6]=="X") && (TicTacToe[7]=="") && (TicTacToe[8]=="X"))//see if there is an X in box 0 and 1 and an empty space in box 2
-{
-  return 2;//block the human player from winning in row1 by playing in box 2
-}
-else
-{
-  return generateRandomInteger(9);//computer just searches for an empty slot to play
-}
-  } //end of fuction hard
+       }
+
+       else if ((TicTacToe[6]=="") && (TicTacToe[7]=="X") && (TicTacToe[8]=="X"))//see if there is an X in box 0 and 1 and an empty space in box 2
+       {	
+         return 0;//block the human player from winning in row1 by playing in box 0
+              }
+
+        else if ((TicTacToe[6]=="X") && (TicTacToe[7]=="") && (TicTacToe[8]=="X"))//see if there is an X in box 0 and 1 and an empty space in box 2
+              {	
+                return 1;//block the human player from winning in row1 by playing in box 1
+           }
+///////////////END OF TIRTH ROW TEST////////////////////////////
 
 
-
-	// function hard()
-	// {//start of function hard
- 	// 	Row2=TicTacToe[3]+TicTacToe[4]+TicTacToe[5];
- 	// 	if ((Row2=="X")&&(numberOfPlays==1))//This if statement is testing against X only because the concatenation operator ignores spaces
- 	// 	{
-  //      			let boardPosition=playDefencePositionOne();
-	// 		return boardPosition;//this is the position on the tic tac toe board where the computer will play
-	// 	}
-  //               else if ((TicTacToe[0]=="X") && (TicTacToe[1]=="X") && (TicTacToe[2]==""))//see if there is an X in box 0 and 1 and an empty space in box 2
-	// 	{	
-	// 		return 2;//block the human player from winning in row1 by playing in box 2
-	//          }
-
- 	// 	else
-  //               {
- 	// 		return generateRandomInteger(9);//computer just searches for an empty slot to play
-  //                }
-	// }//end of function hard
-
-
+ 		else
+                {
+ 			return generateRandomInteger(9);//computer just searches for an empty slot to play
+                 }
+	}//end of function hard
 
 function computerPlays()
 
