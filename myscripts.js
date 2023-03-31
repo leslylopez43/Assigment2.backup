@@ -312,6 +312,38 @@ Row2=TicTacToe[3]+TicTacToe[4]+TicTacToe[5];
 {
   return 2;//block the human player from winning in row1 by playing in box 2
 }
+else if ((TicTacToe[0]=="") && (TicTacToe[1]=="X") && (TicTacToe[2]=="X"))//see if there is an X in box 0 and 1 and an empty space in box 2
+{
+  return 2;//block the human player from winning in row1 by playing in box 2
+}
+else if ((TicTacToe[0]=="X") && (TicTacToe[1]=="") && (TicTacToe[2]=="X"))//see if there is an X in box 0 and 1 and an empty space in box 2
+{
+  return 2;//block the human player from winning in row1 by playing in box 2
+}
+else if ((TicTacToe[3]=="X") && (TicTacToe[4]=="X") && (TicTacToe[5]==""))//see if there is an X in box 0 and 1 and an empty space in box 2
+{
+  return 2;//block the human player from winning in row1 by playing in box 2
+}
+else if ((TicTacToe[3]=="") && (TicTacToe[4]=="X") && (TicTacToe[5]=="X"))//see if there is an X in box 0 and 1 and an empty space in box 2
+{
+  return 2;//block the human player from winning in row1 by playing in box 2
+}
+else if ((TicTacToe[3]=="X") && (TicTacToe[4]=="") && (TicTacToe[5]=="X"))//see if there is an X in box 0 and 1 and an empty space in box 2
+{
+  return 2;//block the human player from winning in row1 by playing in box 2
+}
+else if ((TicTacToe[6]=="X") && (TicTacToe[7]=="X") && (TicTacToe[8]==""))//see if there is an X in box 0 and 1 and an empty space in box 2
+{
+  return 2;//block the human player from winning in row1 by playing in box 2
+}
+else if ((TicTacToe[6]=="") && (TicTacToe[7]=="X") && (TicTacToe[8]=="X"))//see if there is an X in box 0 and 1 and an empty space in box 2
+{
+  return 2;//block the human player from winning in row1 by playing in box 2
+}
+else if ((TicTacToe[6]=="X") && (TicTacToe[7]=="") && (TicTacToe[8]=="X"))//see if there is an X in box 0 and 1 and an empty space in box 2
+{
+  return 2;//block the human player from winning in row1 by playing in box 2
+}
 else
 {
   return generateRandomInteger(9);//computer just searches for an empty slot to play
