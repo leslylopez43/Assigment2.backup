@@ -10,19 +10,19 @@
     <script src="myscripts2.js">       </script>
 </head>
 <body  style="background-image: url(istockphoto-1328689113-170667a.png); background-repeat: no-repeat; background-size: cover;">
-    
+    <!-- <div id="chooseAName"> </div> -->
     <div class="container-fluid grid text-center" >
-       <!-- <a class="navbar-brand" href="index.html"> -->
-    <div class="display-1 alert  ">Tic Tac Toe
+        <!-- <a class="navbar-brand" href="index.html"> -->
+        <div class="display-1 alert  ">Tic Tac Toe
+        </div>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <button class="--bs-columns: 3; display-3 mb-3 col-auto btn-primary" onclick="startgame()">PlayerName</button>
+        <input type="text" class="display-3" id="PlayerName" Onkeydown="detectKey(event)">
+        <button class="--bs-columns: 3; display-3 alert alert-danger rounded-pill btn-outline-danger" Onkeydown="hard()" onclick="hard()">Hard</button>
+
+        <button class="--bs-columns: 3; display-3 alert alert-warning  btn-outline-warning rounded-pill" Onkeydown="easy()" onclick="easy()" >Easy</button>
     </div>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-<button class="--bs-columns: 3; display-3 mb-3 col-auto btn-primary" onclick="startgame()">PlayerName</button>
-<input type="text" class="display-3" id="PlayerName" Onkeydown="detectKey(event)">
-<button class="--bs-columns: 3; display-3 alert alert-danger rounded-pill btn-outline-danger" Onkeydown="hard()" onclick="hard()">Hard</button>
-
-<button class="--bs-columns: 3; display-3 alert alert-warning  btn-outline-warning rounded-pill" Onkeydown="easy()" onclick="easy()" >Easy</button>
-</div>
-
+    <div id="chooseAName"> test</div> 
 </body>
 </html>

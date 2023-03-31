@@ -1,6 +1,5 @@
 var difficult="";
 
-
 function startgame()
 {
   //let onscreenBoard=getElementsByClassName(startgame);
@@ -11,7 +10,8 @@ function startgame()
   localStorage.setItem("dn",difficult)
    if(difficult=="" || Pname=="")
    {
-    alert("You need to choose hard or easy and also enter a name")
+  // confirm("You need to choose hard or easy and also enter a name")
+  document.getElementById("chooseAName").innerHTML="Needddd to Type a Name then choose a Hard or easy";
    }
    else
    {
@@ -40,3 +40,4 @@ function hard()
   // alert("hard")
   startgame();
 }
+
