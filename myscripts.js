@@ -226,8 +226,6 @@ function checkcolumn3Row()
   
   }
 }
-
-
 function putNaughtOrCross(boxNumber)
  {
 
@@ -289,6 +287,37 @@ function display()
     document.getElementById("message").innerHTML="ComputerPlays"
   }
 }
+function playDefencePositionOne()
+{
+decider=generateRandomInteger(4);
+  alert("decider="+decider);
+    if(decider==0)
+       return 0;
+    if(decider==1)
+       return 2;
+    if(decider==2)
+       return 6;
+     if(decider==3)
+       return 8;
+}
+function hard()
+{ //START OF FUCTION HARD
+Row2=TicTacToe[3]+TicTacToe[4]+TicTacToe[5];
+  if ((Row2=="X")&&(numberOfPlays==1))//this if statement is testing against X only because the concatenation operator ignores spaces
+  {
+    let boardPosition=PlayDefencePositionOne();
+    return boardPosition;//this is the position on the Tic tac Toe where the pc will play
+  }
+  else if ((TicTacToe[0]=="X") && (TicTacToe[1]=="X") && (TicTacToe[2]==""))//see if there is an X in box 0 and 1 and an empty space in box 2
+{
+  return 2;//block the human player from winning in row1 by playing in box 2
+}
+else
+{
+  return generateRandomInteger(9);//computer just searches for an empty slot to play
+}
+  } //end of fuction hard
+
 
 function computerPlays()
 
