@@ -20,6 +20,7 @@ Click the "Start Game" button.
 The game board will appear. Click on a square to place your marker (X or O).
 The computer will then take its turn, and the game will continue until someone wins or the game ends in a tie.
 
+## index
 Features
 
 Players can choose their name and difficulty level.
@@ -57,19 +58,9 @@ Acknowledgments
 code institute, w3school and CodeCamp for providing inspiration and guidance.
 
 
+## Style.css
+the Stylen css page provides the user with a form to capture the image design and color.
 
-
-
-
-
-
-
-
-
-## Current Tic Tac Toe games
-Current Ti games highlights the latest computer.
-## Contact us
-The contact us page provides the user with a form to capture the name and email of anyone wishing to contact us. The form is linked to a PHP script that will automatically send the request via email and also generates an automated reply. The form uaes the POST method for security so that the user's details are not made visible in the URL
 ## about Us
 This page give information about the website, its aims and contains a donation button for those wishing to give some money if they so wish.
 ## Forum page
@@ -133,7 +124,7 @@ Validation of scripting languages were validated using the following:
 Website pages are standard HTML pages and HTML templates. There is use of Django and a Django environment running version 3.2 and Python 2.7 is required
 
 # Where can it be found on GitHub? 
-The GitHub link for the project is - GamesForAll.GitHub.Com
+The GitHub link for the project is - https://github.com/leslylopez43/assigment2.git
 
 
 
