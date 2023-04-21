@@ -10,11 +10,12 @@ This is a simple Tic Tac Toe game built using HTML, CSS, and JavaScript. The gam
 The Home page is the landing page which introduces the website to the visitor and introduces the latest Tic Tac Toe with links to go to the Current  games page Tic Tac Toe
 
 ## Home page
+
 This is a simple Tic Tac Toe website that allows players to choose their name and difficulty level. The website is built using HTML, CSS, and JavaScript, and uses the Bootstrap framework for styling.
 
 ## myscripts2 page
 How to Play
-
+![](img.png/istockphoto-1328689113-170667a.png)
 Enter your name and difficulty level (Easy or Hard) in the input field.
 Click the "Start Game" button.
 The game board will appear. Click on a square to place your marker (X or O).
@@ -63,17 +64,16 @@ code institute, w3school and CodeCamp for providing inspiration and guidance.
 the Stylen css page provides the user with a form to capture the image design and color.
 
 The interface consists of Wireframes – 3 wireframes for each page – (one for each of PC size, Ipad, Smartphone ) – The files are included named as follows:
-|Web page| File name|
+|home page| index name|
 | ------ | ------ |
 |   Home page    |   Home.Png        |
-|  Current computer games     | Current computer.png          |
-|  About Us     |   About us.png        |
-| contact us      | Contact us.png          |
-|  Forum     |    Forum.png       |
+|  Current Tic toc toe games     | Current computer.png          |
+|  
 
 # Resources  
 ## images
-Fortnight gameplay screenshot  - source www.picturebook
+tic toc toe Background  - source www.picturebook
+
 ## graphics
 Logo - create at wix.com using the online logo maker
 ## video
