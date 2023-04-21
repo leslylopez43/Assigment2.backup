@@ -701,7 +701,7 @@ else if(player=="X")
     // document.getElementById("numberOfPlayers").innerHTML=mode;
    
     
-playTheGame();
+playTheGame()
 
 
 
