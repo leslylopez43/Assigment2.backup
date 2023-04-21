@@ -15,7 +15,7 @@ This is a simple Tic Tac Toe website that allows players to choose their name an
 
 ## myscripts2 page
 How to Play
-![](img.png/istockphoto-1328689113-170667a.png)
+![](img.png/Screenshot%202023-04-21%20at%2015.32.50.png)
 Enter your name and difficulty level (Easy or Hard) in the input field.
 Click the "Start Game" button.
 The game board will appear. Click on a square to place your marker (X or O).
