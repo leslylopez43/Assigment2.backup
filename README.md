@@ -12,7 +12,7 @@ The Home page is the landing page which introduces the website to the visitor an
 ## Home page
 This is a simple Tic Tac Toe website that allows players to choose their name and difficulty level. The website is built using HTML, CSS, and JavaScript, and uses the Bootstrap framework for styling.
 
-## myscripts2
+## myscripts2 page
 How to Play
 
 Enter your name and difficulty level (Easy or Hard) in the input field.
@@ -24,7 +24,7 @@ The computer will then take its turn, and the game will continue until someone w
 Features
 
 Players can choose their name and difficulty level.
-The game board is displayed in a clean and user-friendly manner.
+The game board is displayed in a clean and user-friendly manner.contains a buttons
 The game logic is implemented using JavaScript.
 The website is responsive and works on both desktop and mobile devices.
 
@@ -58,14 +58,10 @@ Acknowledgments
 code institute, w3school and CodeCamp for providing inspiration and guidance.
 
 
+# Design 
 ## Style.css
 the Stylen css page provides the user with a form to capture the image design and color.
 
-## about Us
-This page give information about the website, its aims and contains a donation button for those wishing to give some money if they so wish.
-## Forum page
-The forum page consists of a chat facility created using Django and puts visitors in touch with each other to discuss computer games
-# Design 
 The interface consists of Wireframes – 3 wireframes for each page – (one for each of PC size, Ipad, Smartphone ) – The files are included named as follows:
 |Web page| File name|
 | ------ | ------ |
