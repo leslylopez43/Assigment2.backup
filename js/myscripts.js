@@ -7,6 +7,11 @@ var mode="";
 var computerChoice= 0;
 let player="O"; //X player is human and O player is computer 
 var choosePlayer=0;
+// Call the function to generate a random move
+const randomMove = generateRandomInteger(8);
+console.log(randomMove); // Output: a random integer between 0 and 8
+
+
 boxes.forEach(box => {
   box.addEventListener('click', function handleClick(event) {
     if ((player!="X") || (gameOver==true))
@@ -296,8 +301,10 @@ decider=generateRandomInteger(4);
      if(decider==3)
        return 8;
 }
-function hard()
+function playhard()
 	{//start of function hard
+  
+
  		Row2=TicTacToe[3]+TicTacToe[4]+TicTacToe[5];
  		if ((Row2=="X")&&(numberOfPlays==1))//This if statement is testing against X only because the concatenation operator ignores spaces
  		{
@@ -439,15 +446,15 @@ else if ((TicTacToe[2]=="X") && (TicTacToe[5]=="X") && (TicTacToe[8]==""))//see 
 
  		else
                 {
- 			//return generateRandomInteger(9);//computer just searches for an empty slot to play
-    let randomPlayingChoice=  attack();
-    return randomPlayingChoice;
+ 			return generateRandomInteger(9);//computer just searches for an empty slot to play
+    // let randomPlayingChoice=  attack();
+    // return randomPlayingChoice;
                  }
 	}//end of function hard
 
 function attack()
 {
-        ////////TEST IF HUMAN PLAYER ISABOUT TO WIN IN THE FIRST ROW AND BLOCK ////////////////
+        ////////TEST IF HUMAN PLAYER IS ABOUT TO WIN IN THE FIRST ROW AND BLOCK ////////////////
         if ((TicTacToe[0]=="O") && (TicTacToe[1]=="O") && (TicTacToe[2]==""))//see if there is an X in box 0 and 1 and an empty space in box 2
         {	
           return 2;//block the human player from winning in row1 by playing in box 2
@@ -581,8 +588,9 @@ function attack()
     
     
          else
-                    {
-           return generateRandomInteger(9);//computer just searches for an empty slot to play
+
+                    {  playhard();
+          //  return generateRandomInteger(9);//computer just searches for an empty slot to play
                      }
 
 }
@@ -595,12 +603,12 @@ function computerPlays()
   		///{
   		if(mode=="hard")
 {
-    		computerChoice= hard();//the hard function is the one that makes it hard for the human player to win
+    		computerChoice= attack();//the hard function is the one that makes it hard for the human player to win
              //alert("computerchoice in computerplays="+computerChoice)
 }
   		else
   		  {
-     			computerChoice= generateRandomInteger(9);
+     			computerChoice= generateRandomInteger(8);
 		  } 
  			 //alert(computerChoice)
 		putNaughtOrCross(computerChoice)
@@ -700,6 +708,10 @@ else if(player=="X")
     // document.getElementById("message").innerHTML="ComputerTurnxxxxxxxxxx";
     // document.getElementById("numberOfPlayers").innerHTML=mode;
    
+    
+    function generateRandomInteger(max) {
+      return Math.floor(Math.random() * (max + 1));
+    }
     
 playTheGame()
 
