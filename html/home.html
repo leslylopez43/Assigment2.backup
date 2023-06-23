@@ -1,28 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    
-    <script src="../js/myscripts2.js">       </script>
+
+ <!-- <script src="/myscripts.js"></script> -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body  style="background-image: url(img/istockphoto-1328689113-170667a.webp); background-repeat: no-repeat; background-size: cover;">
-    <!-- <div id="chooseAName"> </div> -->
-    <div class="container-fluid grid text-center" >
-        <!-- <a class="navbar-brand" href="index.html"> -->
-        <div class="display-1 alert  ">Tic Tac Toe
-        </div>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<body onload="display2()">
+  
+  <h1>TIc Tac Toe</h1>
+  <div id="numberOfPlayers"></div>
+<table>
+  <tr>
+    <td class="box" id="zero"></td>
+    <td class="box vert" id="one"> </td>
+    <td class="box"  id="two"></td>
+  </tr>
+  <tr>
+    <td class="box hori" id="three"></td>
+    <td class="box vert hori" id="four"></td>
+    <td class="box hori" id="five"class="hori"></td>
+  </tr>
+  <tr>
+    <td class="box" id="six"></td>
+    <td class="box vert" id="seven"></td>
+    <td class="box" id="eight"></td>
+  </tr>
+</table>   
+<div id="Display">  </div>
+<div id="displayWinner">  </div>
 
-        <button class="--bs-columns: 3; display-3 mb-3 col-auto btn-primary" onclick="startgame()">PlayerName</button>
-        <input type="text" class="display-3" id="PlayerName" Onkeydown="detectKey(event)" textarea placeholder="Name & Easy or Hard?"></textarea>
-        <button class="--bs-columns: 3; display-3 alert alert-danger rounded-pill btn-outline-danger" Onkeydown="hard()" onclick="hard()">Hard</button>
+<div id="status">Active Playing Game</div>
+<button id="Home"">Home </button> 
 
-        <button class="--bs-columns: 3; display-3 alert alert-warning  btn-outline-warning rounded-pill" Onkeydown="easy()" onclick="easy()" >Easy</button>
-    </div>
-    <div id="chooseAName"></div> 
-</body>
-</html>
+  <button onclick="clearBoard()"   id="restart">Reset Game</button>
+
+<div id="message" class="message-box"></div>
+<!-- 
+ <button class="reset" on click>Game</button> -->
+ 
+
+<script src="js/myscripts.js"></script>     
+    </body>
+    </html>
