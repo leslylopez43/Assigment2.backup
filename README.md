@@ -64,7 +64,7 @@ code institute, w3school and CodeCamp for providing inspiration and guidance.
 the Stylen css page provides the user with a form to capture the image design and color.
 
 The interface consists of Wireframes – 3 wireframes for each page – (one for each of PC size, Ipad, Smartphone ) – The files are included named as follows:
-|home page| index name|
+|Index page| Home name|
 | ------ | ------ |
 |   Home page    |   Home.Png        |
 |  Current Tic toc toe games     | Current computer.png          |
