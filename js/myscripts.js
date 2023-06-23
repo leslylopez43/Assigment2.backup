@@ -688,12 +688,12 @@ else if(player=="X")
    
     }
 
-    function indexpage()
+    function homepage()
     {
       window.location.href="index.html"; //is change for the location of the page
     } 
     homeBtn=document.getElementById("Home")
-    homeBtn.addEventListener('click',indexpage);
+    homeBtn.addEventListener('click',homepage);
 
     // let messageElement = document.getElementById("message");
     // messageElement.innerHTML = "Cumputer Turn";
