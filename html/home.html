@@ -1,73 +1,42 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-pzjw8g9gi5Zwdj+wzjw3v81nivkdLQ8c5JFU/8LX6j8n6Y3JGzjBn8o+X7Kpwo4"
-    crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TIC TAC TOE L</title>
-  <style>
-    /* Additional CSS styling */
-    .box {
-      width: 100px;
-      height: 100px;
-      text-align: center;
-      vertical-align: middle;
-    }
-
-    .hori {
-      border-bottom: none;
-    }
-
-    .vert {
-      border-right: none;
-    }
-
-    .message-box {
-      margin-top: 20px;
-      font-weight: bold;
-    }
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body onload="display2()">
-  <h1 class="text-center">TIc Tac Toe</h1>
-  <div id="numberOfPlayers"></div>
-  <table class="mx-auto mt-4">
-    <tr>
-      <td class="box" id="zero"></td>
-      <td class="box vert" id="one"></td>
-      <td class="box" id="two"></td>
-    </tr>
-    <tr>
-      <td class="box hori" id="three"></td>
-      <td class="box vert hori" id="four"></td>
-      <td class="box hori" id="five"></td>
-    </tr>
-    <tr>
-      <td class="box" id="six"></td>
-      <td class="box vert" id="seven"></td>
-      <td class="box" id="eight"></td>
-    </tr>
-  </table>
-  <div id="Display"></div>
-  <div id="displayWinner"></div>
-  <div id="status" class="text-center mt-4">Active Playing Game</div>
-  <button id="Home" class="btn btn-primary mt-2">Home</button>
-  <button onclick="clearBoard()" id="restart" class="btn btn-danger mt-2">Reset Game</button>
-  <div id="message" class="message-box"></div>
+  <div class="container">
+    <h1 class="text-center">Tic Tac Toe</h1>
+    <div id="numberOfPlayers"></div>
+    <table class="table mt-4">
+      <tr>
+        <td class="box" id="zero"></td>
+        <td class="box vert" id="one"></td>
+        <td class="box" id="two"></td>
+      </tr>
+      <tr>
+        <td class="box hori" id="three"></td>
+        <td class="box vert hori" id="four"></td>
+        <td class="box hori" id="five"></td>
+      </tr>
+      <tr>
+        <td class="box" id="six"></td>
+        <td class="box vert" id="seven"></td>
+        <td class="box" id="eight"></td>
+      </tr>
+    </table>
+    <div id="Display"></div>
+    <div id="displayWinner"></div>
+    <div id="status" class="text-center">Active Playing Game</div>
+    <button id="Home" class="btn btn-primary d-block mx-auto mt-3">Home</button>
+    <button onclick="clearBoard()" id="restart" class="btn btn-primary d-block mx-auto">Reset Game</button>
+    <div id="message" class="message-box text-center"></div>
+  </div>
 
   <script src="../js/myscripts.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-KyZXEAg3d+Uvjv8Zm5+ctScjc7z/0xMLrAuUpR+7W5Jm2Iq4l9rgSt5h+g6PFZPx"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
-    integrity="sha384-TE2f5YAXvceg4H7X/hA/6A+XNj0MO6YBHkjq+i4w9UnGqZ1bD2K1UT2k6rryivix"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-pzjw8g9gi5Zwdj+wzjw3v81nivkdLQ8c5JFU/8LX6j8n6Y3JGzjBn8o+X7Kpwo4"
-    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
