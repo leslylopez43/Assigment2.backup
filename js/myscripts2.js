@@ -15,7 +15,7 @@ function startgame()
    }
    else
    {
-  window.location.href="html/home.html"; //is change for the location of the page
+  window.location.href="indexhtml"; //is change for the location of the page
    }
 }
 
