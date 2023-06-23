@@ -115,8 +115,10 @@ body {
   color: white;
 }
 #chooseAName{
-  color: #0f2a34;
-  font:100px;
+  color: #d21313;
+  font-weight: bold;
+  font-weight: 50%;
+  text-decoration-skip: 2em;
 }
 :placeholder{
   size: 15px;

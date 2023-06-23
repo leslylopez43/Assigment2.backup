@@ -11,7 +11,7 @@ function startgame()
    if(difficult=="" || Pname=="")
    {
   // confirm("You need to choose hard or easy and also enter a name")
-  document.getElementById("chooseAName").innerHTML="Needddd to Type a Name then choose a Hard or easy";
+  document.getElementById("chooseAName").innerHTML="Type a Name then choose a Hard or easy";
    }
    else
    {
