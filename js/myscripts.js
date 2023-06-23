@@ -690,7 +690,7 @@ else if(player=="X")
 
     function indexpage()
     {
-      window.location.href="/html/home.html"; //is change for the location of the page
+      window.location.href="index.html"; //is change for the location of the page
     } 
     homeBtn=document.getElementById("Home")
     homeBtn.addEventListener('click',indexpage);
