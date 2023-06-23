@@ -1,125 +1,126 @@
-body{
-background-color: rgb(239, 230, 236);
+body {
+  background-color: rgb(239, 230, 236);
+  padding: 90px;
 }
+
 h1 {
-    text-align: center;
-  }
+  text-align: center;
+}
+
 td {
-    width: 300px;
-    height: 100px;
-    padding: 20px; 
-    border: 150px;
-    margin: 30px;
-  }
+  width: 300px;
+  height: 100px;
+  padding: 20px;
+  border: 150px;
+  margin: 30px;
+}
 
 table {
-    margin: 55px auto;
-  }
-  .vert {
-    border-left: 20px solid black;
-    border-right: 20px solid black;
-  }
-  .vert :hover{
-    color: rgb(13, 13, 56);
-  }
-  
-  .hori {
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-  }
+  margin: 55px auto;
+}
 
-  #Display{
-    width: 300px;
-    color: rgb(0, 38, 255);
-    font-size: 3em;
-  }
-  
-  .box{
-    width: 100px;
-    height: 100px;
-    border: 15px solid #20461d;
-    box-shadow: 0 0 0 2px #5cb0d4;
-    /* display: flex; */
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    font-size: 75px;
-  }
+.vert {
+  border-left: 20px solid black;
+  border-right: 20px solid black;
+}
 
-  #status{
-    padding: 20px;
-    font-size: 25px;
-    font-weight: 500;
-    color: #231e23;
-  }
-  
-  button{
-    width: 150px;
-    height: 40px;
-    font-size: 18px;
-    color:rgb(193, 26, 26);
-    background-color: #f047ff;
-    border: none;
-    border-radius: 3px;
-  }
-  button:hover {
-    box-shadow: inset 1000px 0 0 0 #54b3d6;
-    color: white;
-  }
-  
-  
-  .win{
-      animation: winAnimation ease-in-out 3s infinite;
-  }
-  
-  @keyframes winAnimation {
-    0%{background-color: #2c3a47;}
-    100%{background-color: #130f40;}
-    
-  }
-   .name{width: 150px;
-    height: 50px;
+.vert:hover {
+  color: rgb(13, 13, 56);
+}
 
-   }
-   .hard{
-    background-color: #699f9f;
-    float: right;
-   }
-   .easy{
-    background-color: #cf1313;
-   }
-   body{
-    padding: 90px;
-   }
-/*    
-    HTML CSSResult Skip Results Iframe
-EDIT ON
-body {
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-} */
+.hori {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#Display {
+  width: 300px;
+  color: rgb(0, 38, 255);
+  font-size: 3em;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border: 15px solid #20461d;
+  box-shadow: 0 0 0 2px #5cb0d4;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 75px;
+}
+
+#status {
+  padding: 20px;
+  font-size: 25px;
+  font-weight: 500;
+  color: #231e23;
+}
+
+button {
+  width: 150px;
+  height: 40px;
+  font-size: 18px;
+  color: rgb(193, 26, 26);
+  background-color: #f047ff;
+  border: none;
+  border-radius: 3px;
+}
+
+button:hover {
+  box-shadow: inset 1000px 0 0 0 #54b3d6;
+  color: white;
+}
+
+.win {
+  animation: winAnimation ease-in-out 3s infinite;
+}
+
+@keyframes winAnimation {
+  0% {
+    background-color: #2c3a47;
+  }
+  100% {
+    background-color: #130f40;
+  }
+}
+
+.name {
+  width: 150px;
+  height: 50px;
+}
+
+.hard {
+  background-color: #699f9f;
+  float: right;
+}
+
+.easy {
+  background-color: #cf1313;
+}
 
 .message-box {
   font-size: 50px;
   color: rgb(21, 21, 23);
-  /* background-color: rgb(35, 64, 180); */
   border: 1px solid #ccc;
   box-shadow: inset 0 0 0 0 #4b6c79;
   margin: 0 -.25rem;
   padding: 0 .25rem;
   transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
+
 .message-box:hover {
   box-shadow: inset 1000px 0 0 0 #54b3d6;
   color: white;
 }
-#chooseAName{
+
+#chooseAName {
   color: #d21313;
   font-weight: bold;
   font-weight: 50%;
   text-decoration-skip: 2em;
 }
-:placeholder{
+
+::placeholder {
   size: 15px;
 }
