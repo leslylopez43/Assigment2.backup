@@ -8,16 +8,17 @@ h1 {
 }
 
 td {
-  width: 300px;
-  height: 100px;
-  padding: 20px;
-  border: 150px;
-  margin: 30px;
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  border: 5px solid black;
+  margin: 10px;
 }
 
 table {
-  margin: 55px auto;
+  margin: 30px auto;
 }
+
 
 .vert {
   border-left: 20px solid black;
@@ -38,17 +39,21 @@ table {
   color: rgb(0, 38, 255);
   font-size: 3em;
 }
-
 .box {
   width: 100px;
   height: 100px;
   border: 15px solid #20461d;
-  box-shadow: 0 0 0 2px #5cb0d4;
+  box-shadow: 
+    0 0 0 2px #5cb0d4,
+    0 0 0 4px #5cb0d4,
+    0 0 0 6px #5cb0d4,
+    0 0 0 8px #5cb0d4;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   font-size: 75px;
 }
+
 
 #status {
   padding: 20px;
