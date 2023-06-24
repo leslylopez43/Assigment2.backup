@@ -70,14 +70,13 @@ function checkWinner()
 
 function checkTopRow()
 {    TopRow=TicTacToe[0]+TicTacToe[1]+TicTacToe[2];
-  if(TopRow=="XXX")
+  if(TopRow==="XXX")
   {
     winner=player;
     gameOver=true;
   displayWinner("X player wins");
     }
-  
-    if(TopRow=="OOO")
+    if(TopRow==="OOO")
   {
     winner=player;
     gameOver=true;
@@ -87,7 +86,7 @@ function checkTopRow()
 
 function checkMiddleRow()
 {    MiddleRow=TicTacToe[3]+TicTacToe[4]+TicTacToe[5];
- if(MiddleRow=="XXX")
+ if(MiddleRow==="XXX")
   {
     winner=player;
     gameOver=true;
@@ -95,7 +94,7 @@ function checkMiddleRow()
     }
     
     MiddleRow=TicTacToe[3]+TicTacToe[4]+TicTacToe[5];
- if(MiddleRow=="OOO")
+ if(MiddleRow==="OOO")
   {
     winner=player;
     gameOver=true;
@@ -105,7 +104,7 @@ function checkMiddleRow()
 }
 function checkbottomRow()
 {    bottomRow=TicTacToe[6]+TicTacToe[7]+TicTacToe[8];
- if(bottomRow=="XXX")
+ if(bottomRow==="XXX")
   {
     winner=player;
     gameOver=true;
@@ -113,7 +112,7 @@ function checkbottomRow()
     }
     
      bottomRow=TicTacToe[6]+TicTacToe[7]+TicTacToe[8];
- if(bottomRow=="OOO")
+ if(bottomRow==="OOO")
   {
     winner=player;
     gameOver=true;
@@ -123,7 +122,7 @@ function checkbottomRow()
 }
 function checkdiagonal1Row()
 {    diagonal1Row=TicTacToe[0]+TicTacToe[4]+TicTacToe[8];
- if(diagonal1Row=="XXX")
+ if(diagonal1Row==="XXX")
   {
     winner=player;
     gameOver=true;
@@ -131,7 +130,7 @@ function checkdiagonal1Row()
     }
     
     diagonal1=TicTacToe[0]+TicTacToe[4]+TicTacToe[8];
- if(diagonal1=="OOO")
+ if(diagonal1==="OOO")
   {
     winner=player;
     gameOver=true;
@@ -140,7 +139,7 @@ function checkdiagonal1Row()
 }
 function checkdiagonal2Row()
 {    diagonal2Row=TicTacToe[6]+TicTacToe[4]+TicTacToe[2];
- if(diagonal2Row=="XXX")
+ if(diagonal2Row==="XXX")
   {
     winner=player;
     gameOver=true;
@@ -148,7 +147,7 @@ function checkdiagonal2Row()
     }
     
     diagonal2=TicTacToe[6]+TicTacToe[4]+TicTacToe[2];
- if(diagonal2=="OOO")
+ if(diagonal2==="OOO")
   {
     winner=player;
     gameOver=true;
@@ -157,7 +156,7 @@ function checkdiagonal2Row()
 }
 function checkcolumn1Row()
 {    column1Row=TicTacToe[0]+TicTacToe[3]+TicTacToe[6];
- if(column1Row=="XXX")
+ if(column1Row==="XXX")
   {
     winner=player;
     gameOver=true;
@@ -165,7 +164,7 @@ function checkcolumn1Row()
     }
     
     column1=TicTacToe[0]+TicTacToe[3]+TicTacToe[6];
- if(column1=="OOO")
+ if(column1==="OOO")
   {
     winner=player;
     gameOver=true;
@@ -174,7 +173,7 @@ function checkcolumn1Row()
 }
 function checkcolumn2Row()
 {    column2Row=TicTacToe[1]+TicTacToe[4]+TicTacToe[7];
- if(column2Row=="XXX")
+ if(column2Row==="XXX")
   {
     winner=player;
     gameOver=true;
@@ -182,7 +181,7 @@ function checkcolumn2Row()
     }
     
     column2=TicTacToe[1]+TicTacToe[4]+TicTacToe[7];
- if(column2=="OOO")
+ if(column2==="OOO")
   {
     winner=player;
     gameOver=true;
@@ -191,7 +190,7 @@ function checkcolumn2Row()
 }
 function checkcolumn3Row()
 {    column3Row=TicTacToe[2]+TicTacToe[5]+TicTacToe[8];
- if(column3Row=="XXX")
+ if(column3Row==="XXX")
   {
     winner=player;
     gameOver=true;
@@ -199,7 +198,7 @@ function checkcolumn3Row()
     }
     
     column3=TicTacToe[2]+TicTacToe[5]+TicTacToe[8];
- if(column3=="OOO")
+ if(column3==="OOO")
   {
     winner=player;
     gameOver=true;
