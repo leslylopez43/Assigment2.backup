@@ -1,7 +1,7 @@
 const boxes = document.querySelectorAll('.box');
 var numberOfPlays=0;
 var winner="";
-var HumanPlayer="";
+var HumanPlayer="X";
 var gameOver=false;
 var mode="";
 var computerChoice= 0;
@@ -207,62 +207,50 @@ function checkcolumn3Row()
 }
 function putNaughtOrCross(boxNumber)
  {
-
   let onscreenBoard=document.getElementsByClassName("box")
   //  alert(TicTacToe[boxNumber] )
-   if (TicTacToe[boxNumber] =="")  //CHECK ARRAY LOCATION IF EMPTY
+   if (TicTacToe[boxNumber] ==="")  //CHECK ARRAY LOCATION IF EMPTY
        {
           //Check if player is human then change to computer player and call computerplays  
           onscreenBoard[boxNumber].innerText=player;
           TicTacToe[boxNumber]=player;//Record player position in array TicTacToe
            numberOfPlays++;//increases numerOfPlays by one
-           if(player=="X")
+           if(player==="X")
                {
                   player="O";//Change player to computer
                   display();
-                   //computerPlays();
                     const TimeoutRef=setTimeout(computerPlays,2000);//computer plays after 2 seconds
                 }
              checkWinner();   
           }
-   
  } // End of put nought or cross function 
 
  function generateRandomInteger(max) {
-  let noSpaceFound=true;
+  let noSpaceFound = true;
   var randomNumber; 
-while((noSpaceFound==true) && (numberOfPlays<9))
-{
-  randomNumber=Math.floor(Math.random() * max);
-  
-  if (TicTacToe[randomNumber] =="")  //CHECK ARRAY LOCATION IF EMPTY
-  {
-    noSpaceFound=false;//set noSpaceFound to false to stop while loop
-  }
-}
- return randomNumber;
-}
-if(player=="O")
-{
+  while (noSpaceFound && (numberOfPlays < 9)) {
+    randomNumber = Math.floor(Math.random() * max);
 
-}
-function display()
-{
-  
-  if(player=="X")
-  
-  {
-    // alert("player1")
-   document.getElementById("message").innerHTML=HumanPlayer;
-   
+    if (TicTacToe[randomNumber] === "") {
+      noSpaceFound = false;
+    }
   }
-  if (player=="O")
-    
-  {
-    // alert("computer2")
-    document.getElementById("message").innerHTML="ComputerPlays"
+  return randomNumber;
+}
+
+if (player === "O") {
+  computerPlays();
+}
+
+function display() {
+  if (player === "X") {
+    document.getElementById("message").innerHTML = HumanPlayer;
+  }
+  if (player === "O") {
+    document.getElementById("message").innerHTML = "ComputerPlays";
   }
 }
+
 
 
 function playDefencePositionOne() {
