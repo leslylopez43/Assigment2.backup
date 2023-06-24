@@ -652,24 +652,22 @@ else if(player==="X")
 
   function displayWinner(winner)
   {
-
-    alert("checkWinner")
-     document.getElementById("Display").innerHTML=winner 
+    // alert("checkWinner")
+     document.getElementById("Display").innerHTML= winner;
     }
   
     function display2 ()
     {
       
-      const num=localStorage.getItem("PN") //retrieve store info from the local storage
+      const num=localStorage.getItem("PN");//retrieve store info from the local storage
       //alert(num);
-       mode=localStorage.getItem("dn")
+       mode=localStorage.getItem("dn");
      // alert ("inside  display2 " + mode);
       HumanPlayer=num;
       document.getElementById("Display").innerHTML=HumanPlayer; 
       
      // document.getElementById("message").innerHTML="ComputerTurnxxxxxxxxxx";
     document.getElementById("numberOfPlayers").innerHTML=mode;
-   
     }
 
     function homepage()
