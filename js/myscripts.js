@@ -253,7 +253,6 @@ function putNaughtOrCross(boxNumber)
   var randomNumber; 
 while((noSpaceFound==true) && (numberOfPlays<9))
 {
-  // randomNumber=Math.floor(Math.random() * max) + 1;
   randomNumber=Math.floor(Math.random() * max);
   
   if (TicTacToe[randomNumber] =="")  //CHECK ARRAY LOCATION IF EMPTY
@@ -265,9 +264,7 @@ while((noSpaceFound==true) && (numberOfPlays<9))
 }
 if(player=="O")
 {
- /*let computerChoice= generateRandomInteger(8);
- putNaughtOrCross(computerChoice)*/
- //const TimeoutRef=setTimeout(computerPlays,1000);
+
 }
 function display()
 {
@@ -631,7 +628,7 @@ else if(player==="X")
      numberOfPlays=0;
       //  this while loop is clear the tic toc tac
           let counter=0;
-          while(counter<onscreenBoard.length ++)
+          while(counter<onscreenBoard.length)
             {
              onscreenBoard[counter].innerText=""; //this line is for clear a box
              counter = counter + 1;
@@ -649,9 +646,7 @@ else if(player==="X")
 
           player = "O";
           display();
-
-//  const TimeoutRef=setTimeout(computerPlays,2000);
-   
+          // line reloads the entire page
             location.reload();
           }
 
