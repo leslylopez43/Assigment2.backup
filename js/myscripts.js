@@ -13,43 +13,34 @@ console.log(randomMove); // Output: a random integer between 0 and 8
 
 
 boxes.forEach(box => {
-  box.addEventListener('click', function handleClick(event) {
-    if ((player!="X") || (gameOver==true))
+  box.addEventListener('click', function handleClick (event) {
+    if (player!=="X" || gameOver)
     {
-      document.getElementById("message").innerHTML="\!ComputerTurn!";
-      // alert("it is not you turn") 
+      document.getElementById("message").innerHTML="!ComputerTurn!";
       return;
   }
-    if(box.id=="zero")
-    putNaughtOrCross(0)
-    if(box.id=="one")
-    putNaughtOrCross(1)
-    if(box.id=="two")
-    putNaughtOrCross(2)
-    if(box.id=="three")
-    putNaughtOrCross(3)
-    if(box.id=="four")
-    putNaughtOrCross(4)
-// alert(event.target)
-   if(box.id=="five")
-    putNaughtOrCross(5)
-    if(box.id=="six")
-    putNaughtOrCross(6)
-    if(box.id=="seven")
-    putNaughtOrCross(7)
-    if(box.id=="eight")
-    putNaughtOrCross(8)
-
-   //box.addEventListener('click', function handleClick(event) {
-    //console.log(box.id, event);
-    
-    //  box.setAttribute('style', 'background-color: yellow;');
-  });
-  
+    if(box.id==="zero")
+    putNaughtOrCross(0);
+    if(box.id==="one")
+    putNaughtOrCross(1);
+    if(box.id==="two")
+    putNaughtOrCross(2);
+    if(box.id==="three")
+    putNaughtOrCross(3);
+    if(box.id==="four")
+    putNaughtOrCross(4);
+   if(box.id==="five")
+    putNaughtOrCross(5);
+    if(box.id==="six")
+    putNaughtOrCross(6);
+    if(box.id==="seven")
+    putNaughtOrCross(7);
+    if(box.id==="eight")
+    putNaughtOrCross(8);
+  }); 
 });
 ///////////////
-
-TicTacToe=[0,1,2,
+let TicTacToe = [0,1,2,
            3,4,5,
            6,7,8];
 // each arrange location is set one space
@@ -63,16 +54,6 @@ TicTacToe[5]="";
 TicTacToe[6]="";
 TicTacToe[7]="";
 TicTacToe[8]="";
-
-//let player="O"; //X player is human and O player is computer 
-/*let Board=document.getElementById("Display");
-CurrentBoard=TicTacToe[0]+TicTacToe[1]+TicTacToe[2]+"<br>";
-CurrentBoard=CurrentBoard+TicTacToe[3]+TicTacToe[4]+TicTacToe[5]+"<br>";
-CurrentBoard=CurrentBoard+TicTacToe[6]+TicTacToe[7]+TicTacToe[8]+"<br>";
-console.log(Board)
-Board.innerHTML=CurrentBoard; //display  Tic Tac Toe Board on screen
-//alert(CurrentBoard)*/
-//var numberOfPlays=0;
 
 function checkWinner()
 
