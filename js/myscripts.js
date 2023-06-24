@@ -673,16 +673,12 @@ else if(player==="X")
     {
       window.location.href="../index.html"; //is change for the location of the page
     } 
+    document.addEventListener("DOMContentLoaded", function() {
     homeBtn=document.getElementById("Home")
     homeBtn.addEventListener('click',homepage);
+    });
 
-    // let messageElement = document.getElementById("message");
-    // messageElement.innerHTML = "Cumputer Turn";
-    // document.getElementById("message").innerHTML="ComputerTurnxxxxxxxxxx";
-    // document.getElementById("numberOfPlayers").innerHTML=mode;
-   
-    
-    function generateRandomInteger(max) {
+    function generateRandomInteger(max) {        // Generate a random integer between 0 and 10 (inclusive)
       return Math.floor(Math.random() * (max + 1));
     }
     
