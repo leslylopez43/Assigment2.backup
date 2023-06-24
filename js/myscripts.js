@@ -450,7 +450,8 @@ else if ((TicTacToe[2]=="X") && (TicTacToe[5]=="X") && (TicTacToe[8]==""))//see 
     // let randomPlayingChoice=  attack();
     // return randomPlayingChoice;
                  }
-	}//end of function hard
+                }
+              //end of function hard
 
 function attack()
 {
@@ -608,7 +609,7 @@ function computerPlays()
 }
   		else
   		  {
-     			computerChoice= generateRandomInteger(8);
+     			computerChoice= generateRandomInteger(9);
 		  } 
  			 //alert(computerChoice)
 		putNaughtOrCross(computerChoice)
