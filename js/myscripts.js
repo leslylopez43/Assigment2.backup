@@ -605,20 +605,21 @@ function computerPlays()
 function playTheGame()
 {
 choosePlayer=generateRandomInteger(2);
-if(choosePlayer==0)
-player="O" //X is the human player
-if(choosePlayer==1)
-player="O"; //O is the computer player
+if(choosePlayer===0){
+  player="O"; //X is the human player
+}
+else if(choosePlayer===1){
+  player="O"; //O is the computer player
+}
 //  alert(player)
-  if(player=="O")
+  if(player==="O")
   { 
     display();
- const TimeoutRef=setTimeout(computerPlays,2000);
+ const timeoutRef=setTimeout(computerPlays,2000);
   //computerPlays();   
   }
-else if(player=="X")
+else if(player==="X")
  display();
-//}
 }
 
     function clearBoard() //is reseting the game
