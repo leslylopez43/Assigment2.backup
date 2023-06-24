@@ -658,7 +658,6 @@ else if(player==="X")
   
     function display2 ()
     {
-      
       const num=localStorage.getItem("PN");//retrieve store info from the local storage
       //alert(num);
        mode=localStorage.getItem("dn");
