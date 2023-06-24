@@ -117,10 +117,9 @@ button:hover {
 #chooseAName {
   color: #d21313;
   font-weight: bold;
-  font-weight: 50%;
-  text-decoration-skip: 2em;
+  text-decoration-skip-ink: 2em;
 }
 
 ::placeholder {
-  size: 15px;
+  font-size: 15px;
 }

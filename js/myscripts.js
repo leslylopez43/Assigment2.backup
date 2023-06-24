@@ -455,44 +455,37 @@ function attack() {
   }
 }
 
+function computerPlays() {
+  if (gameOver === true)
+    return;
+  
+  if (mode === "hard") {
+    computerChoice = attack();
+    //alert("computerchoice in computerplays="+computerChoice)
+  } else {
+    computerChoice = generateRandomInteger(9);
+  } 
 
-function computerPlays()
+  putNaughtOrCross(computerChoice);
+  player = "X"; // Change player to human player
+  display();
+}
 
-	{
-  		if (gameOver===true)
-  		return;
-  		if(mode==="hard")
-{
-    		computerChoice= attack();//the hard function is the one that makes it hard for the human player to win
-             //alert("computerchoice in computerplays="+computerChoice)
-}
-  		else
-  		  {
-     			computerChoice= generateRandomInteger(9);
-		  } 
-		putNaughtOrCross(computerChoice)
-		player="X" //Change player to human player
-		display();
-	}
+function playTheGame() {
+  choosePlayer = generateRandomInteger(2);
 
-function playTheGame()
-{
-choosePlayer=generateRandomInteger(2);
-if(choosePlayer===0){
-  player="O"; //X is the human player
-}
-else if(choosePlayer===1){
-  player="O"; //O is the computer player
-}
-//  alert(player)
-  if(player==="O")
-  { 
-    display();
- const timeoutRef=setTimeout(computerPlays,2000);
-  //computerPlays();   
+  if (choosePlayer === 0) {
+    player = "X"; // X is the human player
+  } else if (choosePlayer === 1) {
+    player = "O"; // O is the computer player
   }
-else if(player==="X")
- display();
+
+  if (player === "O") { 
+    display();
+    const timeoutRef = setTimeout(computerPlays, 2000);
+  } else if (player === "X") {
+    display();
+  }
 }
 
     function clearBoard() //is reseting the game
