@@ -243,6 +243,49 @@ If you would like to use JSLint in your own development workflow, refer to the o
 
 Please note that JSLint has its own set of rules and preferences. You may need to adjust your code or configuration to align with the desired JSLint standards.
 
+# CSS Testing with W3C CSS Validator
+I have thoroughly tested my code program for bugs and issues related to CSS using the W3C CSS Validator, a widely recognized tool for validating CSS code against the official CSS specifications set by the World Wide Web Consortium (W3C). This ensures compliance with industry standards and helps maintain a consistent and error-free CSS codebase.
+
+## Why W3C CSS Validator?
+The W3C CSS Validator is a valuable tool for identifying CSS-related problems and ensuring the code's correctness. By validating my CSS code against the W3C standards, I can catch potential errors and inconsistencies, leading to improved code quality.
+
+## Encountered Error and Resolution
+During the testing process with the W3C CSS Validator, I encountered one error in my CSS code. However, I promptly resolved it to ensure compliance with the standards. Here are the details of the error and its resolution:
+![](img/w3c%20css%20validator%20error.webp)
+Error: [Describe the specific error or issue encountered in your CSS code.]
+
+Resolution: [Explain how you addressed and resolved the error. This may involve modifying the CSS code, adjusting styles, or fixing syntax issues.]
+
+## Benefits of Resolving CSS Errors
+By resolving the error identified by the W3C CSS Validator, I have gained the following benefits:
+
+Improved Compatibility: Ensuring compliance with W3C standards enhances the compatibility of my CSS code across different browsers and platforms. It reduces the likelihood of rendering issues and provides a consistent user experience.
+
+Better Code Quality: By resolving CSS errors, I have improved the overall quality of my code program. The code is now more maintainable, easier to understand, and less prone to bugs.
+
+Future-Proofing: Adhering to W3C standards future-proofs my CSS code. It reduces the need for extensive revisions in the future and ensures compatibility with upcoming CSS features and browser updates.
+
+## Running the W3C CSS Validator
+To test your code program using the W3C CSS Validator and identify any CSS errors or issues, follow these steps:
+
+Visit the W3C CSS Validator website at https://jigsaw.w3.org/css-validator/.
+
+Copy and paste your CSS code into the validator or upload your CSS file for validation.
+
+Initiate the validation process and wait for the results.
+
+Review the validation report, which will highlight any detected errors or warnings, including the specific error you encountered.
+
+Resolve the identified error(s) by updating your CSS code accordingly. This may involve modifying selectors, properties, or values to align with the CSS standards.
+
+Re-validate your CSS code to ensure that all errors have been resolved successfully.
+
+## Getting Started with the W3C CSS Validator
+To incorporate the W3C CSS Validator into your own development workflow, refer to the official W3C CSS Validator website at https://jigsaw.w3.org/css-validator/ for more information. The website provides detailed documentation and instructions on using the validator effectively.
+
+Please note that the W3C CSS Validator has its own set of rules and preferences. You may need to adjust your CSS code or configuration to align with the desired standards.
+
+
 # Bugs
 |Bug|Comment|
 | ------ | ------ |
