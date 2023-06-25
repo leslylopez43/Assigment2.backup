@@ -198,16 +198,56 @@ The following web browsers were used to test the display of the website includin
 ## Language validation
 Validation of scripting languages were validated using the following:
 •       HTML validation using HTML validator (W3C validator) at https://jigsaw.w3.org/css-validator/
-•       JavaScript validated at https://https://www.jslint.com/
+•       JavaScript validated at https://www.jslint.com/
 •       CSS validated at https://jigsaw.w3.org/css-validator/
+
+# Bug Testing with JSLint
+I have conducted thorough bug testing for my code program using JSLint, a powerful JavaScript code quality tool. JSLint helps identify potential issues and adherence to coding conventions, ensuring cleaner and more reliable code.
+
+## Why JSLint?
+JSLint is a widely recognized tool in the JavaScript community for its strict analysis of code. It enforces a set of guidelines and best practices that promote code consistency, readability, and maintainability. By running my code through JSLint, I can catch potential bugs and improve the overall quality of the codebase.
+
+## Handling Long Lines Warning
+During the JSLint testing process, I encountered a specific warning related to lines longer than 80 characters. JSLint warns against exceeding this character limit as it can impact code readability and maintainability.
+
+To address this warning, I have made the following adjustments to my code:
+
+Line Wrapping: I have wrapped lines longer than 80 characters to ensure they fit within the recommended limit. This improves code readability and makes it easier for other developers to understand the code.
+
+Refactoring and Code Restructuring: In some cases, I have refactored or restructured my code to reduce line length. This may involve splitting long statements into multiple lines or extracting complex expressions into separate variables or functions.
+
+## Benefits of Resolving Long Lines Warning
+By addressing the long lines warning highlighted by JSLint, I have achieved the following benefits:
+
+Improved Readability: Keeping lines within the recommended limit enhances code readability, making it easier to understand and maintain. Developers working on the code in the future will appreciate the improved clarity.
+
+Code Consistency: By adhering to the line length guideline, I have maintained consistency across the codebase. Consistent code formatting promotes a cohesive and professional codebase.
+
+Reduced Risk of Errors: Long lines can increase the likelihood of introducing errors, as it becomes harder to comprehend the code's logic. By shortening lines, I have minimized the risk of mistakes and made the code more robust.
+
+## Running JSLint on the Code
+To test the code program using JSLint and identify the long lines warning, follow these steps:
+
+include it as a development dependency in your project.
+
+Run JSLint on the JavaScript files of your code program using the command-line interface or integrated development environment (IDE) plugins.
+
+Review the generated JSLint report, which will highlight any detected issues, errors, or warnings, including the specific warning for lines longer than 80 characters.
+
+Address the warning by applying line wrapping techniques or refactoring the code to maintain line length within the recommended limit.
+
+## Getting Started with JSLint
+If you would like to use JSLint in your own development workflow, refer to the official JSLint website at https://jslint.com for more information. The website provides detailed documentation and instructions on using JSLint effectively.
+
+Please note that JSLint has its own set of rules and preferences. You may need to adjust your code or configuration to align with the desired JSLint standards.
+
 # Bugs
 |Bug|Comment|
 | ------ | ------ |
-|Home link page pointed to the wrong page on the About us page|This was corrected and recorded in the Test log|
-|The Forum link on the Home page did not launch the Forum page|Code was included to correctly lauch to the Forum page. Subsequent test verified correct operation of the link|
+|Home link page pointed to the wrong page on the Home page and index page |This was corrected and recorded in the Test log|
 
 # Deployment
-Website pages are standard HTML pages and HTML templates. There is use of Django and a Django environment running version 3.2 and Python 2.7 is required
+Website pages are standard HTML pages and HTML templates. Python 2.7 is required
 
 # Where can it be found on GitHub? 
 The GitHub link for the project is - https://leslylopez43.github.io/Assigment2.backup/
