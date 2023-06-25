@@ -72,19 +72,106 @@ The interface consists of Wireframes – 3 wireframes for each page – (one for
 |   Home page    |   Home.Png        |
 |  Current Tic toc toe games     | Current computer.png          |
 |  
-
+## ipad wireframe
+![](img/ipad%203.webp)
+## iphone 13 pro max wireframe
+![](img/iphone%2013%20pro%20max.webp)
+## website wireframe
+![](img/website.webp)
 # Resources  
 ## images
-tic toc toe Background  - source www.picturebook
+tic tac toe Background  - source www.picturebook
+![](img/background.webp)
 
-## graphics
-Logo - create at wix.com using the online logo maker
-## video
-All the videos are originally created by the owners of the website and there is no copyright associated with these resources.
+
+## lighthouse
+Tic tac toe tested
+
+## What is Lighthouse?
+Lighthouse is an open-source tool developed by Google that assesses web pages against a set of best practices and industry standards. It evaluates various aspects, including performance, accessibility, SEO, and more.
+
+![](img/screens-%20sources.webp)
+## Testing Process
+
+To conduct the Lighthouse tests, the following steps were followed:
+
+1. Set up a testing environment with the latest version of Lighthouse.
+2. Ran the Lighthouse tests on the index page and home page of our project.
+3. Reviewed the generated reports to assess the accessibility, performance, and best practices scores.
+4. Made necessary optimizations and adjustments to improve any areas that did not meet the desired standards.
+5. Repeated the testing process until achieving the desired 100% scores across all categories.
+
+## Accessibility, Performance, and Best Practices
+I am proud to share that my code program has achieved a perfect 100% 
+This project has been thoroughly tested using the Lighthouse resource to ensure optimal accessibility, performance, and adherence to best practices. The index page and home page have both achieved a perfect score of 100% in these areas.
+
+### Accessibility
+
+The Lighthouse accessibility test evaluates the project's compliance with accessibility guidelines and standards. By scoring 100% in accessibility, we have confirmed that our code program provides an inclusive user experience, considering factors such as proper semantic structure, keyboard navigation, and screen reader compatibility.
+![](img/lighthouse%20index.webp)
+
+### Performance
+
+The performance test conducted by Lighthouse measures the project's loading speed and resource optimization. Our index page and home page demonstrated exceptional performance, achieving a 100% score. This indicates that our project loads quickly, efficiently utilizes network resources, and employs caching strategies for improved user experience.
+![](img/lighthouse-home.webp)
+
+### Best Practices
+
+Lighthouse also evaluates the project's adherence to best practices in web development. We are proud to announce that our code program received a perfect score of 100% in this category. This means that we have followed industry-standard coding practices, maintained code quality, and ensured security throughout the project.
+
+![](img/lighthouse_home.webp)
+
+## Conclusion
+
+By achieving 100% accessibility, performance, and best practices scores on the index page and home page, we have demonstrated our commitment to delivering a high-quality code program. We aim to provide an inclusive, efficient, and well-optimized user experience.
+
+We encourage users to explore the project and report any accessibility issues, performance bottlenecks, or suggestions for further improving best practices. Your feedback is valuable in helping us maintain and enhance the overall quality of our code program.
+
+## Getting Started
+
+[Include instructions for getting started with the project, including installation, dependencies, and running the code]
+
+## Support
+
+[Provide contact information or instructions for users to seek support or report issues]
+
+## Continuous Improvement
+While we have achieved a high accessibility score, we understand that accessibility is an ongoing effort. We remain committed to continuously improving our code program's accessibility and addressing any future accessibility issues that may arise.
+
+By leveraging the power of Lighthouse, we have ensured that our code program meets industry-standard accessibility guidelines, allowing us to deliver an inclusive experience to our users.
+
 # Attribution
 Bootstrap library used for styling all pages
-Forms - Django forms used for their inbuilt validation and security features
-Forum - The chat facility uses standand Django code that is supplied with Django
+
+## Styling with Bootstrap
+This code program leverages the powerful Bootstrap library to handle the styling and layout of all pages. Bootstrap is a widely adopted CSS framework that offers a range of pre-designed components, responsive grids, and utility classes, making it easier to create visually appealing and mobile-friendly web pages.
+
+## Why Bootstrap?
+By using Bootstrap, I have streamlined the styling process, allowing for consistent and professional-looking design across all pages. The library's extensive collection of CSS classes and components enables rapid development and ensures a responsive and visually engaging user interface.
+
+## How Bootstrap Enhances the Code Program
+Responsive Design: Bootstrap's responsive grid system ensures that the code program adapts seamlessly to different screen sizes and devices. This means that users can access and interact with the code program effectively, regardless of the device they are using.
+
+Pre-Designed Components: Bootstrap provides a wide range of pre-designed components such as navigation bars, buttons, forms, and alerts. These components can be easily customized and incorporated into the code program, saving development time and effort.
+
+CSS Utility Classes: Bootstrap offers a variety of utility classes that simplify common styling tasks. These classes allow for quick adjustments to margins, padding, typography, and more, ensuring consistent styling throughout the code program.
+
+## Customization
+While Bootstrap provides a solid foundation for styling, I have also tailored the design to suit the specific requirements of this code program. Custom styles and modifications have been applied to ensure a unique and cohesive visual identity that aligns with the project's goals.
+
+## Getting Started
+To make use of Bootstrap in your own development environment, follow these steps:
+
+Include the Bootstrap CSS and JavaScript files in your HTML pages. You can either download the files and host them locally or link to a CDN (Content Delivery Network) version.
+
+Utilize the Bootstrap classes and components in your HTML markup to achieve the desired styling and layout.
+
+For more information on utilizing Bootstrap effectively, refer to the official Bootstrap documentation at https://getbootstrap.com/docs.
+
+Please note that Bootstrap is licensed under the MIT license, which allows for both personal and commercial use, ensuring flexibility and freedom in incorporating it into your projects.
+
+
+
 # Testing
 ## Testing web page  links
 |Test Case| Test|Expected Outcome|Actual Outcome|Comment|
