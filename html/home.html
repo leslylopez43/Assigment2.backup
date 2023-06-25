@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body onload="display2()" class="text-center">
-  <h1 class="text-center">Tic Tac Toe</h1>
+  <div id="status" class="text-center">Active Tic Tac Toe Game</div>
   <div class="container">
     <div class="col text-center">
       <div id="numberOfPlayers"></div>
@@ -37,10 +37,8 @@
   </div>
     <div class="container">
       <div class="row">
-        
-          <div id="status" class="text-center mt-3">Active Playing Game</div>
-          <button id="Home" class="btn btn-primary d-block mx-auto mt-3">Home</button>
-          <button onclick="clearBoard()" id="restart" class="btn btn-primary d-block mx-auto mt-3">Reset Game</button>
+          <button id="Home" class=" btn-primary d mx-auto btn-custom">Home</button>
+          <button onclick="clearBoard()" id="restart" class="btn btn-primary d-block mx-auto mt-3 btn-custom">Reset Game</button>
           <div id="message" class="message-box text-center mt-3"></div>
         </div>
       </div>

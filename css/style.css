@@ -7,18 +7,43 @@ h1 {
   text-align: center;
 }
 
+.table-container {
+  display: flex;
+  justify-content: center;
+}
+
+.table-container table {
+  margin: 30px auto;
+}
+
 td {
   width: 150px;
   height: 150px;
   padding: 10px;
   border: 5px solid black;
   margin: 10px;
+  position: relative;
 }
 
-table {
-  margin: 30px auto;
+td::before,
+td::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
+td::before {
+  border: 5px solid rgba(0, 0, 0, 0.5);
+  transform: translate(-10px, -10px);
+}
+
+td::after {
+  border: 5px solid rgba(0, 0, 0, 0.3);
+  transform: translate(10px, 10px);
+}
 
 .vert {
   border-left: 20px solid black;
@@ -39,19 +64,34 @@ table {
   color: rgb(0, 38, 255);
   font-size: 3em;
 }
+
 .box {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border: 15px solid #20461d;
-  box-shadow: 
-    0 0 0 2px #5cb0d4,
-    0 0 0 4px #5cb0d4,
-    0 0 0 6px #5cb0d4,
-    0 0 0 8px #5cb0d4;
+  box-shadow: 0 0 0 2px #5cb0d4;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  font-size: 75px;
+  font-size: 50px;
+  position: relative;
+  perspective: 1000px;
+}
+
+.box::before,
+.box::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border: 10px solid #5cb0d4;
+  transform: translateZ(-20px);
+}
+
+.box::after {
+  transform: translateZ(20px);
 }
 
 
@@ -108,16 +148,17 @@ button:hover {
   font-size: 50px;
   color: rgb(21, 21, 23);
   border: 1px solid #ccc;
-  box-shadow: inset 0 0 0 0 #4b6c79;
+  box-shadow: inset 0 0 0 10px #4b6c79; /* Adjust the last value (10px) to control the size of the shadow */
   margin: 0 -.25rem;
   padding: 0 .25rem;
   transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
 .message-box:hover {
-  box-shadow: inset 1000px 0 0 0 #54b3d6;
-  color: white;
+  box-shadow: inset 0 0 0 10px #8a9d6c; /* Adjust the last value (10px) to control the size of the shadow */
+  color: rgb(3, 17, 31);
 }
+
 
 #chooseAName {
   color: #d21313;
@@ -127,4 +168,9 @@ button:hover {
 
 ::placeholder {
   font-size: 15px;
+}
+
+.btn-custom {
+  font-size: 18px;
+  padding: 10px 20px;
 }
