@@ -5,7 +5,7 @@ var HumanPlayer="";
 var gameOver=false;
 var mode="";
 var computerChoice= 0;
-let player="O"; //X player is human and O player is computer 
+let player="x"; //X player is human and O player is computer 
 var choosePlayer=0;
 // Call the function to generate a random move
 const randomMove = generateRandomInteger(8);
@@ -207,7 +207,7 @@ function checkcolumn3Row()
 }
 function putNaughtOrCross(boxNumber)
  {
-  let onscreenBoard=document.getElementsByClassName("box")
+  let onscreenBoard = document.getElementsByClassName("box")
   //  alert(TicTacToe[boxNumber] )
    if (TicTacToe[boxNumber] ==="")  //CHECK ARRAY LOCATION IF EMPTY
        {
@@ -223,50 +223,32 @@ function putNaughtOrCross(boxNumber)
                 }
              checkWinner();   
           }
- } // End of put nought or cross function 
-
- function generateRandomInteger(max) {
-  let noSpaceFound = true;
-  var randomNumber; 
-  while (noSpaceFound && (numberOfPlays < 9)) {
-    randomNumber = Math.floor(Math.random() * max);
-
-    if (TicTacToe[randomNumber] === "") {
-      noSpaceFound = false;
-    }
-  }
-  return randomNumber;
-}
-
-if (player === "O") {
-  computerPlays();
-}
+ }
 
 function display() {
   if (player === "X") {
-    document.getElementById("message").innerHTML = HumanPlayer;
+    document.getElementById("message").innerHTML = "You turn"    //HumanPlayer;
   }
   if (player === "O") {
-    document.getElementById("message").innerHTML = "ComputerPlays";
+    document.getElementById("message").innerHTML = "Computer's turn";
   }
 }
 
 function playDefencePositionOne() {
-  var decider = generateRandomInteger(4);
+ decider = generateRandomInteger(4);
   
   if (decider == 0)
       return 0;
-  else if (decider == 1)
+  if (decider == 1)
       return 2;
-  else if (decider == 2)
+  if (decider == 2)
       return 6;
-  else if (decider == 3)
+ if (decider == 3)
       return 8;
 }
 
 function playhard() {
   // start of function hard
-
   Row2 = TicTacToe[3] + TicTacToe[4] + TicTacToe[5];
   if (Row2 === "X" && numberOfPlays === 1) {
     // This if statement is testing against X only because the concatenation operator ignores spaces
@@ -370,8 +352,8 @@ function playhard() {
   }
   ///////////////END OF COLUMN3 TEST////////////////////////////
   else {
-    let boardPosition = playDefencePositionOne();
-    return boardPosition; // this is the position on the tic tac toe board where the computer will play
+    // let boardPosition = playDefencePositionOne();
+    return findemptyspace(); // this is the position on the tic tac toe board where the computer will play
   }
   // end of function hard
 }
@@ -450,8 +432,8 @@ function attack() {
   }
   ///////////////END OF COLUMN3 TEST////////////////////////////
   else {
-    playhard();
-    //  return generateRandomInteger(9);//computer just searches for an empty slot to play
+    compueterplayselection=playhard();
+      return compueterplayselection;//computer just searches for an empty slot to play
   }
 }
 
@@ -461,9 +443,9 @@ function computerPlays() {
   
   if (mode === "hard") {
     computerChoice = attack();
-    //alert("computerchoice in computerplays="+computerChoice)
+    //alert("computerchoice in computerplays="+computerChoice) player to win
   } else {
-    computerChoice = generateRandomInteger(9);
+    computerChoice = findemptyspace();
   } 
 
   putNaughtOrCross(computerChoice);
@@ -471,22 +453,36 @@ function computerPlays() {
   display();
 }
 
-function playTheGame() {
-  choosePlayer = generateRandomInteger(2);
-
-  if (choosePlayer === 0) {
-    player = "X"; // X is the human player
-  } else if (choosePlayer === 1) {
-    player = "O"; // O is the computer player
+function findemptyspace(){
+  var slot;
+  var emptyspacefound = false;
+  while ((emptyspacefound == false) && (!gameOver)){
+    slot = generateRandomInteger(8); 
+    //alert(slot+"is"+ TIcTacToe[slot])
+    if(TicTacToe[slot] == ""){
+      emptyspacefound = true;
+    }
   }
-
-  if (player === "O") { 
-    display();
-    const timeoutRef = setTimeout(computerPlays, 2000);
-  } else if (player === "X") {
-    display();
-  }
+  return slot;
 }
+function selectplayer(){
+  choosePlayer = generateRandomInteger(2);
+  if (choosePlayer == 0){
+  player = "0"  //compuer player
+ }
+  if (choosePlayer ==1){
+  player ="X"; //human Player
+}
+}
+
+function playTheGame() {
+  selectplayer ();
+  if (player === 0) {
+    display(); 
+    const timeoutRef = setTimeout(computerPlays,2000);
+  } else if (player ==="x") 
+    display();
+  }
 
     function clearBoard() //is reseting the game
     {
@@ -550,6 +546,7 @@ function playTheGame() {
     function generateRandomInteger(max) {        // Generate a random integer between 0 and 10 (inclusive)
       return Math.floor(Math.random() * (max + 1));
     }
+    
     
 playTheGame()
 
