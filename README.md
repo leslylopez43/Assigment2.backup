@@ -123,9 +123,9 @@ Lighthouse also evaluates the project's adherence to best practices in web devel
 
 ## Conclusion
 
-By achieving 100% accessibility, performance, and best practices scores on the index page and home page, we have demonstrated our commitment to delivering a high-quality code program. We aim to provide an inclusive, efficient, and well-optimized user experience.
+By achieving 100% accessibility, performance, and best practices scores on the index page and home page, I have demonstrated my commitment to delivering a high-quality code program. my aim to provide an inclusive, efficient, and well-optimized user experience.
 
-We encourage users to explore the project and report any accessibility issues, performance bottlenecks, or suggestions for further improving best practices. Your feedback is valuable in helping us maintain and enhance the overall quality of our code program.
+I encourage users to explore the project and report any accessibility issues, performance bottlenecks, or suggestions for further improving best practices. Your feedback is valuable in helping us maintain and enhance the overall quality of our code program.
 
 ## Getting Started
 
@@ -136,7 +136,7 @@ We encourage users to explore the project and report any accessibility issues, p
 [Provide contact information or instructions for users to seek support or report issues]
 
 ## Continuous Improvement
-While we have achieved a high accessibility score, we understand that accessibility is an ongoing effort. We remain committed to continuously improving our code program's accessibility and addressing any future accessibility issues that may arise.
+While we have achieved a high accessibility score, I understand that accessibility is an ongoing effort. I remain committed to continuously improving our code program's accessibility and addressing any future accessibility issues that may arise.
 
 By leveraging the power of Lighthouse, we have ensured that our code program meets industry-standard accessibility guidelines, allowing us to deliver an inclusive experience to our users.
 
