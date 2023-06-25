@@ -1,7 +1,8 @@
 README.md
 # What the Project is about? 
 The website is about Tic tac toe. 
-
+![](img/Tic%20tac%20toe%20front%20page.webp)
+![]()
 
 Description
 
@@ -16,7 +17,7 @@ This is a simple Tic Tac Toe website that allows players to choose their name an
 
 ## myscripts2 page
 How to Play
-![](img.png/Screenshot%202023-04-21%20at%2015.32.50.png)
+![]()
 Enter your name and difficulty level (Easy or Hard) in the input field.
 Click the "Start Game" button.
 The game board will appear. Click on a square to place your marker (X or O).
@@ -121,7 +122,7 @@ Validation of scripting languages were validated using the following:
 Website pages are standard HTML pages and HTML templates. There is use of Django and a Django environment running version 3.2 and Python 2.7 is required
 
 # Where can it be found on GitHub? 
-The GitHub link for the project is - https://github.com/leslylopez43/assigment2.git
+The GitHub link for the project is - https://leslylopez43.github.io/Assigment2.backup/
 
 
 
