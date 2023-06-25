@@ -2,11 +2,12 @@ README.md
 # What the Project is about? 
 The website is about Tic tac toe. 
 ![](img/Tic%20tac%20toe%20front%20page.webp)
-![]()
+
 
 Description
 
 This is a simple Tic Tac Toe game built using HTML, CSS, and JavaScript. The game allows you to play against the computer, with the computer making its moves automatically. The game keeps track of the number of plays and declares a winner when there is one.
+![](img/tic%20tac%20toe.webp)
 
 # Web pages
 The Home page is the landing page which introduces the website to the visitor and introduces the latest Tic Tac Toe with links to go to the Current  games page Tic Tac Toe
