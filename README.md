@@ -201,6 +201,20 @@ Validation of scripting languages were validated using the following:
 •       JavaScript validated at https://www.jslint.com/
 •       CSS validated at https://jigsaw.w3.org/css-validator/
 
+Code Validation:
+----------------
+The HTML code in this project has been thoroughly tested for bugs and issues using the W3C HTML validator. The validator is a widely recognized tool that checks the markup validity of web documents, ensuring compliance with HTML standards.
+
+During the testing process, the code was analyzed, and any errors or warnings reported by the validator were carefully addressed and resolved. By validating the HTML code, I aimed to ensure that my web pages are well-formed, structured correctly, and adhere to industry best practices.
+
+The validation process helped identify and rectify any issues, such as missing or improperly nested tags, invalid attributes, or other HTML-related problems. This meticulous approach ensures that our code follows established standards, enhancing the reliability, compatibility, and maintainability of our web application.
+### index page
+![](img/w3_html_index%20validator.webp)
+I am proud to share that our code has successfully passed the W3C HTML validator with no errors or warnings, indicating that it meets the required standards for quality HTML markup.
+### home page
+![](img/w3_validator_home.webp)
+
+
 # Bug Testing with JSLint
 I have conducted thorough bug testing for my code program using JSLint, a powerful JavaScript code quality tool. JSLint helps identify potential issues and adherence to coding conventions, ensuring cleaner and more reliable code.
 
@@ -284,6 +298,7 @@ Re-validate your CSS code to ensure that all errors have been resolved successfu
 To incorporate the W3C CSS Validator into your own development workflow, refer to the official W3C CSS Validator website at https://jigsaw.w3.org/css-validator/ for more information. The website provides detailed documentation and instructions on using the validator effectively.
 
 Please note that the W3C CSS Validator has its own set of rules and preferences. You may need to adjust your CSS code or configuration to align with the desired standards.
+
 
 
 # Bugs
