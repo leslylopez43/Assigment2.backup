@@ -10,7 +10,8 @@ function startgame() {
   if (difficult == "" || Pname == "") {
     // confirm("You need to choose hard or easy and also enter a name")
     document.getElementById("chooseAName").innerHTML =
-      "!Type a Name then choose Hard or Easy";
+  "!Type a Name then choose Hard or Easy";
+
   } else {
     window.location.href = "html/home.html"; //is change for the location of the page
   }
