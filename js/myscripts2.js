@@ -4,7 +4,7 @@ function startgame()
 {
   //let onscreenBoard=getElementsByClassName(startgame);
 // the text box identifie by Player name
- Pname=document.getElementById("PlayerName").value; 
+ Pname=document.getElementById("PlayerName").value;
  localStorage.setItem("PN",Pname)
   //the information store is identify the Pn Name
   localStorage.setItem("dn",difficult)
@@ -21,9 +21,7 @@ function startgame()
 
 function detectKey(e)
 {
-
-    if (e.key == "Enter") 
-    
+    if (e.key == "Enter")
   startgame();
    }
 
@@ -42,4 +40,3 @@ function hard()
   startgame();
   document.getElementById("game-container").classList.add("hard-mode");
 }
-

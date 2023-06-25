@@ -1,19 +1,19 @@
-const boxes = document.querySelectorAll('.box');
+const boxes = document.querySelectorAll(".box");
 var numberOfPlays=0;
 var winner="";
 var HumanPlayer="";
 var gameOver=false;
 var mode="";
 var computerChoice= 0;
-let player="X"; //X player is human and O player is computer 
+var player="X"; //X player is human and O player is computer
 var choosePlayer=0;
 // Call the function to generate a random move
 const randomMove = generateRandomInteger(8);
 console.log(randomMove); // Output: a random integer between 0 and 8
 
 
-boxes.forEach(box => {
-  box.addEventListener('click', function handleClick (event) {
+boxes.forEach(function(box) {
+  box.addEventListener("click", function handleClick (event) {
     if (player!=="X" || gameOver)
     {
       document.getElementById("message").innerHTML="!ComputerTurn!";
@@ -37,7 +37,7 @@ boxes.forEach(box => {
     putNaughtOrCross(7);
     if(box.id==="eight")
     putNaughtOrCross(8);
-  }); 
+  });
 });
 ///////////////
 let TicTacToe = [0,1,2,
@@ -92,7 +92,6 @@ function checkMiddleRow()
     gameOver=true;
     displayWinner("X player wins");
     }
-    
     MiddleRow=TicTacToe[3]+TicTacToe[4]+TicTacToe[5];
  if(MiddleRow==="OOO")
   {
@@ -110,7 +109,6 @@ function checkbottomRow()
     gameOver=true;
     displayWinner("X player wins");
     }
-    
      bottomRow=TicTacToe[6]+TicTacToe[7]+TicTacToe[8];
  if(bottomRow==="OOO")
   {
@@ -128,7 +126,6 @@ function checkdiagonal1Row()
     gameOver=true;
     displayWinner("X player wins");
     }
-    
     diagonal1=TicTacToe[0]+TicTacToe[4]+TicTacToe[8];
  if(diagonal1==="OOO")
   {
@@ -145,7 +142,6 @@ function checkdiagonal2Row()
     gameOver=true;
     displayWinner("X player wins");
     }
-    
     diagonal2=TicTacToe[6]+TicTacToe[4]+TicTacToe[2];
  if(diagonal2==="OOO")
   {
@@ -162,7 +158,6 @@ function checkcolumn1Row()
     gameOver=true;
     displayWinner("X player wins");
     }
-    
     column1=TicTacToe[0]+TicTacToe[3]+TicTacToe[6];
  if(column1==="OOO")
   {
@@ -179,7 +174,6 @@ function checkcolumn2Row()
     gameOver=true;
     displayWinner("X player wins");
     }
-    
     column2=TicTacToe[1]+TicTacToe[4]+TicTacToe[7];
  if(column2==="OOO")
   {
@@ -196,7 +190,6 @@ function checkcolumn3Row()
     gameOver=true;
     displayWinner("X player wins");
     }
-    
     column3=TicTacToe[2]+TicTacToe[5]+TicTacToe[8];
  if(column3==="OOO")
   {
@@ -210,19 +203,19 @@ function putNaughtOrCross(boxNumber)
   let onscreenBoard = document.getElementsByClassName("box")
   //  alert(TicTacToe[boxNumber] )
    if (TicTacToe[boxNumber] ==="")  //CHECK ARRAY LOCATION IF EMPTY
-       {
-          //Check if player is human then change to computer player and call computerplays  
-          onscreenBoard[boxNumber].innerText=player;
-          TicTacToe[boxNumber]=player;//Record player position in array TicTacToe
-           numberOfPlays++;//increases numerOfPlays by one
-           if(player==="X")
-               {
-                  player="O";//Change player to computer
-                  display();
-                    const TimeoutRef=setTimeout(computerPlays,2000);//computer plays after 2 seconds
-                }
-             checkWinner();   
-          }
+    {
+     //Check if player is human then change to computer player and call computerplays  
+      onscreenBoard[boxNumber].innerText=player;
+      TicTacToe[boxNumber]=player;//Record player position in array TicTacToe
+      numberOfPlays++;//increases numerOfPlays by one
+     if(player==="X")
+      {
+      player="O";//Change player to computer
+     display();
+    const TimeoutRef=setTimeout(computerPlays,2000);//computer plays after 2 seconds
+       }
+      checkWinner();
+    }
  }
 
 function display() {
@@ -236,7 +229,6 @@ function display() {
 
 function playDefencePositionOne() {
  decider = generateRandomInteger(4);
-  
   if (decider == 0)
       return 0;
   if (decider == 1)
@@ -251,14 +243,15 @@ function playhard() {
   // start of function hard
   Row2 = TicTacToe[3] + TicTacToe[4] + TicTacToe[5];
   if (Row2 === "X" && numberOfPlays === 1) {
-    // This if statement is testing against X only because the concatenation operator ignores spaces
-    let boardPosition = playDefencePositionOne();
-    return boardPosition; // this is the position on the tic tac toe board where the computer will play
+  // This if statement is testing against X only because the concatenation operator ignores spaces
+  let boardPosition = playDefencePositionOne();
+    return boardPosition; 
+    // this is the position on the tic tac toe board where the computer will play
   }
-  ////////TEST IF HUMAN PLAYER ISABOUT TO WIN IN THE FIRST ROW AND BLOCK ////////////////
+     ///TEST IF HUMAN PLAYER ISABOUT TO WIN IN THE FIRST ROW AND BLOCK /////
   else if (TicTacToe[0] === "X" && TicTacToe[1] === "X" && TicTacToe[2] === "") {
     // see if there is an X in box 0 and 1 and an empty space in box 2
-    return 2; // block the human player from winning in row1 by playing in box 2
+  return 2; // block the human player from winning in row1 by playing in box 2
   } else if (TicTacToe[0] === "" && TicTacToe[1] === "X" && TicTacToe[2] === "X") {
     // see if there is an X in box 0 and 1 and an empty space in box 2
     return 0; // block the human player from winning in row1 by playing in box 0
@@ -266,8 +259,8 @@ function playhard() {
     // see if there is an X in box 0 and 1 and an empty space in box 2
     return 1; // block the human player from winning in row1 by playing in box 1
   }
-  ///////////////END OF FIRST ROW TEST////////////////////////////
-  //////////TEST IF HUMAN PLAYER ISABOUT TO WIN IN THE SECOND ROW AND BLOCK ////////////////
+  ////////END OF FIRST ROW TEST//////
+ ///TEST IF HUMAN PLAYER ISABOUT TO WIN IN THE SECOND ROW AND BLOCK //////
   else if (TicTacToe[3] === "X" && TicTacToe[4] === "X" && TicTacToe[5] === "") {
     // see if there is an X in box 0 and 1 and an empty space in box 2
     return 5; // block the human player from winning in row1 by playing in box 5
@@ -278,8 +271,8 @@ function playhard() {
     // see if there is an X in box 0 and 1 and an empty space in box 2
     return 4; // block the human player from winning in row1 by playing in box 4
   }
-  ///////////////END OF SECOND ROW TEST////////////////////////////
-  //////////TEST IF HUMAN PLAYER ISABOUT TO WIN IN THE TIRTH ROW AND BLOCK ////////////////
+  ////////END OF SECOND ROW TEST//////////
+  ////TEST IF HUMAN PLAYER ISABOUT TO WIN IN THE TIRTH ROW AND BLOCK ///////
   else if (TicTacToe[6] === "X" && TicTacToe[7] === "X" && TicTacToe[8] === "") {
     // see if there is an X in box 0 and 1 and an empty space in box 2
     return 8; // block the human player from winning in row1 by playing in box 8
@@ -290,8 +283,8 @@ function playhard() {
     // see if there is an X in box 0 and 1 and an empty space in box 2
     return 7; // block the human player from winning in row1 by playing in box 7
   }
-  ///////////////END OF TIRTH ROW TEST////////////////////////////
-  ////////TEST IF HUMAN PLAYER ISABOUT TO WIN IN THE DIAGONAL1 ROW AND BLOCK ////////////////
+   ///////END OF TIRTH ROW TEST////////////////////////////
+   ///TEST IF HUMAN PLAYER ISABOUT TO WIN IN THE DIAGONAL1 ROW AND BLOCK ////////
   else if (TicTacToe[0] === "X" && TicTacToe[4] === "X" && TicTacToe[8] === "") {
     // see if there is an X in box 0 and 1 and an empty space in box 2
     return 8; // block the human player from winning in row1 by playing in box 8
@@ -302,8 +295,8 @@ function playhard() {
     // see if there is an X in box 0 and 1 and an empty space in box 2
     return 4; // block the human player from winning in row1 by playing in box 4
   }
-  ///////////////END OF DIAGONAL1 ROW TEST////////////////////////////
-  //////////TEST IF HUMAN PLAYER ISABOUT TO WIN IN THE DIAGONAL2 ROW AND BLOCK ////////////////
+     ////////END OF DIAGONAL1 ROW TEST//////////
+    /////TEST IF HUMAN PLAYER ISABOUT TO WIN IN THE DIAGONAL2 ROW AND BLOCK //////////
   else if (TicTacToe[6] === "X" && TicTacToe[4] === "X" && TicTacToe[2] === "") {
     // see if there is an X in box 0 and 1 and an empty space in box 2
     return 2; // block the human player from winning in row1 by playing in box 2
@@ -314,8 +307,8 @@ function playhard() {
     // see if there is an X in box 0 and 1 and an empty space in box 2
     return 4; // block the human player from winning in row1 by playing in box 4
   }
-  ///////////////END OF DIAGONAL2 ROW TEST////////////////////////////
-  //////////TEST IF HUMAN PLAYER ISABOUT TO WIN IN THE COLUMN1 AND BLOCK ////////////////
+  ////////END OF DIAGONAL2 ROW TEST///////////////
+  ///////TEST IF HUMAN PLAYER ISABOUT TO WIN IN THE COLUMN1 AND BLOCK ////////
   else if (TicTacToe[0] === "X" && TicTacToe[3] === "X" && TicTacToe[6] === "") {
     // see if there is an X in box 0 and 1 and an empty space in box 2
     return 6; // block the human player from winning in row1 by playing in box 6
@@ -440,14 +433,12 @@ function attack() {
 function computerPlays() {
   if (gameOver === true)
     return;
-  
   if (mode === "hard") {
     computerChoice = attack();
     //alert("computerchoice in computerplays="+computerChoice) player to win
   } else {
     computerChoice = findemptyspace();
-  } 
-
+  }
   putNaughtOrCross(computerChoice);
   player = "X"; // Change player to human player
   display();
@@ -478,9 +469,9 @@ function selectplayer(){
 function playTheGame() {
   selectplayer ();
   if (player === 0) {
-    display(); 
+    display();
     const timeoutRef = setTimeout(computerPlays,2000);
-  } else if (player ==="x") 
+  } else if (player ==="x")
     display();
   }
 
@@ -497,8 +488,7 @@ function playTheGame() {
             {
              onscreenBoard[counter].innerText=""; //this line is for clear a box
              counter = counter + 1;
-            }  
-
+            }
           TicTacToe[0]="";
           TicTacToe[1]="";
           TicTacToe[2]="";
@@ -508,7 +498,6 @@ function playTheGame() {
           TicTacToe[6]="";
           TicTacToe[7]="";
           TicTacToe[8]="";
-
           player = "O";
           display();
           // line reloads the entire page
@@ -520,34 +509,30 @@ function playTheGame() {
     // alert("checkWinner")
      document.getElementById("Display").innerHTML= winner;
     }
-  
     function display2 ()
     {
-      const num=localStorage.getItem("PN");//retrieve store info from the local storage
+    const num=localStorage.getItem("PN");//retrieve store info from the local storage
       //alert(num);
        mode=localStorage.getItem("dn");
      // alert ("inside  display2 " + mode);
       HumanPlayer=num;
-      document.getElementById("Display").innerHTML=HumanPlayer; 
-      
+      document.getElementById("Display").innerHTML=HumanPlayer;
      // document.getElementById("message").innerHTML="ComputerTurnxxxxxxxxxx";
     document.getElementById("numberOfPlayers").innerHTML=mode;
     }
-
     function homepage()
     {
-      window.location.href="../index.html"; //is change for the location of the page
-    } 
-    document.addEventListener("DOMContentLoaded", function() {
+    window.location.href="../index.html"; //is change for the location of the page
+    }
+    document.addEventListener("DOMContentLoaded",
+    function() {
     homeBtn=document.getElementById("Home")
-    homeBtn.addEventListener('click',homepage);
+    homeBtn.addEventListener("click",homepage);
     });
 
     function generateRandomInteger(max) {        // Generate a random integer between 0 and 10 (inclusive)
       return Math.floor(Math.random() * (max + 1));
     }
-    
-    
 playTheGame()
 
 
