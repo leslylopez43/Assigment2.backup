@@ -81,7 +81,7 @@ The interface consists of Wireframes – 3 wireframes for each page – (one for
 # Resources  
 ## images
 tic tac toe Background  - source www.picturebook
-![](img/background.webp)
+![](img/background1.webp)
 
 
 ## lighthouse
@@ -264,7 +264,7 @@ Improved Compatibility: Ensuring compliance with W3C standards enhances the comp
 Better Code Quality: By resolving CSS errors, I have improved the overall quality of my code program. The code is now more maintainable, easier to understand, and less prone to bugs.
 
 Future-Proofing: Adhering to W3C standards future-proofs my CSS code. It reduces the need for extensive revisions in the future and ensures compatibility with upcoming CSS features and browser updates.
-
+![](img/css%20validator.webp)
 ## Running the W3C CSS Validator
 To test your code program using the W3C CSS Validator and identify any CSS errors or issues, follow these steps:
 

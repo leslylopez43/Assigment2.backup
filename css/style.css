@@ -162,8 +162,7 @@ button:hover {
 
 #chooseAName {
   color: #d21313;
-  font-weight: bold;
-  text-decoration-skip-ink: 2em;
+    font-weight: bold;
 }
 
 ::placeholder {
