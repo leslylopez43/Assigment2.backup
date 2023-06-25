@@ -210,7 +210,7 @@ During the testing process, the code was analyzed, and any errors or warnings re
 The validation process helped identify and rectify any issues, such as missing or improperly nested tags, invalid attributes, or other HTML-related problems. This meticulous approach ensures that our code follows established standards, enhancing the reliability, compatibility, and maintainability of our web application.
 ### index page
 ![](img/w3_html_index%20validator.webp)
-I am proud to share that our code has successfully passed the W3C HTML validator with no errors or warnings, indicating that it meets the required standards for quality HTML markup.
+I am proud to share that my code has successfully passed the W3C HTML validator with no errors or warnings, indicating that it meets the required standards for quality HTML markup.
 ### home page
 ![](img/w3_validator_home.webp)
 
