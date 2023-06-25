@@ -5,7 +5,7 @@ var HumanPlayer="";
 var gameOver=false;
 var mode="";
 var computerChoice= 0;
-let player="x"; //X player is human and O player is computer 
+let player="X"; //X player is human and O player is computer 
 var choosePlayer=0;
 // Call the function to generate a random move
 const randomMove = generateRandomInteger(8);

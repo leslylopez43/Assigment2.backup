@@ -11,7 +11,7 @@ function startgame()
    if(difficult=="" || Pname=="")
    {
   // confirm("You need to choose hard or easy and also enter a name")
-  document.getElementById("chooseAName").innerHTML="Type a Name then choose a Hard or easy";
+  document.getElementById("chooseAName").innerHTML="!Type a Name then choose Hard or Easy";
    }
    else
    {
@@ -29,15 +29,17 @@ function detectKey(e)
 
  function easy()
  {
-  difficult = "easy";
+  difficult = "easy-mode";
   // alert("difficult = " + difficult);
   startgame();
+  document.getElementById("game-container").classList.add("easy-mode");
 }
 
 function hard()
 {
-  difficult= "hard";
+  difficult= "hard-mode";
   // alert("hard")
   startgame();
+  document.getElementById("game-container").classList.add("hard-mode");
 }
 
