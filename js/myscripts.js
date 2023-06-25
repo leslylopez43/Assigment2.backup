@@ -243,15 +243,14 @@ function playhard() {
   // start of function hard
   Row2 = TicTacToe[3] + TicTacToe[4] + TicTacToe[5];
   if (Row2 === "X" && numberOfPlays === 1) {
-  // This if statement is testing against X only because the concatenation operator ignores spaces
-  let boardPosition = playDefencePositionOne();
-    return boardPosition; 
-    // this is the position on the tic tac toe board where the computer will play
+    // This if statement is testing against X only because the concatenation operator ignores spaces
+    let boardPosition = playDefencePositionOne();
+    return boardPosition; // this is the position on the tic tac toe board where the computer will play
   }
-     ///TEST IF HUMAN PLAYER ISABOUT TO WIN IN THE FIRST ROW AND BLOCK /////
+  ///TEST IF HUMAN PLAYER IS ABOUT TO WIN IN THE FIRST ROW AND BLOCK /////
   else if (TicTacToe[0] === "X" && TicTacToe[1] === "X" && TicTacToe[2] === "") {
     // see if there is an X in box 0 and 1 and an empty space in box 2
-  return 2; // block the human player from winning in row1 by playing in box 2
+    return 2; // block the human player from winning in row1 by playing in box 2
   } else if (TicTacToe[0] === "" && TicTacToe[1] === "X" && TicTacToe[2] === "X") {
     // see if there is an X in box 0 and 1 and an empty space in box 2
     return 0; // block the human player from winning in row1 by playing in box 0
@@ -260,7 +259,7 @@ function playhard() {
     return 1; // block the human player from winning in row1 by playing in box 1
   }
   ////////END OF FIRST ROW TEST//////
- ///TEST IF HUMAN PLAYER ISABOUT TO WIN IN THE SECOND ROW AND BLOCK //////
+  ///TEST IF HUMAN PLAYER IS ABOUT TO WIN IN THE SECOND ROW AND BLOCK //////
   else if (TicTacToe[3] === "X" && TicTacToe[4] === "X" && TicTacToe[5] === "") {
     // see if there is an X in box 0 and 1 and an empty space in box 2
     return 5; // block the human player from winning in row1 by playing in box 5
@@ -272,7 +271,7 @@ function playhard() {
     return 4; // block the human player from winning in row1 by playing in box 4
   }
   ////////END OF SECOND ROW TEST//////////
-  ////TEST IF HUMAN PLAYER ISABOUT TO WIN IN THE TIRTH ROW AND BLOCK ///////
+  ////TEST IF HUMAN PLAYER IS ABOUT TO WIN IN THE THIRD ROW AND BLOCK ///////
   else if (TicTacToe[6] === "X" && TicTacToe[7] === "X" && TicTacToe[8] === "") {
     // see if there is an X in box 0 and 1 and an empty space in box 2
     return 8; // block the human player from winning in row1 by playing in box 8
@@ -283,8 +282,8 @@ function playhard() {
     // see if there is an X in box 0 and 1 and an empty space in box 2
     return 7; // block the human player from winning in row1 by playing in box 7
   }
-   ///////END OF TIRTH ROW TEST////////////////////////////
-   ///TEST IF HUMAN PLAYER ISABOUT TO WIN IN THE DIAGONAL1 ROW AND BLOCK ////////
+  /////////END OF THIRD ROW TEST////////////////////////////
+  ///TEST IF HUMAN PLAYER IS ABOUT TO WIN IN DIAGONAL1 ROW AND BLOCK ////////
   else if (TicTacToe[0] === "X" && TicTacToe[4] === "X" && TicTacToe[8] === "") {
     // see if there is an X in box 0 and 1 and an empty space in box 2
     return 8; // block the human player from winning in row1 by playing in box 8
@@ -295,8 +294,8 @@ function playhard() {
     // see if there is an X in box 0 and 1 and an empty space in box 2
     return 4; // block the human player from winning in row1 by playing in box 4
   }
-     ////////END OF DIAGONAL1 ROW TEST//////////
-    /////TEST IF HUMAN PLAYER ISABOUT TO WIN IN THE DIAGONAL2 ROW AND BLOCK //////////
+  ////////END OF DIAGONAL1 ROW TEST//////////
+  /////TEST IF HUMAN PLAYER IS ABOUT TO WIN IN DIAGONAL2 ROW AND BLOCK //////////
   else if (TicTacToe[6] === "X" && TicTacToe[4] === "X" && TicTacToe[2] === "") {
     // see if there is an X in box 0 and 1 and an empty space in box 2
     return 2; // block the human player from winning in row1 by playing in box 2
@@ -307,8 +306,8 @@ function playhard() {
     // see if there is an X in box 0 and 1 and an empty space in box 2
     return 4; // block the human player from winning in row1 by playing in box 4
   }
-  ////////END OF DIAGONAL2 ROW TEST///////////////
-  ///////TEST IF HUMAN PLAYER ISABOUT TO WIN IN THE COLUMN1 AND BLOCK ////////
+  ////////END OF DIAGONAL2 ROW TEST//////////
+  ///////TEST IF HUMAN PLAYER IS ABOUT TO WIN IN COLUMN1 AND BLOCK ////////
   else if (TicTacToe[0] === "X" && TicTacToe[3] === "X" && TicTacToe[6] === "") {
     // see if there is an X in box 0 and 1 and an empty space in box 2
     return 6; // block the human player from winning in row1 by playing in box 6
@@ -320,7 +319,7 @@ function playhard() {
     return 3; // block the human player from winning in row1 by playing in box 3
   }
   ///////////////END OF COLUMN1 TEST////////////////////////////
-  //////////TEST IF HUMAN PLAYER ISABOUT TO WIN IN THE COLUMN2 AND BLOCK ////////////////
+  //////////TEST IF HUMAN PLAYER IS ABOUT TO WIN IN COLUMN2 AND BLOCK ////////////////
   else if (TicTacToe[1] === "X" && TicTacToe[4] === "X" && TicTacToe[7] === "") {
     // see if there is an X in box 0 and 1 and an empty space in box 2
     return 7; // block the human player from winning in row1 by playing in box 7
@@ -332,7 +331,7 @@ function playhard() {
     return 4; // block the human player from winning in row1 by playing in box 4
   }
   ///////////////END OF COLUMN2 TEST////////////////////////////
-  //////////TEST IF HUMAN PLAYER ISABOUT TO WIN IN THE COLUMN3 AND BLOCK ////////////////
+  //////////TEST IF HUMAN PLAYER IS ABOUT TO WIN IN COLUMN3 AND BLOCK ////////////////
   else if (TicTacToe[2] === "X" && TicTacToe[5] === "X" && TicTacToe[8] === "") {
     // see if there is an X in box 0 and 1 and an empty space in box 2
     return 8; // block the human player from winning in row1 by playing in box 8
@@ -345,10 +344,9 @@ function playhard() {
   }
   ///////////////END OF COLUMN3 TEST////////////////////////////
   else {
-    // let boardPosition = playDefencePositionOne();
-    return findemptyspace(); // this is the position on the tic tac toe board where the computer will play
+    let boardPosition = randomPlay();
+    return boardPosition;
   }
-  // end of function hard
 }
 
 function attack() {
@@ -361,6 +359,7 @@ function attack() {
     return 1; // block the human player from winning in row1 by playing in box 1
   }
   ///////////////END OF FIRST ROW TEST////////////////////////////
+
   ////////TEST IF HUMAN PLAYER IS ABOUT TO WIN IN THE SECOND ROW AND BLOCK ////////////////
   else if (TicTacToe[3] === "O" && TicTacToe[4] === "O" && TicTacToe[5] === "") {
     return 5; // block the human player from winning in row1 by playing in box 5
@@ -370,6 +369,7 @@ function attack() {
     return 4; // block the human player from winning in row1 by playing in box 4
   }
   ///////////////END OF SECOND ROW TEST////////////////////////////
+
   ////////TEST IF HUMAN PLAYER IS ABOUT TO WIN IN THE THIRD ROW AND BLOCK ////////////////
   else if (TicTacToe[6] === "O" && TicTacToe[7] === "O" && TicTacToe[8] === "") {
     return 8; // block the human player from winning in row1 by playing in box 8
@@ -379,6 +379,7 @@ function attack() {
     return 7; // block the human player from winning in row1 by playing in box 7
   }
   ///////////////END OF THIRD ROW TEST////////////////////////////
+
   ////////TEST IF HUMAN PLAYER IS ABOUT TO WIN IN THE DIAGONAL1 ROW AND BLOCK ////////////////
   else if (TicTacToe[0] === "O" && TicTacToe[4] === "O" && TicTacToe[8] === "") {
     return 8; // block the human player from winning in row1 by playing in box 8
@@ -388,6 +389,7 @@ function attack() {
     return 4; // block the human player from winning in row1 by playing in box 4
   }
   ///////////////END OF DIAGONAL1 ROW TEST////////////////////////////
+
   ////////TEST IF HUMAN PLAYER IS ABOUT TO WIN IN THE DIAGONAL2 ROW AND BLOCK ////////////////
   else if (TicTacToe[6] === "O" && TicTacToe[4] === "O" && TicTacToe[2] === "") {
     return 2; // block the human player from winning in row1 by playing in box 2
@@ -397,6 +399,7 @@ function attack() {
     return 4; // block the human player from winning in row1 by playing in box 4
   }
   ///////////////END OF DIAGONAL2 ROW TEST////////////////////////////
+
   ////////TEST IF HUMAN PLAYER IS ABOUT TO WIN IN COLUMN1 AND BLOCK ////////////////
   else if (TicTacToe[0] === "O" && TicTacToe[3] === "O" && TicTacToe[6] === "") {
     return 6; // block the human player from winning in row1 by playing in box 6
@@ -406,6 +409,7 @@ function attack() {
     return 3; // block the human player from winning in row1 by playing in box 3
   }
   ///////////////END OF COLUMN1 TEST////////////////////////////
+
   ////////TEST IF HUMAN PLAYER IS ABOUT TO WIN IN COLUMN2 AND BLOCK ////////////////
   else if (TicTacToe[1] === "O" && TicTacToe[4] === "O" && TicTacToe[7] === "") {
     return 7; // block the human player from winning in row1 by playing in box 7
@@ -415,6 +419,7 @@ function attack() {
     return 4; // block the human player from winning in row1 by playing in box 4
   }
   ///////////////END OF COLUMN2 TEST////////////////////////////
+
   ////////TEST IF HUMAN PLAYER IS ABOUT TO WIN IN COLUMN3 AND BLOCK ////////////////
   else if (TicTacToe[2] === "O" && TicTacToe[5] === "O" && TicTacToe[8] === "") {
     return 8; // block the human player from winning in row1 by playing in box 8
@@ -424,11 +429,13 @@ function attack() {
     return 5; // block the human player from winning in row1 by playing in box 5
   }
   ///////////////END OF COLUMN3 TEST////////////////////////////
+
   else {
-    compueterplayselection=playhard();
-      return compueterplayselection;//computer just searches for an empty slot to play
+    compueterplayselection = playhard();
+    return compueterplayselection; // computer just searches for an empty slot to play
   }
 }
+
 
 function computerPlays() {
   if (gameOver === true)
