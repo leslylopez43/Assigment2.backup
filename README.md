@@ -198,7 +198,7 @@ The following web browsers were used to test the display of the website includin
 ## Language validation
 Validation of scripting languages were validated using the following:
 •       HTML validation using HTML validator (W3C validator) at https://jigsaw.w3.org/css-validator/
-•       JavaScript validated at https://esprima.org/demo/validate.html
+•       JavaScript validated at https://https://www.jslint.com/
 •       CSS validated at https://jigsaw.w3.org/css-validator/
 # Bugs
 |Bug|Comment|
