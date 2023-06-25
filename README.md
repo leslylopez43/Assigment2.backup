@@ -215,6 +215,7 @@ To address this warning, I have made the following adjustments to my code:
 Line Wrapping: I have wrapped lines longer than 80 characters to ensure they fit within the recommended limit. This improves code readability and makes it easier for other developers to understand the code.
 
 Refactoring and Code Restructuring: In some cases, I have refactored or restructured my code to reduce line length. This may involve splitting long statements into multiple lines or extracting complex expressions into separate variables or functions.
+![](img/javascrip%20page%201.webp)
 
 ## Benefits of Resolving Long Lines Warning
 By addressing the long lines warning highlighted by JSLint, I have achieved the following benefits:
@@ -224,6 +225,7 @@ Improved Readability: Keeping lines within the recommended limit enhances code r
 Code Consistency: By adhering to the line length guideline, I have maintained consistency across the codebase. Consistent code formatting promotes a cohesive and professional codebase.
 
 Reduced Risk of Errors: Long lines can increase the likelihood of introducing errors, as it becomes harder to comprehend the code's logic. By shortening lines, I have minimized the risk of mistakes and made the code more robust.
+![](img/js%20page2.webp)
 
 ## Running JSLint on the Code
 To test the code program using JSLint and identify the long lines warning, follow these steps:
@@ -245,6 +247,7 @@ Please note that JSLint has its own set of rules and preferences. You may need t
 |Bug|Comment|
 | ------ | ------ |
 |Home link page pointed to the wrong page on the Home page and index page |This was corrected and recorded in the Test log|
+
 
 # Deployment
 Website pages are standard HTML pages and HTML templates. Python 2.7 is required
