@@ -154,12 +154,6 @@ button:hover {
   transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
-.message-box:hover {
-  box-shadow: inset 0 0 0 10px #8a9d6c; /* Adjust the last value (10px) to control the size of the shadow */
-  color: rgb(3, 17, 31);
-}
-
-
 #chooseAName {
   color: #d21313;
     font-weight: bold;
