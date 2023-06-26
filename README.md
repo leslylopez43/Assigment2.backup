@@ -3,67 +3,37 @@ README.md
 The website is about Tic tac toe. 
 ![](img/Tic%20tac%20toe%20front%20page.webp)
 
-
-Description
+# Description
 
 This is a simple Tic Tac Toe game built using HTML, CSS, and JavaScript. The game allows you to play against the computer, with the computer making its moves automatically. The game keeps track of the number of plays and declares a winner when there is one.
 ![](img/tic%20tac%20toe.webp)
 
+# Features
+Players can choose their name and difficulty level.
+The game board is displayed in a clean and user-friendly manner.
+The game logic is implemented using JavaScript.
+The website is responsive and works on both desktop and mobile devices.
+
 # Web pages
-The Home page is the landing page which introduces the website to the visitor and introduces the latest Tic Tac Toe with links to go to the Current  games page Tic Tac Toe
+## Home Page
+The home page is the landing page of the website, where visitors are introduced to the Tic Tac Toe game. It provides an overview of the game and includes links to go to the current games page.
 
-## Home page
+## Current Games Page
+The current games page allows players to play Tic Tac Toe against the computer. Players can enter their name and choose the difficulty level (Easy or Hard). The game board is displayed, and players can make their moves by clicking on the squares. The computer will then take its turn, and the game continues until there is a winner or a tie.
 
-This is a simple Tic Tac Toe website that allows players to choose their name and difficulty level. The website is built using HTML, CSS, and JavaScript, and uses the Bootstrap framework for styling.
+## How to Play
+To play the game, follow these steps:
 
-## myscripts2 page
-How to Play
-![]()
 Enter your name and difficulty level (Easy or Hard) in the input field.
 Click the "Start Game" button.
 The game board will appear. Click on a square to place your marker (X or O).
 The computer will then take its turn, and the game will continue until someone wins or the game ends in a tie.
 
-## index
-Features
+# Getting Started
+To get started with the Tic Tac Toe website, simply open the index.html file in your web browser. The game will load automatically, and you can start playing right away.
 
-Players can choose their name and difficulty level.
-The game board is displayed in a clean and user-friendly manner.contains a buttons
-The game logic is implemented using JavaScript.
-The website is responsive and works on both desktop and mobile devices.
-
-
-Getting Started
-## Installation
-
-To get started with the Tic Tac Toe website, simply open the index.html file in your web browser.
-The game will load automatically, and you can start playing right away.
-
-Usage
-
-Click on a box on the Tic Tac Toe board to make your move.
-The computer will automatically make its move.
-Continue taking turns until there is a winner or a tie.
-
-##Code
-
-The game logic is implemented using JavaScript, with the main code in index.js. The Tic Tac Toe board is created using HTML and styled using CSS.
-
-Contributors
-
-This project was created by me Lesly Lopez
-
-License
-
-This project is licensed under the MIT License.Feel free to use
-
-Acknowledgments
-
-code institute, w3school and CodeCamp for providing inspiration and guidance.
-
-
-# Design 
-## Style.css
+## Design
+The website is designed using HTML, CSS, and the Bootstrap framework for styling. The style.css file provides custom styling and allows users to capture the image design and color.
 the Stylen css page provides the user with a form to capture the image design and color.
 
 The interface consists of Wireframes – 3 wireframes for each page – (one for each of PC size, Ipad, Smartphone ) – The files are included named as follows:
@@ -71,18 +41,39 @@ The interface consists of Wireframes – 3 wireframes for each page – (one for
 | ------ | ------ |
 |   Home page    |   Home.Png        |
 |  Current Tic toc toe games     | Current computer.png          |
-|  
+
+## Home Page: Home.png
+Current Tic Tac Toe Games Page: Current_computer.png
+Responsive Design
+The website has been tested and optimized for responsive design. It works well on different devices, including smartphones, tablets, and desktop computers. Here are some examples of responsive testing:
+
+Acknowledgments
+
+code institute, w3school and CodeCamp for providing inspiration and guidance.
+
+# Wireframes
+The interface consists of wireframes for different devices, including PC, iPad, and Smartphone. Here are the wireframes for each page:
+  
 ## ipad wireframe
+Tablet Display: The website should display correctly on an iPad or other tablets.
 ![](img/ipad%203.webp)
 ## iphone 13 pro max wireframe
+Smartphone Display: The website should display with no distortions on a smartphone screen.
 ![](img/iphone%2013%20pro%20max.webp)
 ## website wireframe
+Desktop Display: The website should display without distortion on a desktop computer.
+Contributors
 ![](img/website.webp)
+This project was created by me Lesly Lopez
+
+License
+
+This project is licensed under the MIT License.Feel free to use
+
 # Resources  
 ## images
 tic tac toe Background  - source www.picturebook
 ![](img/background1.webp)
-
 
 ## lighthouse
 Tic tac toe tested
