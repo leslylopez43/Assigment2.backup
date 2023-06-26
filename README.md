@@ -299,7 +299,7 @@ Please note that the W3C CSS Validator has its own set of rules and preferences.
 
 
 # Deployment
-Website pages are standard HTML pages and HTML templates. Python 2.7 is required
+Website pages are standard HTML pages and HTML templates. Python 3.12 is required
 
 # Where can it be found on GitHub? 
 The GitHub link for the project is - https://leslylopez43.github.io/Assigment2.backup/
