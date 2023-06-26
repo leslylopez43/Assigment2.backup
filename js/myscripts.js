@@ -240,7 +240,6 @@ function playDefencePositionOne() {
 }
 
 function playhard() {
-  // start of function hard
   Row2 = TicTacToe[3] + TicTacToe[4] + TicTacToe[5];
   if (Row2 === "X" && numberOfPlays === 1) {
     // This if statement is testing against X only because the concatenation operator ignores spaces
@@ -344,10 +343,9 @@ function playhard() {
   }
   ///////////////END OF COLUMN3 TEST////////////////////////////
   else {
-    let boardPosition = randomPlay();
-    return boardPosition;
-  }
-}
+        return findemptyspace(); //computer just searches for an empty slot to play
+      }
+  } //end of function hard
 
 function attack() {
   ////////TEST IF HUMAN PLAYER IS ABOUT TO WIN IN THE FIRST ROW AND BLOCK ////////////////
@@ -432,7 +430,7 @@ function attack() {
 
   else {
     compueterplayselection = playhard();
-    return compueterplayselection; // computer just searches for an empty slot to play
+    return compueterplayselection; 
   }
 }
 
@@ -442,7 +440,7 @@ function computerPlays() {
     return;
   if (mode === "hard") {
     computerChoice = attack();
-    //alert("computerchoice in computerplays="+computerChoice) player to win
+    //the hard function is the one that makes it hard for the human player to win
   } else {
     computerChoice = findemptyspace();
   }
