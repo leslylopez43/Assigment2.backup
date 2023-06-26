@@ -418,7 +418,7 @@ function attack() {
   }
   ///////////////END OF COLUMN2 TEST////////////////////////////
 
-  ////////TEST IF COMPUTER PLAYER IS ABOUT TO WIN IN COLUMN3 AND BLOCK ////////////////
+  ////////TEST IF human PLAYER IS ABOUT TO WIN IN COLUMN3 AND BLOCK ////////////////
   else if (TicTacToe[2] === "O" && TicTacToe[5] === "O" && TicTacToe[8] === "") {
     return 8; // block the human player from winning in row1 by playing in box 8
   } else if (TicTacToe[2] === "" && TicTacToe[5] === "O" && TicTacToe[8] === "O") {
@@ -502,7 +502,7 @@ function playTheGame() {
           TicTacToe[6]="";
           TicTacToe[7]="";
           TicTacToe[8]="";
-          player = "O";
+          player = selectplayer();
           display();
           // line reloads the entire page
             location.reload();
@@ -528,11 +528,9 @@ function playTheGame() {
     {
     window.location.href="../index.html"; //is change for the location of the page
     }
-    document.addEventListener("DOMContentLoaded",
-    function() {
-    homeBtn=document.getElementById("Home")
+    
+    homeBtn = document.getElementById("Home")
     homeBtn.addEventListener("click",homepage);
-    });
 
     function generateRandomInteger(max) {        // Generate a random integer between 0 and 10 (inclusive)
       return Math.floor(Math.random() * (max + 1));
