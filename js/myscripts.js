@@ -4,13 +4,11 @@ var winner="";
 var HumanPlayer="";
 var gameOver=false;
 var mode="";
-var computerChoice= 0;
-var player="X"; //X player is human and O player is computer
+var computerChoice = 0;
+var player="0"; //X player is human and O player is computer
 var choosePlayer=0;
 // Call the function to generate a random move
 const randomMove = generateRandomInteger(8);
-console.log(randomMove); // Output: a random integer between 0 and 8
-
 
 boxes.forEach(function(box) {
   box.addEventListener("click", function handleClick (event) {
