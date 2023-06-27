@@ -66,6 +66,10 @@ function checkWinner()
     checkcolumn1Row();
     checkcolumn2Row();
     checkcolumn3Row();
+    if ((numberOfPlays==9) && (winner == "")){
+      displayWinner("It's a DRAW");
+      gameOver = true;
+    }
 }
 
 function checkTopRow()
@@ -216,7 +220,7 @@ function putNaughtOrCross(boxNumber)
        }
       checkWinner();
     }
- }
+ }// End of put nought or cross function 
 
 function display() {
   if (player === "X") {
