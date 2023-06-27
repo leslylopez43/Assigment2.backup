@@ -14,9 +14,8 @@ console.log(randomMove); // Output: a random integer between 0 and 8
 
 boxes.forEach(function(box) {
   box.addEventListener("click", function handleClick (event) {
-    if (player!=="X" || gameOver)
+    if ((player!=="X") || (gameOver == true))
     {
-      document.getElementById("message").innerHTML="!ComputerTurn!";
       return;
   }
     if(box.id==="zero")
@@ -39,12 +38,11 @@ boxes.forEach(function(box) {
     putNaughtOrCross(8);
   });
 });
-///////////////
-let TicTacToe = [0,1,2,
-           3,4,5,
-           6,7,8];
+/////////////////Declare array to store the Os and Xs 
+ TicTacToe = [0,1,2,
+                3,4,5,
+                6,7,8];
 // each arrange location is set one space
-
 TicTacToe[0]="";
 TicTacToe[1]="";
 TicTacToe[2]="";
@@ -56,7 +54,6 @@ TicTacToe[7]="";
 TicTacToe[8]="";
 
 function checkWinner()
-
 {
     checkTopRow();
     checkMiddleRow();
