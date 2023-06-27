@@ -199,7 +199,7 @@ function checkcolumn3Row()
 }
 function putNaughtOrCross(boxNumber)
  {
-  let onscreenBoard = document.getElementsByClassName("box")
+  let onscreenBoard = document.getElementsByClassName("box");
   //  alert(TicTacToe[boxNumber] )
    if (TicTacToe[boxNumber] ==="")  //CHECK ARRAY LOCATION IF EMPTY
     {
@@ -434,8 +434,9 @@ function attack() {
 }
 
 function computerPlays() {
-  if (gameOver === true)
+  if (gameOver === true){
     return;
+  }
   if (mode === "hard") {
     computerChoice = attack();
     //the hard function is the one that makes it hard for the human player to win
@@ -452,20 +453,20 @@ function findemptyspace(){
   var emptyspacefound = false;
   while ((emptyspacefound == false) && (!gameOver)){
     slot = generateRandomInteger(8); 
-    //alert(slot+"is"+ TIcTacToe[slot])
-    if(TicTacToe[slot] == ""){
+    if(TicTacToe[slot] === ""){
       emptyspacefound = true;
     }
   }
   return slot;
 }
+
 function selectplayer(){
   choosePlayer = generateRandomInteger(2);
-  if (choosePlayer == 0){
+  if (choosePlayer === 0){
   player = "0"  //compuer player
  }
-  if (choosePlayer ==1){
-  player ="X"; //human Player
+  else if (choosePlayer === 1){
+  player = "X"; //human Player
 }
 }
 
@@ -474,8 +475,9 @@ function playTheGame() {
   if (player === 0) {
     display();
     const timeoutRef = setTimeout(computerPlays,2000);
-  } else if (player ==="x")
+  } else if (player ==="x"){
     display();
+  }
   }
 
     function clearBoard() //is reseting the game
