@@ -3,6 +3,9 @@ README.md
 The website is about Tic tac toe. 
 ![](img/Tic%20tac%20toe%20front%20page.webp)
 
+# link in the website
+https://leslylopez43.github.io/Assigment2.backup/html/home.html
+
 # Description
 
 This is a simple Tic Tac Toe game built using HTML, CSS, and JavaScript. The game allows you to play against the computer, with the computer making its moves automatically. The game keeps track of the number of plays and declares a winner when there is one.
