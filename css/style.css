@@ -68,7 +68,7 @@ td::after {
 .box {
   width: 120px;
   height: 120px;
-  border: 15px solid #20461d;
+  border: 15px solid;
   box-shadow: 0 0 0 2px #5cb0d4;
   justify-content: center;
   align-items: center;
