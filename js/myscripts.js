@@ -463,7 +463,6 @@ function findemptyspace() {
     var emptyspacefound = false;
     while ((emptyspacefound == false) && (!gameOver)) {
         slot = generateRandomInteger(8);
-        //  alert(slot+"is"+ TicTacToe[slot])
         if (TicTacToe[slot] == "") {
             emptyspacefound = true;
         }
