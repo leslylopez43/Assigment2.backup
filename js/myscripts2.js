@@ -16,7 +16,6 @@ function startgame() {
     window.location.href =
   "html/" +
   "home.html"; // change for the location of the page
-
   }
 }
 
@@ -28,18 +27,12 @@ function detectKey(e) {
 
 function easy() {
   difficult = "easy-mode";
-  // alert("difficult = " + difficult);
-
     startgame();
     document.getElementById("game-container").classList.add("easy-mode");
-
 }
 
 function hard() {
   difficult = "hard-mode";
-  // alert("hard")
-
     startgame();
-
   document.getElementById("game-container").classList.add("hard-mode");
 }

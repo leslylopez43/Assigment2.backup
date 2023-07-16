@@ -13,7 +13,6 @@ const randomMove = generateRandomInteger(8);
 boxes.forEach(box => {
     box.addEventListener('click', function handleClick(event) {
         if ((player != "X") || (gameOver == true)) {
-            
             return;
         }
         if (box.id == "zero")
@@ -35,14 +34,12 @@ boxes.forEach(box => {
         if (box.id == "eight")
             putNaughtOrCross(8)
     });
-
 });
 ///////////////
 //Declare array to store the Os and Xs 
 TicTacToe = [0, 1, 2,
              3, 4, 5,
              6, 7, 8];
-
 // each arrange location is set one space
 TicTacToe[0] = "";
 TicTacToe[1] = "";
@@ -99,7 +96,6 @@ function checkMiddleRow() {
         gameOver = true;
         displayWinner("0 player wins");
     }
-
 }
 
 function checkbottomRow() {
@@ -109,14 +105,12 @@ function checkbottomRow() {
         gameOver = true;
         displayWinner("X player wins");
     }
-
     bottomRow = TicTacToe[6] + TicTacToe[7] + TicTacToe[8];
     if (bottomRow == "OOO") {
         winner = player;
         gameOver = true;
         displayWinner("0 player wins");
     }
-
 }
 
 function checkdiagonal1Row() {
@@ -126,7 +120,6 @@ function checkdiagonal1Row() {
         gameOver = true;
         displayWinner("X player wins");
     }
-
     diagonal1 = TicTacToe[0] + TicTacToe[4] + TicTacToe[8];
     if (diagonal1 == "OOO") {
         winner = player;
@@ -142,7 +135,6 @@ function checkdiagonal2Row() {
         gameOver = true;
         displayWinner("X player wins");
     }
-
     diagonal2 = TicTacToe[6] + TicTacToe[4] + TicTacToe[2];
     if (diagonal2 == "OOO") {
         winner = player;
@@ -174,7 +166,6 @@ function checkcolumn2Row() {
         gameOver = true;
         displayWinner("X player wins");
     }
-
     column2 = TicTacToe[1] + TicTacToe[4] + TicTacToe[7];
     if (column2 == "OOO") {
         winner = player;
@@ -190,7 +181,6 @@ function checkcolumn3Row() {
         gameOver = true;
         displayWinner("X player wins");
     }
-
     column3 = TicTacToe[2] + TicTacToe[5] + TicTacToe[8];
     if (column3 == "OOO") {
         winner = player;
@@ -214,17 +204,12 @@ function putNaughtOrCross(boxNumber) {
         }
         checkWinner();
     }
-
 } // End of put nought or cross function 
-
 
 function display() {
     if (player == "X")
-
     {
-
         document.getElementById("message").innerHTML = "Your turn" //HumanPlayer's turn;
-
     }
     
     if (player == "O")
@@ -352,7 +337,6 @@ function playhard() {
     ///////////////END OF COLUMN3 TEST////////////////////////////
     else {
         return findemptyspace(); //computer just searches for an empty slot to play
-
     }
 } //end of function hard
 
@@ -454,27 +438,21 @@ function attack() {
     }
     ///////////////END OF COLUMN 3 TEST////////////////////////////
     else
-
     {
         computerplayselection = playhard();
         return computerplayselection;
     }
-
 }
 
 function computerPlays()
-
 {
     if (gameOver == true)
-        return;
-    
+        return; 
     if (mode == "hard") {
         computerChoice = attack(); //the hard function is the one that makes it hard for the human player to win
     } else {
-        computerChoice = findemptyspace();
-        
+        computerChoice = findemptyspace();    
     }
-   
     putNaughtOrCross(computerChoice)
     player = "X" //Change player to human player
     display();
@@ -493,14 +471,12 @@ function findemptyspace() {
     return slot;
 }
 
-
 function selectplayer() {
     choosePlayer = generateRandomInteger(2);
     if (choosePlayer == 0)
         player = "O" //0 is the computer player
     if (choosePlayer == 1)
         player = "X"; //X is the human player
-
 }
 
 function playTheGame() {
@@ -535,7 +511,6 @@ function clearBoard() //is resetting the game
     TicTacToe[6] = "";
     TicTacToe[7] = "";
     TicTacToe[8] = "";
-
     player = selectplayer();
     display();
     location.reload();
@@ -551,7 +526,6 @@ function display2() {
     HumanPlayer = num;
     document.getElementById("Display").innerHTML = HumanPlayer;
     document.getElementById("numberOfPlayers").innerHTML = mode;
-
 }
 
 function homepage() {
@@ -559,7 +533,6 @@ function homepage() {
 }
 homeBtn = document.getElementById("Home")
 homeBtn.addEventListener('click', homepage);
-
 
 function generateRandomInteger(max) {
 
