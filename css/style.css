@@ -70,6 +70,7 @@ td::after {
   height: 120px;
   border: 15px solid #20461d;
   box-shadow: 0 0 0 2px #5cb0d4;
+  display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
@@ -165,4 +166,40 @@ button:hover {
 .btn-custom {
   font-size: 18px;
   padding: 10px 20px;
+}
+
+@media (max-width: 768px) {
+  /* Mobile-specific styles */
+  body {
+    padding: 30px;
+  }
+
+  .table-container table {
+    margin: 15px auto;
+  }
+
+  td {
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 3px solid black;
+    margin: 5px;
+  }
+
+  .box {
+    width: 80px;
+    height: 80px;
+    border: 10px solid #20461d;
+    font-size: 30px;
+  }
+
+  .name {
+    width: 100px;
+    height: 30px;
+  }
+
+  .btn-custom {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
 }
