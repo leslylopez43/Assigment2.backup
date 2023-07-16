@@ -4,7 +4,7 @@ The website is about Tic tac toe.
 ![](img/Tic%20tac%20toe%20front%20page.webp)
 
 # link in the website
-https://leslylopez43.github.io/Assigment2.backup/html/home.html
+https://leslylopez43.github.io/Assigment2.backup/index.html
 
 # Description
 
