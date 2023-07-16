@@ -94,7 +94,6 @@ td::after {
   transform: translateZ(20px);
 }
 
-
 #status {
   padding: 20px;
   font-size: 25px;
@@ -156,7 +155,7 @@ button:hover {
 
 #chooseAName {
   color: #d21313;
-    font-weight: bold;
+  font-weight: bold;
 }
 
 ::placeholder {
