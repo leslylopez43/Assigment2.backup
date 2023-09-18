@@ -140,17 +140,17 @@ code institute, w3school and CodeCamp for providing inspiration and guidance.
 # Wireframes
 The interface consists of wireframes for different devices, including PC, iPad, and Smartphone. Here are the wireframes for each page:
   
-## ipad wireframe
-Tablet Display: The website should display correctly on an iPad or other tablets.
-![](img/ipad%203.webp)
-## iphone 13 pro max wireframe
-Smartphone Display: The website should display with no distortions on a smartphone screen.
-![](img/iphone%2013%20pro%20max.webp)
-## website wireframe
-Desktop Display: The website should display without distortion on a desktop computer.
-Contributors
-![](img/website.webp)
-This project was created by me Lesly Lopez
+| Device Type | Wireframe Description |
+|---|---|
+| **Tablet Display** | The website should display correctly on an iPad or other tablets. |
+| **Wireframe** | ![Tablet Wireframe](img/ipad%203.webp) |
+| **Smartphone Display** | The website should display with no distortions on a smartphone screen. |
+| **Wireframe** | ![Smartphone Wireframe](img/iphone%2013%20pro%20max.webp) |
+| **Desktop Display** | The website should display without distortion on a desktop computer. |
+| **Wireframe** | ![Desktop Wireframe](img/website.webp) |
+
+**Contributors**: This project was created by me, Lesly Lopez.
+
 
 License
 
