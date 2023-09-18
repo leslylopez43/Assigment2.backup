@@ -1,6 +1,10 @@
 README.md
 # What the Project is about? 
 The website is about Tic tac toe. 
+# What is Tic Tac Toe?
+
+Tic Tac Toe, also known as Noughts and Crosses, is a classic paper-and-pencil game played between two players. The objective is to be the first to form a line of three of your markers, either horizontally, vertically, or diagonally, on a 3x3 grid.
+
 ![](img/Tic%20tac%20toe%20front%20page.webp)
 
 # link in the website
@@ -22,38 +26,9 @@ https://leslylopez43.github.io/Assigment2.backup/index.html
 
 
 
-# Description
+# User Stories.
 
-This is a simple Tic Tac Toe game built using HTML, CSS, and JavaScript. The game allows you to play against the computer, with the computer making its moves automatically. The game keeps track of the number of plays and declares a winner when there is one.
-![](img/tic%20tac%20toe.webp)
-
-# Features
-Players can choose their name and difficulty level.
-The game board is displayed in a clean and user-friendly manner.
-The game logic is implemented using JavaScript.
-The website is responsive and works on both desktop and mobile devices.
-
-# Web pages
-## Home Page
-The home page is the landing page of the website, where visitors are introduced to the Tic Tac Toe game. It provides an overview of the game and includes links to go to the current games page.
-
-## Current Games Page
-The current games page allows players to play Tic Tac Toe against the computer. Players can enter their name and choose the difficulty level (Easy or Hard). The game board is displayed, and players can make their moves by clicking on the squares. The computer will then take its turn, and the game continues until there is a winner or a tie.
-
-## # Tic Tac Toe Website Guide
-
-Welcome to the Tic Tac Toe website! This guide will walk you through using and navigating the site effectively.
-
-
-# What is Tic Tac Toe?
-
-Tic Tac Toe, also known as Noughts and Crosses, is a classic paper-and-pencil game played between two players. The objective is to be the first to form a line of three of your markers, either horizontally, vertically, or diagonally, on a 3x3 grid.
-
-
-
-# User History
-
-| **User History** |
+| **User Stories** |
 |---|
 | - This website provides a digital version of the traditional Tic Tac Toe game. |
 | - It records your game history, allowing you to review past matches and outcomes. |
@@ -77,6 +52,33 @@ Tic Tac Toe is more than just a game; it's a delightful pastime that offers nume
 | 10. Overall Enjoyment | Ultimately, the primary benefit of playing Tic Tac Toe for fun is the sheer joy it brings. Whether you win or lose, the fun and lighthearted nature of the game ensure that you walk away with a smile. |
 
 So, immerse yourself in a game of Tic Tac Toe, have fun, and let it be a delightful distraction that rejuvenates your mind and spirit.
+
+
+# Description
+
+This is a simple Tic Tac Toe game built using HTML, CSS, and JavaScript. The game allows you to play against the computer, with the computer making its moves automatically. The game keeps track of the number of plays and declares a winner when there is one.
+![](img/tic%20tac%20toe.webp)
+
+# Features
+Players can choose their name and difficulty level.
+The game board is displayed in a clean and user-friendly manner.
+The game logic is implemented using JavaScript.
+The website is responsive and works on both desktop and mobile devices.
+
+
+# Web pages
+
+## Home Page
+The home page is the landing page of the website, where visitors are introduced to the Tic Tac Toe game. It provides an overview of the game and includes links to go to the current games page.
+
+
+## Current Games Page
+The current games page allows players to play Tic Tac Toe against the computer. Players can enter their name and choose the difficulty level (Easy or Hard). The game board is displayed, and players can make their moves by clicking on the squares. The computer will then take its turn, and the game continues until there is a winner or a tie.
+
+## # Tic Tac Toe Website Guide
+
+Welcome to the Tic Tac Toe website! This guide will walk you through using and navigating the site effectively.
+
 
 ## Getting Started 
 
