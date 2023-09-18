@@ -6,6 +6,22 @@ The website is about Tic tac toe.
 # link in the website
 https://leslylopez43.github.io/Assigment2.backup/index.html
 
+## how to Navigate in the Tic tac Toe Website.
+| **Step**                                            | **Instructions**                                                                                   |
+| --------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| 1. Open your web browser.                           |                                                                                            |
+| 2. In the address bar, type the website's URL      | If you have the URL, enter it directly. If not, you can try searching for the website using a search engine.      |
+| 3. Press Enter or tap "Go."                        |                                                                                            |
+| 4. You will land on the Home page,                 | which introduces the website and allows you to choose your name and difficulty level.               |
+| 5. To start playing Tic Tac Toe,                   | Follow the instructions on the Home page. Enter your name, choose the difficulty level (Easy or Hard), and click the "Start Game" button. |
+| 6. The game board will appear,                     | and you can click on a square to place your marker (X or O). The computer will then take its turn automatically.                  |
+| 7. Continue taking turns until there is a winner | or the game ends in a tie.                                                                         |
+| 8. You can explore the features of the website,   | learn more about how to play on the "myscripts2" page, and view the code and contributors' information as mentioned in the description.     |
+| 9. Enjoy playing Tic Tac Toe on the website!      |                                                                                            |
+| **Note:**                                           | Remember that you can open the website by entering the URL mentioned in your browser's address bar, and then follow the on-screen instructions to play the game. |
+
+
+
 # Description
 
 This is a simple Tic Tac Toe game built using HTML, CSS, and JavaScript. The game allows you to play against the computer, with the computer making its moves automatically. The game keeps track of the number of plays and declares a winner when there is one.
@@ -24,16 +40,81 @@ The home page is the landing page of the website, where visitors are introduced 
 ## Current Games Page
 The current games page allows players to play Tic Tac Toe against the computer. Players can enter their name and choose the difficulty level (Easy or Hard). The game board is displayed, and players can make their moves by clicking on the squares. The computer will then take its turn, and the game continues until there is a winner or a tie.
 
-## How to Play
-To play the game, follow these steps:
+## # Tic Tac Toe Website Guide
 
-Enter your name and difficulty level (Easy or Hard) in the input field.
-Click the "Start Game" button.
-The game board will appear. Click on a square to place your marker (X or O).
-The computer will then take its turn, and the game will continue until someone wins or the game ends in a tie.
+Welcome to the Tic Tac Toe website! This guide will walk you through using and navigating the site effectively.
 
-# Getting Started
-To get started with the Tic Tac Toe website, simply open the index.html file in your web browser. The game will load automatically, and you can start playing right away.
+
+# What is Tic Tac Toe?
+
+Tic Tac Toe, also known as Noughts and Crosses, is a classic paper-and-pencil game played between two players. The objective is to be the first to form a line of three of your markers, either horizontally, vertically, or diagonally, on a 3x3 grid.
+
+
+
+# User History
+
+| **User History** |
+|---|
+| - This website provides a digital version of the traditional Tic Tac Toe game. |
+| - It records your game history, allowing you to review past matches and outcomes. |
+| - You can access your game history through your user profile. |
+
+##  As a User The Benefits of Playing Tic Tac Toe for Fun
+
+Tic Tac Toe is more than just a game; it's a delightful pastime that offers numerous benefits, making it an ideal choice for those seeking to have fun and distract their minds from the daily grind. Here's why playing Tic Tac Toe can be a source of joy and relaxation:
+
+| **User Benefits** | **User Description and experience** |
+|---|---|
+| 1. Simplicity and Accessibility | Tic Tac Toe is incredibly simple to understand and play. Its rules are straightforward: just form a line of three of your markers before your opponent does. This accessibility means that anyone, regardless of age or gaming experience, can enjoy it. |
+| 2. Quick and Engaging Matches | Each Tic Tac Toe game is relatively short, typically lasting just a few minutes. This makes it an excellent choice for quick entertainment during breaks or moments when you need a mental breather. |
+| 3. Mindful Distraction | Engaging in a game of Tic Tac Toe provides a healthy distraction for your mind. It allows you to momentarily shift your focus away from stressors or worries, providing a mental break and a chance to recharge. |
+| 4. Strategic Thinking | While Tic Tac Toe may seem simple, it involves strategic thinking and planning. Players must anticipate their opponent's moves and make calculated decisions to secure a win. This strategic element keeps the game engaging and mentally stimulating. |
+| 5. Friendly Competition | Tic Tac Toe can be enjoyed with friends, family, or even against a computer opponent, fostering friendly competition and bonding. Sharing laughs and victories with others adds to the overall enjoyment of the game. |
+| 6. Reducing Screen Time | In a world filled with screens and digital distractions, Tic Tac Toe offers a refreshing change. It's a non-digital game that allows you to take a break from electronic devices and enjoy a tactile and analog gaming experience. |
+| 7. Sense of Achievement | Winning a game of Tic Tac Toe, whether against a human or a computer opponent, provides a sense of accomplishment and boosts your mood. Celebrating small victories can brighten your day. |
+| 8. Stress Relief | Playing games like Tic Tac Toe can serve as a stress reliever. The simple act of focusing on the game and trying to outwit your opponent can help reduce tension and promote relaxation. |
+| 9. Mental Agility | Engaging in strategic games like Tic Tac Toe can help maintain and enhance your mental agility. It keeps your mind active and sharp, making it an excellent choice for mental exercise. |
+| 10. Overall Enjoyment | Ultimately, the primary benefit of playing Tic Tac Toe for fun is the sheer joy it brings. Whether you win or lose, the fun and lighthearted nature of the game ensure that you walk away with a smile. |
+
+So, immerse yourself in a game of Tic Tac Toe, have fun, and let it be a delightful distraction that rejuvenates your mind and spirit.
+
+## Getting Started 
+
+| **Getting Started** |
+|---|
+| 1. **Access the Website**<br>- Open your preferred web browser. |
+| 2. **Enter the URL**<br>- In the address bar, type the website's URL (web address). If you don't have it, you can search for it using a search engine. |
+| 3. **Navigate to the Home Page**<br>- You'll land on the Home Page, the starting point for your Tic Tac Toe journey. |
+
+## as a User I can Personalize Your Game
+
+| **Personalize Your Game** |
+|---|
+| 4. **Choose Your Name and Difficulty Level**<br>- On the Home Page:<br>  - Enter your name in the provided input field.<br>  - Select your preferred difficulty level ("Easy" or "Hard"). |
+| 5. **Start the Game**<br>- Click the enticing "Start Game" button to begin your Tic Tac Toe adventure. |
+
+## Playing **user** Game
+
+| **Playing the Game** |
+|---|
+| 6. **Play Your Move**<br>- You'll see the Tic Tac Toe board with empty squares.<br>- Click on any unoccupied square to place your marker ("X" or "O"). |
+| 7. **Computer's Turn**<br>- After your move, watch as the computer automatically makes its move. |
+| 8. **Continue Playing**<br>- The game progresses until:<br>  - You or the computer wins by forming a line of your marker.<br>  - The game ends in a tie if all squares are filled. |
+
+## user can Exploring the Website
+
+| **Exploring the Website** |
+|---|
+| 9. **Discover Additional Features**<br>- Beyond playing the game, you can explore:<br>  - The "myscripts2" page for more game details.<br>  - The "Code" section to view the technical aspects.<br>  - The "Contributors" section to see who contributed to this project.<br>  - The website operates under the MIT License, so feel free to use it. |
+
+## As a User Have Fun!
+
+| **Have Fun User!** |
+|---|
+| 10. **Enjoy Your Tic Tac Toe Experience**<br>- Have a blast playing Tic Tac Toe on our website.<br>- If you want to play again, simply follow steps 4 to 6. |
+
+**Remember, you can return to the website by entering the URL in your browser's address bar whenever you're ready for another game. Have an amazing time playing!**
+
 
 ## Design
 The website is designed using HTML, CSS, and the Bootstrap framework for styling. The style.css file provides custom styling and allows users to capture the image design and color.
