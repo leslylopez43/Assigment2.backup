@@ -8,7 +8,8 @@ Tic Tac Toe, also known as Noughts and Crosses, is a classic paper-and-pencil ga
 ![](img/Tic%20tac%20toe%20front%20page.webp)
 
 # link in the website
-https://leslylopez43.github.io/Assigment2.backup/index.html
+**https://leslylopez43.github.io/Assigment2.backup/index.html**
+
 
 ## how to Navigate in the Tic tac Toe Website.
 | **Step**                                            | **Instructions**                                                                                   |
@@ -149,12 +150,6 @@ The interface consists of wireframes for different devices, including PC, iPad, 
 | **Desktop Display** | The website should display without distortion on a desktop computer. |
 | **Wireframe** | ![Desktop Wireframe](img/website.webp) |
 
-**Contributors**: This project was created by me, Lesly Lopez.
-
-
-License
-
-This project is licensed under the MIT License.Feel free to use
 
 # Resources  
 ## images
@@ -386,5 +381,9 @@ Please note that the W3C CSS Validator has its own set of rules and preferences.
 # Deployment
 Website pages are standard HTML pages and HTML templates. Python 3.12 is required
 
-# Where can it be found on GitHub? 
-The GitHub link for the project is - https://leslylopez43.github.io/Assigment2.backup/
+**Contributors**: This project was created by me, Lesly Lopez.
+
+
+License
+
+This project is licensed under the MIT License.Feel free to use
