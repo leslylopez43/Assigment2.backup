@@ -73,7 +73,7 @@ td::after {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  font-size: 50px;
+  font-size: 4vmax;
   position: relative;
   perspective: 1000px;
 }
