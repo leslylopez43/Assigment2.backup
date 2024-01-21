@@ -26,7 +26,6 @@ Tic Tac Toe, also known as Noughts and Crosses, is a classic paper-and-pencil ga
 | **Note:**                                           | Remember that you can open the website by entering the URL mentioned in your browser's address bar, and then follow the on-screen instructions to play the game. |
 
 
-
 # User Stories.
 
 | **User Stories** |
@@ -34,6 +33,9 @@ Tic Tac Toe, also known as Noughts and Crosses, is a classic paper-and-pencil ga
 | - This website provides a digital version of the traditional Tic Tac Toe game. |
 | - It records your game history, allowing you to review past matches and outcomes. |
 | - You can access your game history through your user profile. |
+| - Users want to know whose turn it is during the game. |
+| - Users want the ability to reset the current game. |
+| - Users want the ability to start a new game. |
 
 ##  As a User The Benefits of Playing Tic Tac Toe for Fun
 

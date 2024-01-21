@@ -92,11 +92,10 @@ td::after {
 /* Media query for small screens */
 @media only screen and (max-width: 600px) {
   .box {
-    width: 80px; /* Adjusted width for small screens */
-    height: 80px; /* Adjusted height for small screens */
-    font-size: 3vmax; /* Adjusted font size for small screens */
+    font-size: 4vw;
   }
 }
+
 
 /* Pseudo-elements for additional borders on the box */
 .box::before,
