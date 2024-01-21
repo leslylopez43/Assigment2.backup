@@ -51,36 +51,52 @@ TicTacToe[6] = "";
 TicTacToe[7] = "";
 TicTacToe[8] = "";
 
-function checkWinner()
-{
-    checkTopRow();
-    checkMiddleRow();
-    checkbottomRow();
-    checkdiagonal1Row();
-    checkdiagonal2Row();
-    checkcolumn1Row();
-    checkcolumn2Row();
-    checkcolumn3Row();
+// Function to check the winner by checking different rows, columns, and diagonals
+function checkWinner() {
+    // Check each possible winning combination
+    checkTopRow();        // Check the top row
+    checkMiddleRow();     // Check the middle row
+    checkbottomRow();     // Check the bottom row
+    checkdiagonal1Row();  // Check the diagonal from top-left to bottom-right
+    checkdiagonal2Row();  // Check the diagonal from top-right to bottom-left
+    checkcolumn1Row();    // Check the leftmost column
+    checkcolumn2Row();    // Check the middle column
+    checkcolumn3Row();    // Check the rightmost column
+
+    // Check for a draw if all cells are filled and there's no winner
     if ((numberOfPlays == 9) && (winner == "")) {
+        // Display draw message
         displayWinner("It's a DRAW");
+        // Set the game over flag
         gameOver = true;
     }
 }
 
+
+// Function to check the top row for a winner
 function checkTopRow() {
+    // Concatenate values of the cells in the top row
     TopRow = TicTacToe[0] + TicTacToe[1] + TicTacToe[2];
+
+    // Check if X player wins in the top row
     if (TopRow == "XXX") {
+        // Set the winner and game over flags
         winner = player;
         gameOver = true;
+        // Display the winner message for X player
         displayWinner("X player wins");
     }
 
+    // Check if O player wins in the top row
     if (TopRow == "OOO") {
+        // Set the winner and game over flags
         winner = player;
         gameOver = true;
+        // Display the winner message for O player
         displayWinner("O player wins");
     }
 }
+
 
 function checkMiddleRow() {
     MiddleRow = TicTacToe[3] + TicTacToe[4] + TicTacToe[5];
@@ -206,18 +222,21 @@ function putNaughtOrCross(boxNumber) {
     }
 } // End of put nought or cross function 
 
+// Function to display the current player's turn message
 function display() {
-    if (player == "X")
-    {
-        document.getElementById("message").innerHTML = "Your turn" //HumanPlayer's turn;
+    // Check if it's X player's turn
+    if (player == "X") {
+        // Display message for X player's turn (HumanPlayer's turn)
+        document.getElementById("message").innerHTML = "Your turn";
     }
-    
-    if (player == "O")
-    {
 
-        document.getElementById("message").innerHTML = "Computer's turn"
+    // Check if it's O player's turn
+    if (player == "O") {
+        // Display message for O player's turn (Computer's turn)
+        document.getElementById("message").innerHTML = "Computer's turn";
     }
 }
+
 
 function playDefencePositionOne() {
     decider = generateRandomInteger(4);
@@ -444,19 +463,31 @@ function attack() {
     }
 }
 
-function computerPlays()
-{
+// Function for computer's turn to make a move
+function computerPlays() {
+    // Check if the game is already over
     if (gameOver == true)
-        return; 
+        return;
+
+    // Check the game mode
     if (mode == "hard") {
-        computerChoice = attack(); //the hard function is the one that makes it hard for the human player to win
+        // If the mode is "hard," use the attack strategy to make it challenging for the human player
+        computerChoice = attack();
     } else {
-        computerChoice = findemptyspace();    
+        // If the mode is not "hard," use a simple strategy to find an empty space
+        computerChoice = findemptyspace();
     }
-    putNaughtOrCross(computerChoice)
-    player = "X" //Change player to human player
+
+    // Make the move on the chosen space
+    putNaughtOrCross(computerChoice);
+
+    // Change player to the human player (X)
+    player = "X";
+
+    // Update the display to show the human player's turn
     display();
 }
+
 
 function findemptyspace() {
     var slot;
