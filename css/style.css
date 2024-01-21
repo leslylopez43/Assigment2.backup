@@ -65,6 +65,8 @@ td::after {
   font-size: 3em;
 }
 
+
+/* Default styles for larger screens */
 .box {
   width: 120px;
   height: 120px;
@@ -77,6 +79,16 @@ td::after {
   position: relative;
   perspective: 1000px;
 }
+
+/* Media query for small screens */
+@media only screen and (max-width: 600px) {
+  .box {
+    width: 80px; /* Adjusted width for small screens */
+    height: 80px; /* Adjusted height for small screens */
+    font-size: 3vmax; /* Adjusted font size for small screens */
+  }
+}
+
 
 .box::before,
 .box::after {
